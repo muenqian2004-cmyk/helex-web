@@ -1,0 +1,729 @@
+{
+  "meta": {
+    "dataType": "ryze_simulator_coefficients_engine_ready",
+    "version": "1.2",
+    "simulatorName": "瑞天帝模拟器计算系数表",
+    "champion": "瑞兹",
+    "championKey": "Ryze",
+    "championId": "13",
+    "championTitleCn": "符文法师",
+    "baseVersion": "16.10.1",
+    "basedOn": "D:/桌面/ryze_simulator_coefficients_v1.1_engine_ready.json",
+    "generatedAt": "2026-05-26T22:32:57+08:00",
+    "notesCn": "v1.2: 修正loopFactor为四路径loopCore公式;新增multiplicative/additive双模式;补充魔王冠冕/龙心/时光之杖;新增calibrationTests;删除错误的0.0323示例。"
+  },
+  "baseChampionStats": {
+    "level": 18,
+    "hp": 2753,
+    "mana": 1490,
+    "ad": 109,
+    "ap": 0,
+    "armor_raw": 97.8,
+    "mr_raw": 55.4,
+    "attackRange": 550,
+    "moveSpeed": 340,
+    "attackSpeed": 0.658,
+    "attackSpeedGrowth": 0.0211,
+    "partype": "法力"
+  },
+  "ryzePassive": {
+    "nameCn": "奥术专精",
+    "manaFormula": "mana = flatMana * (1 + 0.001 * AP)",
+    "coefficient": 0.001,
+    "flatManaDefinition": "baseMana(1490) + 所有装备flatMana之和(魔宗1000+大天使1000+末日寒冬1000+时光之杖800...)",
+    "descriptionCn": "AP每增加1点,总法力值增加flatMana×0.001。这是循环的引擎:AP→mana→HP→AD→AP。"
+  },
+  "augments": [
+    {
+      "augmentId": "adapt",
+      "nameCn": "物理转魔法",
+      "rarityCn": "银色",
+      "enabled": true,
+      "effects": {
+        "ad_to_ap": 1.67,
+        "ap_mult": 0.15,
+        "mana_to_hp": 0,
+        "mana_to_ad": 0,
+        "mana_to_ap": 0,
+        "hp_to_ad": 0,
+        "hp_to_ap": 0,
+        "ad_mult": 0,
+        "hp_mult": 0
+      },
+      "priority": "必拿",
+      "roleInLoop": "循环起点Step1。ad_to_ap=1.67将每1bonusAD转1.67AP。ap_mult=0.15用于独立乘区。"
+    },
+    {
+      "augmentId": "mind_to_matter",
+      "nameCn": "由心及物",
+      "rarityCn": "银色",
+      "enabled": true,
+      "disabled": false,
+      "effects": {
+        "mana_to_hp": 0.5,
+        "mana_to_ad": 0,
+        "mana_to_ap": 0,
+        "hp_to_ad": 0,
+        "hp_to_ap": 0,
+        "ad_to_ap": 0,
+        "ad_mult": 0,
+        "ap_mult": 0,
+        "hp_mult": 0
+      },
+      "priority": "必拿",
+      "roleInLoop": "由心及物提供 mana_to_hp=0.5，每 1 点法力值转化为 0.5 点最大生命值。它会放大瑞兹的蓝量→生命值→攻击力/法强循环，是瑞天帝模拟器的核心强化之一。"
+    },
+    {
+      "augmentId": "goliath",
+      "nameCn": "歌利亚巨人",
+      "rarityCn": "棱彩",
+      "enabled": true,
+      "effects": {
+        "hp_mult": 0.35,
+        "ap_mult": 0.15,
+        "mana_to_hp": 0,
+        "mana_to_ad": 0,
+        "mana_to_ap": 0,
+        "hp_to_ad": 0,
+        "hp_to_ap": 0,
+        "ad_to_ap": 0,
+        "ad_mult": 0
+      },
+      "priority": "高优先级",
+      "roleInLoop": "hp_mult×1.35放大HP→霸王血铠→AD。ap_mult×1.15放大AP→瑞兹被动→mana。"
+    },
+    {
+      "augmentId": "mad_scientist",
+      "nameCn": "科学狂人",
+      "rarityCn": "棱彩",
+      "enabled": true,
+      "effects": {
+        "ap_mult": 0.3,
+        "hp_mult": 0.2,
+        "mana_to_hp": 0,
+        "mana_to_ad": 0,
+        "mana_to_ap": 0,
+        "hp_to_ad": 0,
+        "hp_to_ap": 0,
+        "ad_to_ap": 0,
+        "ad_mult": 0
+      },
+      "priority": "可替代",
+      "roleInLoop": "变大模式hp_mult×1.20, ap_mult×1.30。"
+    },
+    {
+      "augmentId": "tank_engine",
+      "nameCn": "坦克引擎",
+      "rarityCn": "金色",
+      "enabled": true,
+      "effects": {
+        "hp_mult": 0,
+        "ap_mult": 0,
+        "ad_mult": 0,
+        "mana_to_hp": 0,
+        "mana_to_ad": 0,
+        "mana_to_ap": 0,
+        "hp_to_ad": 0,
+        "hp_to_ap": 0,
+        "ad_to_ap": 0
+      },
+      "stacking": {
+        "perStack": {
+          "hp_mult": 0.05
+        },
+        "mode": "compound",
+        "compoundFormula": "tank_engine_hp_mult = (1.05)^N",
+        "additiveFormula": "tank_engine_hp_mult = 1 + 0.05*N",
+        "deathPenalty": "损失65%层数,保留35%"
+      },
+      "priority": "高优先级"
+    },
+    {
+      "augmentId": "baron_hand",
+      "nameCn": "男爵之手",
+      "rarityCn": "棱彩",
+      "enabled": true,
+      "effects": {
+        "ap_mult": 0.25,
+        "hp_mult": 0,
+        "ad_mult": 0,
+        "mana_to_hp": 0,
+        "mana_to_ad": 0,
+        "mana_to_ap": 0,
+        "hp_to_ad": 0,
+        "hp_to_ap": 0,
+        "ad_to_ap": 0
+      },
+      "priority": "可选"
+    }
+  ],
+  "items": [
+    {
+      "itemId": "323004",
+      "nameCn": "魔宗",
+      "price": 2900,
+      "categoryCn": "传说",
+      "enabled": true,
+      "baseStats": {
+        "flatAD": 35,
+        "flatMana": 1000,
+        "flatHP": 0,
+        "flatAP": 0
+      },
+      "effects": {
+        "mana_to_ad": 0.02,
+        "mana_to_ap": 0,
+        "mana_to_hp": 0,
+        "hp_to_ad": 0,
+        "hp_to_ap": 0,
+        "ad_to_ap": 0,
+        "ad_mult": 0,
+        "ap_mult": 0,
+        "hp_mult": 0
+      },
+      "roleInLoop": "flatAD=35进入物理转魔法。mana_to_ad=0.02:每1法力→0.02AD→Path1。flatMana=1000。"
+    },
+    {
+      "itemId": "323003",
+      "nameCn": "大天使之杖",
+      "price": 2900,
+      "categoryCn": "传说",
+      "enabled": true,
+      "baseStats": {
+        "flatAD": 0,
+        "flatMana": 1000,
+        "flatHP": 0,
+        "flatAP": 70
+      },
+      "effects": {
+        "mana_to_ap": 0.02,
+        "mana_to_ad": 0,
+        "mana_to_hp": 0,
+        "hp_to_ad": 0,
+        "hp_to_ap": 0,
+        "ad_to_ap": 0,
+        "ad_mult": 0,
+        "ap_mult": 0,
+        "hp_mult": 0
+      },
+      "roleInLoop": "mana_to_ap=0.02:每1法力→0.02AP→Path2。flatMana=1000。"
+    },
+    {
+      "itemId": "323119",
+      "nameCn": "末日寒冬",
+      "price": 2400,
+      "categoryCn": "传说",
+      "enabled": true,
+      "baseStats": {
+        "flatAD": 0,
+        "flatMana": 1000,
+        "flatHP": 550,
+        "flatAP": 0
+      },
+      "effects": {
+        "mana_to_hp": 0.15,
+        "mana_to_ad": 0,
+        "mana_to_ap": 0,
+        "hp_to_ad": 0,
+        "hp_to_ap": 0,
+        "ad_to_ap": 0,
+        "ad_mult": 0,
+        "ap_mult": 0,
+        "hp_mult": 0
+      },
+      "roleInLoop": "mana_to_hp=0.15:每1法力→0.15HP→Path3&4。末日寒冬 mana_to_hp=0.15，可以与由心及物 mana_to_hp=0.5 叠加。"
+    },
+    {
+      "itemId": "447111",
+      "nameCn": "霸王血铠",
+      "price": 2500,
+      "categoryCn": "传说",
+      "enabled": true,
+      "baseStats": {
+        "flatAD": 30,
+        "flatMana": 0,
+        "flatHP": 550,
+        "flatAP": 0
+      },
+      "effects": {
+        "hp_to_ad": 0.025,
+        "mana_to_hp": 0,
+        "mana_to_ad": 0,
+        "mana_to_ap": 0,
+        "hp_to_ap": 0,
+        "ad_to_ap": 0,
+        "ad_mult": 0,
+        "ap_mult": 0,
+        "hp_mult": 0
+      },
+      "lowHpAdMultiplier": 1.12,
+      "roleInLoop": "hp_to_ad=0.025→Path3。lowHpAdMultiplier=1.12残血放大。flatHP=550。"
+    },
+    {
+      "itemId": "4633",
+      "nameCn": "裂隙制造者",
+      "price": 3100,
+      "categoryCn": "传说",
+      "enabled": true,
+      "baseStats": {
+        "flatAD": 0,
+        "flatMana": 0,
+        "flatHP": 350,
+        "flatAP": 70
+      },
+      "effects": {
+        "hp_to_ap": 0.02,
+        "mana_to_hp": 0,
+        "mana_to_ad": 0,
+        "mana_to_ap": 0,
+        "hp_to_ad": 0,
+        "ad_to_ap": 0,
+        "ad_mult": 0,
+        "ap_mult": 0,
+        "hp_mult": 0
+      },
+      "roleInLoop": "hp_to_ap=0.02→Path4终点。将HP转AP注入瑞兹被动。"
+    },
+    {
+      "itemId": "3089",
+      "nameCn": "灭世者的死亡之帽",
+      "price": 3600,
+      "categoryCn": "传说",
+      "enabled": true,
+      "baseStats": {
+        "flatAD": 0,
+        "flatMana": 0,
+        "flatHP": 0,
+        "flatAP": 130
+      },
+      "effects": {
+        "ap_mult": 0.3,
+        "mana_to_hp": 0,
+        "mana_to_ad": 0,
+        "mana_to_ap": 0,
+        "hp_to_ad": 0,
+        "hp_to_ap": 0,
+        "ad_to_ap": 0,
+        "ad_mult": 0,
+        "hp_mult": 0
+      },
+      "roleInLoop": "AP放大器。ap_mult=0.30用于独立乘区。",
+      "mutexGroup": "hatApMultiplier",
+      "mutexWith": [
+        "3090"
+      ]
+    },
+    {
+      "itemId": "3090",
+      "nameCn": "沃格勒特的巫师帽",
+      "price": 6000,
+      "categoryCn": "basic",
+      "enabled": true,
+      "baseStats": {
+        "flatAD": 0,
+        "flatMana": 0,
+        "flatHP": 0,
+        "flatAP": 300
+      },
+      "effects": {
+        "ap_mult": 0.5,
+        "mana_to_hp": 0,
+        "mana_to_ad": 0,
+        "mana_to_ap": 0,
+        "hp_to_ad": 0,
+        "hp_to_ap": 0,
+        "ad_to_ap": 0,
+        "ad_mult": 0,
+        "hp_mult": 0
+      },
+      "roleInLoop": "帽子加强版。ap_mult=0.50。",
+      "mutexGroup": "hatApMultiplier",
+      "mutexWith": [
+        "3089"
+      ]
+    },
+    {
+      "itemId": "6657",
+      "nameCn": "时光之杖",
+      "price": 2600,
+      "categoryCn": "传说",
+      "enabled": true,
+      "baseStats": {
+        "flatAD": 0,
+        "flatMana": 800,
+        "flatHP": 450,
+        "flatAP": 75
+      },
+      "effects": {
+        "mana_to_hp": 0,
+        "mana_to_ad": 0,
+        "mana_to_ap": 0,
+        "hp_to_ad": 0,
+        "hp_to_ap": 0,
+        "ad_to_ap": 0,
+        "ad_mult": 0,
+        "ap_mult": 0,
+        "hp_mult": 0
+      },
+      "stacking": {
+        "maxStacks": 10,
+        "aramIntervalSeconds": 40,
+        "bonusAtMaxStacks": {
+          "flatAP": 30,
+          "flatMana": 300,
+          "flatHP": 100
+        }
+      },
+      "roleInLoop": "三属性基石。满层总属性:flatAP=105, flatMana=1100, flatHP=550。flatMana增大瑞兹被动基数。"
+    }
+  ],
+  "stackControls": [
+    {
+      "id": "cappa_juice",
+      "nameCn": "帽子饮品",
+      "type": "consumable_stack",
+      "enabled": true,
+      "perStack": {
+        "hp_mult": 0.15
+      },
+      "maxStacks": "无上限",
+      "mode": "additive",
+      "modeFormula_additive": "hp_mult_cappa = 1 + 0.15 × N",
+      "modeFormula_compound": "hp_mult_cappa = (1.15)^N",
+      "notesCn": "ARAM消耗品可重复购买。每瓶+15%HP。"
+    },
+    {
+      "id": "tank_engine_stacks",
+      "nameCn": "坦克引擎层数",
+      "type": "takedown_stack",
+      "enabled": true,
+      "linkedAugmentId": "tank_engine",
+      "perStack": {
+        "hp_mult": 0.05
+      },
+      "maxStacks": "无上限",
+      "mode": "compound",
+      "modeFormula_additive": "hp_mult_te = 1 + 0.05 × N",
+      "modeFormula_compound": "hp_mult_te = (1.05)^N",
+      "deathPenalty": "损失65%, 保留35%"
+    },
+    {
+      "id": "demon_king",
+      "nameCn": "魔王冠冕",
+      "type": "stacking_buff",
+      "enabled": true,
+      "perStack": {
+        "all_stats_mult": 0.01
+      },
+      "maxStacks": "无上限",
+      "mode": "additive",
+      "modeFormula_additive": "all_stats_mult_dk = 1 + 0.01 × N",
+      "modeFormula_compound": "all_stats_mult_dk = (1.01)^N",
+      "affectsWhichStats": [
+        "HP",
+        "AP",
+        "AD",
+        "Mana"
+      ],
+      "notesCn": "魔王冠冕叠加全属性加成。all_stats_mult同时影响HP/AP/AD/Mana,在各自乘区中应用。"
+    },
+    {
+      "id": "dragonheart",
+      "nameCn": "龙心",
+      "type": "stacking_buff",
+      "enabled": true,
+      "perStack": {
+        "all_stats_mult": 0.04
+      },
+      "maxStacks": 7,
+      "mode": "additive",
+      "modeFormula_additive": "all_stats_mult_dh = 1 + 0.04 × N (N ≤ 7)",
+      "modeFormula_compound": "all_stats_mult_dh = (1.04)^N (N ≤ 7)",
+      "affectsWhichStats": [
+        "HP",
+        "AP",
+        "AD",
+        "Mana"
+      ],
+      "notesCn": "龙心最多7层,每层+4%全属性。7层满时all_stats_mult最大为1.28(additive)或≈1.316(compound)。"
+    }
+  ],
+  "toggles": [
+    {
+      "id": "multiplicative",
+      "nameCn": "独立乘区模式",
+      "type": "boolean",
+      "default": true,
+      "trueMeaning": "各来源的ap_mult/hp_mult/ad_mult/all_stats_mult相乘",
+      "falseMeaning": "1 + 所有ap_mult/hp_mult/ad_mult/all_stats_mult相加",
+      "affectedMultipliers": [
+        "ap_mult",
+        "hp_mult",
+        "ad_mult",
+        "all_stats_mult"
+      ],
+      "notesCn": "multipicative=true时,ap_mult_total=∏(1+ap_mult_i)。false时,ap_mult_total=1+Σap_mult_i。"
+    },
+    {
+      "id": "bloodmailLowHp",
+      "nameCn": "霸王血铠残血增幅",
+      "type": "boolean",
+      "default": true,
+      "trueMeaning": "lowHpAdMultiplier = 1.12 (残血时AD×1.12)",
+      "falseMeaning": "lowHpAdMultiplier = 1.0 (不触发残血增幅)",
+      "notesCn": "模拟器可设为true(常驻残血)或false(满血)或动态(根据血量百分比插值)。"
+    },
+    {
+      "id": "hatApMultiplier",
+      "nameCn": "帽子AP倍率二选一",
+      "type": "mutex",
+      "options": [
+        {
+          "itemId": "3089",
+          "nameCn": "灭世者的死亡之帽",
+          "ap_mult": 0.3,
+          "flatAP": 130
+        },
+        {
+          "itemId": "3090",
+          "nameCn": "沃格勒特的巫师帽",
+          "ap_mult": 0.5,
+          "flatAP": 300
+        }
+      ],
+      "defaultSelection": "3089"
+    },
+    {
+      "id": "adapt_enabled",
+      "nameCn": "物理转魔法",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "id": "goliath_enabled",
+      "nameCn": "歌利亚巨人",
+      "type": "boolean",
+      "default": false
+    },
+    {
+      "id": "mad_scientist_enabled",
+      "nameCn": "科学狂人",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "id": "tank_engine_enabled",
+      "nameCn": "坦克引擎",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "id": "baron_hand_enabled",
+      "nameCn": "男爵之手",
+      "type": "boolean",
+      "default": true
+    },
+    {
+      "id": "mind_to_matter_enabled",
+      "nameCn": "由心及物",
+      "type": "boolean",
+      "default": false,
+      "locked": false
+    }
+  ],
+  "statForge": {
+    "nameCn": "属性锻造",
+    "perPoint": {
+      "hp": {
+        "gain": 200,
+        "enabled": true
+      },
+      "ap": {
+        "gain": 30,
+        "enabled": true
+      },
+      "ad": {
+        "gain": 20,
+        "enabled": true
+      },
+      "mana": {
+        "gain": 0,
+        "enabled": false,
+        "reasonCn": "Mana锻造已禁用"
+      }
+    }
+  },
+  "formula": {
+    "descriptionCn": "瑞天帝无限递归循环的完整数学公式。loopCore使用四路径模型。",
+    "loopCore": {
+      "descriptionCn": "loopCore = 四条转换路径之和。每条路径代表法力值→最终AP的不同路线。",
+      "path1": {
+        "nameCn": "法力→AD→AP",
+        "formula": "mana_to_ad × ad_mult × ad_to_ap",
+        "sources": "mana_to_ad(魔宗0.02), ad_mult(默认1.0), ad_to_ap(物理转魔法1.67)"
+      },
+      "path2": {
+        "nameCn": "法力→AP (直接)",
+        "formula": "mana_to_ap",
+        "sources": "mana_to_ap(大天使0.02)"
+      },
+      "path3": {
+        "nameCn": "法力→HP→AD→AP",
+        "formula": "mana_to_hp × hp_mult × hp_to_ad × lowHpAdMultiplier × ad_mult × ad_to_ap",
+        "sources": "mana_to_hp(末日寒冬0.15), hp_mult(全部hp_mult乘区), hp_to_ad(霸王血铠0.025), lowHpAdMultiplier(1.12或1.0), ad_mult(默认1.0), ad_to_ap(1.67)"
+      },
+      "path4": {
+        "nameCn": "法力→HP→AP",
+        "formula": "mana_to_hp × hp_mult × hp_to_ap",
+        "sources": "mana_to_hp(末日寒冬0.15), hp_mult(全部hp_mult乘区), hp_to_ap(裂隙制造者0.02)"
+      },
+      "loopCoreFormula": "loopCore = path1 + path2 + path3 + path4"
+    },
+    "loopFactor": {
+      "formula": "loopFactor = flatMana × 0.001 × loopCore × ap_mult",
+      "flatMana": "baseMana(1490) + ΣitemFlatMana",
+      "ap_mult_definition": "所有ap_mult来源根据multiplicative开关聚合后的总ap倍率",
+      "overflowRule": "loopFactor >= 1",
+      "overflowCap": 2147483647,
+      "overflowCapNote": "32位有符号整数上限 2^31-1 ≈ 21.47亿"
+    },
+    "multiplierAggregation": {
+      "multiplicative": {
+        "ap_mult_total": "∏ (1 + ap_mult_i)  for i in active ap_mult sources",
+        "hp_mult_total": "∏ (1 + hp_mult_i)  for i in active hp_mult sources",
+        "ad_mult_total": "∏ (1 + ad_mult_i)  for i in active ad_mult sources"
+      },
+      "additive": {
+        "ap_mult_total": "1 + Σ ap_mult_i  for i in active ap_mult sources",
+        "hp_mult_total": "1 + Σ hp_mult_i  for i in active hp_mult sources",
+        "ad_mult_total": "1 + Σ ad_mult_i  for i in active ad_mult sources"
+      }
+    },
+    "calibrationTests": [
+      {
+        "testId": "default_calibration",
+        "descriptionCn": "默认装备+强化下的loopFactor验证。用于检查公式是否正确。",
+        "inputs": {
+          "items": [
+            "魔宗",
+            "霸王血铠",
+            "灭世者的死亡之帽",
+            "大天使之杖",
+            "裂隙制造者",
+            "末日寒冬"
+          ],
+          "augments": [
+            "物理转魔法",
+            "科学狂人",
+            "男爵之手",
+            "坦克引擎"
+          ],
+          "tankEngineStacks": 35,
+          "multiplicative": true,
+          "bloodmailLowHp": true,
+          "goliath": false,
+          "demonKingStacks": 0,
+          "dragonheartStacks": 0,
+          "cappaJuiceBottles": 0,
+          "statForgePoints": {
+            "hp": 0,
+            "ap": 0,
+            "ad": 0
+          }
+        },
+        "intermediateValues": {
+          "flatMana": 4490,
+          "mana_to_ad": 0.02,
+          "mana_to_ap": 0.02,
+          "mana_to_hp": 0.15,
+          "hp_to_ad": 0.025,
+          "hp_to_ap": 0.02,
+          "ad_to_ap": 1.67,
+          "ad_mult": 1.0,
+          "lowHpAdMultiplier": 1.12,
+          "hp_mult_tankEngine_35": 5.516015,
+          "hp_mult_total": 6.619218,
+          "ap_mult_total": 2.429375,
+          "path1": 0.0334,
+          "path2": 0.02,
+          "path3": 0.046427,
+          "path4": 0.019858,
+          "loopCore": 0.119685
+        },
+        "result": {
+          "loopFactor": 1.30551,
+          "loopFactorRounded": 1.3055,
+          "isDivergent": true,
+          "verdictCn": "loopFactor ≈ 1.3055 ≥ 1 → 属性发散，无限增长至溢出"
+        }
+      },
+      {
+        "testId": "mind_to_matter_enabled",
+        "descriptionCn": "启用由心及物(mana_to_hp=0.5)后的loopFactor验证。由心及物与末日寒冬叠加后mana_to_hp=0.65。",
+        "inputs": {
+          "items": ["魔宗", "霸王血铠", "灭世者的死亡之帽", "大天使之杖", "裂隙制造者", "末日寒冬"],
+          "augments": ["物理转魔法", "科学狂人", "男爵之手", "坦克引擎", "由心及物"],
+          "tankEngineStacks": 35,
+          "multiplicative": true,
+          "bloodmailLowHp": true,
+          "goliath": false,
+          "demonKingStacks": 0,
+          "dragonheartStacks": 0,
+          "cappaJuiceBottles": 0,
+          "statForgePoints": { "hp": 0, "ap": 0, "ad": 0 }
+        },
+        "intermediateValues": {
+          "flatMana": 4490,
+          "mana_to_hp": 0.65,
+          "mana_to_hp_note": "0.15(末日寒冬) + 0.5(由心及物) = 0.65",
+          "hp_mult_total": 6.619218,
+          "ap_mult_total": 2.429375
+        },
+        "result": {
+          "isDivergent": true,
+          "verdictCn": "由心及物+末日寒冬 mana_to_hp=0.65 → loopFactor显著超过1 → 属性更快速发散"
+        }
+      }
+    ]
+  },
+  "qualityReport": {
+    "allCoefficientsCorrected": true,
+    "loopFactorUses4PathLoopCore": true,
+    "multiplicativeTogglePresent": true,
+    "bloodmailLowHpTogglePresent": true,
+    "requiredItemsPresent": [
+      "魔宗",
+      "霸王血铠",
+      "灭世者的死亡之帽",
+      "大天使之杖",
+      "裂隙制造者",
+      "末日寒冬",
+      "时光之杖"
+    ],
+    "requiredAugmentsPresent": [
+      "物理转魔法",
+      "科学狂人",
+      "男爵之手",
+      "坦克引擎",
+      "歌利亚巨人",
+      "由心及物"
+    ],
+    "requiredStackControlsPresent": [
+      "cappa_juice",
+      "tank_engine_stacks",
+      "demon_king",
+      "dragonheart"
+    ],
+    "calibrationTestsPresent": true,
+    "calibrationLoopFactor": 1.3055,
+    "missingCoefficients": [],
+    "estimatedCoefficients": [],
+    "warnings": [
+      "末日寒冬 mana_to_hp=0.15，可以与由心及物 mana_to_hp=0.5 叠加",
+      "魔王冠冕和龙心的all_stats_mult影响HP/AP/AD/Mana四维,需在各自乘区中分别应用",
+      "坦克引擎compound模式下(1.05)^N,层数高时hp_mult增长速度极快",
+      "calibrationTests仅含一组默认配置,建议补充更多边界测试(如全开/全关/临界发散点)"
+    ],
+    "validationPassed": true
+  }
+}

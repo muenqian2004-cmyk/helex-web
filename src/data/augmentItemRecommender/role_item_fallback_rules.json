@@ -1,0 +1,302 @@
+{
+  "schemaVersion": "augment_item_recommender.role_item_fallback_rules.v1.2",
+  "generatedAt": "2026-05-27",
+  "sourceFiles": [
+    "D:\\桌面\\arammayhem_heroes_v1.json",
+    "D:\\桌面\\lol_arammayhem_items_v2.1_cn_changes.json"
+  ],
+  "data": [
+    {
+      "role": "法师",
+      "preferredItemTags": [
+        {
+          "tag": "mage",
+          "weight": 40,
+          "reasonCn": "法师通常优先使用法强装备"
+        },
+        {
+          "tag": "ap_item",
+          "weight": 35,
+          "reasonCn": "法术强度能直接提高法师输出"
+        },
+        {
+          "tag": "mana_item",
+          "weight": 25,
+          "reasonCn": "部分法师需要法力值支持持续施法"
+        },
+        {
+          "tag": "ability_haste",
+          "weight": 20,
+          "reasonCn": "技能急速能提高技能循环频率"
+        },
+        {
+          "tag": "scaling_item",
+          "weight": 15,
+          "reasonCn": "成长型装备适合需要发育的法师"
+        },
+        {
+          "tag": "sustain_item",
+          "weight": 10,
+          "reasonCn": "吸血和回复帮助法师在团战中存活"
+        }
+      ],
+      "avoidItemTags": [
+        {
+          "tag": "crit_item",
+          "penalty": -25,
+          "reasonCn": "大多数法师无法稳定利用暴击属性"
+        },
+        {
+          "tag": "on_hit_item",
+          "penalty": -10,
+          "reasonCn": "法师主要依靠技能而非普攻触发命中效果"
+        }
+      ],
+      "recommendedItemIds": [],
+      "recommendedItemNamesCn": [],
+      "fallbackReasonCn": "当前强化没有明显装备联动时，根据英雄法师定位优先推荐法强、法力值和技能急速装备。",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "role": "刺客",
+      "preferredItemTags": [
+        {
+          "tag": "ad_item",
+          "weight": 35,
+          "reasonCn": "AD刺客需要攻击力提高爆发"
+        },
+        {
+          "tag": "ap_item",
+          "weight": 35,
+          "reasonCn": "AP刺客需要法强提高爆发"
+        },
+        {
+          "tag": "burst_item",
+          "weight": 30,
+          "reasonCn": "刺客需要高爆发装备秒杀后排"
+        },
+        {
+          "tag": "assassin",
+          "weight": 40,
+          "reasonCn": "刺客专属装备提供穿甲和机动性"
+        }
+      ],
+      "avoidItemTags": [
+        {
+          "tag": "defensive_item",
+          "penalty": -15,
+          "reasonCn": "纯防御装会降低刺客的秒杀能力"
+        },
+        {
+          "tag": "crit_item",
+          "penalty": -10,
+          "reasonCn": "刺客通常不需要暴击属性"
+        },
+        {
+          "tag": "support",
+          "penalty": -25,
+          "reasonCn": "辅助装不适合刺客的输出定位"
+        }
+      ],
+      "recommendedItemIds": [],
+      "recommendedItemNamesCn": [],
+      "fallbackReasonCn": "当前强化没有明显装备联动时，根据英雄刺客定位优先推荐高爆发和穿甲装备。",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "role": "战士",
+      "preferredItemTags": [
+        {
+          "tag": "fighter",
+          "weight": 40,
+          "reasonCn": "战士需要半肉半输出装备"
+        },
+        {
+          "tag": "ad_item",
+          "weight": 30,
+          "reasonCn": "战士主要依赖攻击力输出"
+        },
+        {
+          "tag": "hp_item",
+          "weight": 25,
+          "reasonCn": "生命值提供战士进场的生存能力"
+        },
+        {
+          "tag": "defensive_item",
+          "weight": 20,
+          "reasonCn": "防御属性让战士能在前排站住"
+        },
+        {
+          "tag": "sustain_item",
+          "weight": 15,
+          "reasonCn": "吸血和回复增强战士的持续作战能力"
+        }
+      ],
+      "avoidItemTags": [
+        {
+          "tag": "crit_item",
+          "penalty": -15,
+          "reasonCn": "大多数战士不依赖暴击"
+        },
+        {
+          "tag": "support",
+          "penalty": -25,
+          "reasonCn": "辅助装备不适合战士定位"
+        }
+      ],
+      "recommendedItemIds": [],
+      "recommendedItemNamesCn": [],
+      "fallbackReasonCn": "当前强化没有明显装备联动时，根据英雄战士定位优先推荐半肉半输出装备。",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "role": "坦克",
+      "preferredItemTags": [
+        {
+          "tag": "tank",
+          "weight": 40,
+          "reasonCn": "坦克需要纯防御装备吸收伤害"
+        },
+        {
+          "tag": "hp_item",
+          "weight": 35,
+          "reasonCn": "生命值是坦克最核心的属性"
+        },
+        {
+          "tag": "defensive_item",
+          "weight": 30,
+          "reasonCn": "双抗装备提高坦克的硬度"
+        },
+        {
+          "tag": "sustain_item",
+          "weight": 15,
+          "reasonCn": "回复装备帮助坦克持续站场"
+        }
+      ],
+      "avoidItemTags": [
+        {
+          "tag": "crit_item",
+          "penalty": -25,
+          "reasonCn": "坦克不需要暴击属性"
+        },
+        {
+          "tag": "ap_item",
+          "penalty": -15,
+          "reasonCn": "纯AP输出装会让坦克失去硬度"
+        },
+        {
+          "tag": "marksman",
+          "penalty": -25,
+          "reasonCn": "射手装备不适合坦克定位"
+        }
+      ],
+      "recommendedItemIds": [],
+      "recommendedItemNamesCn": [],
+      "fallbackReasonCn": "当前强化没有明显装备联动时，根据英雄坦克定位优先推荐生命值和防御装备。",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "role": "射手",
+      "preferredItemTags": [
+        {
+          "tag": "marksman",
+          "weight": 40,
+          "reasonCn": "射手需要攻速暴击类装备"
+        },
+        {
+          "tag": "ad_item",
+          "weight": 30,
+          "reasonCn": "攻击力是射手输出的基础"
+        },
+        {
+          "tag": "attack_speed_item",
+          "weight": 30,
+          "reasonCn": "攻速提高射手持续输出"
+        },
+        {
+          "tag": "crit_item",
+          "weight": 25,
+          "reasonCn": "暴击是射手核心属性之一"
+        },
+        {
+          "tag": "on_hit_item",
+          "weight": 20,
+          "reasonCn": "命中特效装备配合高攻速收益高"
+        }
+      ],
+      "avoidItemTags": [
+        {
+          "tag": "tank",
+          "penalty": -25,
+          "reasonCn": "纯防御装会显著降低射手输出"
+        },
+        {
+          "tag": "ap_item",
+          "penalty": -20,
+          "reasonCn": "法强对大多数射手无收益"
+        }
+      ],
+      "recommendedItemIds": [],
+      "recommendedItemNamesCn": [],
+      "fallbackReasonCn": "当前强化没有明显装备联动时，根据英雄射手定位优先推荐攻速、暴击和攻击力装备。",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "role": "辅助",
+      "preferredItemTags": [
+        {
+          "tag": "support",
+          "weight": 40,
+          "reasonCn": "辅助专属装备提供团队增益"
+        },
+        {
+          "tag": "utility_item",
+          "weight": 35,
+          "reasonCn": "功能性装备提供护盾、治疗、控制"
+        },
+        {
+          "tag": "sustain_item",
+          "weight": 25,
+          "reasonCn": "回复装备帮助辅助在团战中存活"
+        },
+        {
+          "tag": "defensive_item",
+          "weight": 15,
+          "reasonCn": "防御属性防止辅助被秒杀"
+        }
+      ],
+      "avoidItemTags": [
+        {
+          "tag": "crit_item",
+          "penalty": -25,
+          "reasonCn": "辅助不需要暴击属性"
+        },
+        {
+          "tag": "assassin",
+          "penalty": -25,
+          "reasonCn": "刺客装备不适合辅助定位"
+        },
+        {
+          "tag": "burst_item",
+          "penalty": -15,
+          "reasonCn": "纯输出装备与辅助职能冲突"
+        }
+      ],
+      "recommendedItemIds": [],
+      "recommendedItemNamesCn": [],
+      "fallbackReasonCn": "当前强化没有明显装备联动时，根据英雄辅助定位优先推荐团队增益和功能性装备。",
+      "confidence": "high",
+      "notesCn": ""
+    }
+  ],
+  "qualityReport": {
+    "totalRoles": 6,
+    "rolesCovered": 6,
+    "lowConfidenceCount": 0
+  }
+}

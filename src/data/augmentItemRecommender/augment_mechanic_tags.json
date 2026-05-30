@@ -1,0 +1,5550 @@
+{
+  "schemaVersion": "augment_item_recommender.augment_mechanic_tags.v1.2",
+  "generatedAt": "2026-05-27",
+  "sourceFiles": [
+    "D:\\桌面\\arammayhem_augments_v6_availability_fixed.json"
+  ],
+  "data": [
+    {
+      "augmentId": "back_to_basics",
+      "nameCn": "回归基本功",
+      "rarityCn": "棱彩",
+      "effectCn": "你的终极技能已被封印。获得30%技能伤害、治疗效果、护盾，和60技能急速。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "cooldown_loop",
+        "ability_cast",
+        "shield_heal",
+        "sustain"
+      ],
+      "relatedStats": [
+        "ability_haste",
+        "shield",
+        "hp"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "sustain_item",
+        "ability_haste"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "回归基本功涉及技能冷却缩减，技能急速装备能让技能循环更流畅，提高持续输出。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "biggest_snowball_ever",
+      "nameCn": "史上最大雪球",
+      "rarityCn": "棱彩",
+      "effectCn": "你的 雪球 获得100技能急速。 你的雪球现在变得 非常大 ，并且可以穿过小兵。它会对敌人造成持续2秒的20% 减速 ， 将他们 击飞 0.75秒，并造成额外 200-350(基于等级) (+100% 额外AD) (+ 60%AP) 伤害 。 如果你没有雪球，则获得一个 雪球 。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "strong",
+      "mechanicTypes": [
+        "stat_conversion",
+        "ad_scaling",
+        "ap_scaling",
+        "cooldown_loop",
+        "ability_cast",
+        "burst"
+      ],
+      "relatedStats": [
+        "ad",
+        "ap",
+        "ability_haste"
+      ],
+      "conversionRules": [
+        {
+          "from": "ad",
+          "to": "ap",
+          "ratio": 1.67,
+          "text": "额外攻击力→法术强度",
+          "cond": "常驻"
+        }
+      ],
+      "preferredItemTags": [
+        "ap_item",
+        "mage",
+        "ad_item",
+        "ability_haste"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "史上最大雪球涉及技能冷却缩减，技能急速装备能让技能循环更流畅，提高持续输出。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "blade_waltz",
+      "nameCn": "利刃华尔兹",
+      "rarityCn": "棱彩",
+      "effectCn": "获得召唤师技能利刃华尔兹。 利刃华尔兹会让你进入不可被选取状态，在此期间对敌人进行反复突进并造成伤害。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "weak",
+      "mechanicTypes": [
+        "summon"
+      ],
+      "relatedStats": [],
+      "conversionRules": [],
+      "preferredItemTags": [],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "该强化主要提供技能/召唤师技能/随机效果，不直接改变装备优先级，推荐时走英雄定位兜底。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": "v1.2降级: 利刃华尔兹是召唤师技能效果，不直接改变装备优先级。"
+    },
+    {
+      "augmentId": "bounce_of_the_poro_king",
+      "nameCn": "魄罗之王的弹跳",
+      "rarityCn": "棱彩",
+      "effectCn": "将一个召唤师技能替换为 魄罗之王的弹跳 ！ 魄罗之王的弹跳 ：变形为【魄罗之王】，拥有无法被阻挡、幽灵状态、获得25%移动速度和85%伤害减免，但不能攻击或使用技能。此外，反复弹跳，造成 100-300(+5%额外生命值) (+100%额外攻击力) (+50%法术强度) 物理伤害 并 击退 附近的敌方英雄。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "strong",
+      "mechanicTypes": [
+        "stat_conversion",
+        "ad_scaling",
+        "ap_scaling",
+        "hp_scaling",
+        "on_hit",
+        "basic_attack",
+        "mobility",
+        "summon",
+        "burst"
+      ],
+      "relatedStats": [
+        "ad",
+        "ap",
+        "hp",
+        "move_speed"
+      ],
+      "conversionRules": [
+        {
+          "from": "ad",
+          "to": "ap",
+          "ratio": 1.67,
+          "text": "额外攻击力→法术强度",
+          "cond": "常驻"
+        },
+        {
+          "from": "hp",
+          "to": "ad",
+          "ratio": null,
+          "text": "生命值→攻击力",
+          "cond": "常驻"
+        }
+      ],
+      "preferredItemTags": [
+        "hp_item",
+        "defensive_item",
+        "ap_item",
+        "mage",
+        "ad_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "魄罗之王的弹跳将额外攻击力转化为法术强度，让AD装备也能为法师提供AP收益，攻击力装备的价值大幅提升。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "cant_touch_this",
+      "nameCn": "你摸不到",
+      "rarityCn": "棱彩",
+      "effectCn": "施放你的终极技能会使你进入持续@InvulnDuration@秒的的免疫伤害状态(@Cooldown@秒冷却时间)。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "ability_cast"
+      ],
+      "relatedStats": [],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "ability_haste"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "你摸不到涉及技能冷却缩减，技能急速装备能让技能循环更流畅，提高持续输出。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "cerberus",
+      "nameCn": "地狱三头犬",
+      "rarityCn": "棱彩",
+      "effectCn": "获得丛刃</spellName>和 强攻 基石符文。 丛刃：对英雄的前三次普通攻击会获得140%/80% 攻击速度 强攻：对同一英雄进行三次攻击会造成额外120-360 (基于等级) (+40%AD) (+30%AP) 自适应伤害，并提高15%后续伤害",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "strong",
+      "mechanicTypes": [
+        "stat_conversion",
+        "ad_scaling",
+        "ap_scaling",
+        "on_hit",
+        "basic_attack",
+        "attack_speed_scaling",
+        "burst",
+        "stat_multiplier"
+      ],
+      "relatedStats": [
+        "ad",
+        "ap",
+        "attack_speed"
+      ],
+      "conversionRules": [
+        {
+          "from": "ad",
+          "to": "ap",
+          "ratio": 1.67,
+          "text": "额外攻击力→法术强度",
+          "cond": "常驻"
+        }
+      ],
+      "preferredItemTags": [
+        "ap_item",
+        "mage",
+        "ad_item",
+        "attack_speed_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "地狱三头犬强化普攻和命中效果，因此攻速和命中特效装备的收益会被显著放大。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "circle_of_death",
+      "nameCn": "死亡之环",
+      "rarityCn": "棱彩",
+      "effectCn": "你造成的治疗效果和生命回复效果会对相距最近的那个敌方英雄造成@HealToDamageConversion*100@%该治疗数额的魔法伤害。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "shield_heal",
+        "sustain"
+      ],
+      "relatedStats": [
+        "hp"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "hp_item",
+        "defensive_item",
+        "ap_item",
+        "mage",
+        "sustain_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "死亡之环涉及治疗和回复，续航和吸血装备能让英雄在团战中更持久。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "clown_college",
+      "nameCn": "小丑学院",
+      "rarityCn": "棱彩",
+      "effectCn": "获得召唤师技能 欺诈魔术 ：隐身最多3秒，并在0.125秒延迟后闪现到400单位内的目标位置。你的下一次普通攻击造成 100 （+150%额外AD） （+55%AP） 额外物理伤害 。 获得 背刺 被动：你的普通攻击从背后攻击敌人时，造成 20-35(基于等级) （+50%额外AD） （+35%AP） 额外物理伤害 。 在你阵亡时，生成一个爆炸盒子来对附近的敌人们造成 25%最大生命值 的 真实伤",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "strong",
+      "mechanicTypes": [
+        "stat_conversion",
+        "ad_scaling",
+        "ap_scaling",
+        "stat_multiplier",
+        "hp_scaling",
+        "burn_dot",
+        "on_hit",
+        "basic_attack",
+        "summon",
+        "burst"
+      ],
+      "relatedStats": [
+        "ad",
+        "ap",
+        "hp"
+      ],
+      "conversionRules": [
+        {
+          "from": "ad",
+          "to": "ap",
+          "ratio": 1.67,
+          "text": "额外攻击力→法术强度",
+          "cond": "常驻"
+        }
+      ],
+      "preferredItemTags": [
+        "hp_item",
+        "defensive_item",
+        "ap_item",
+        "mage",
+        "ad_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "小丑学院增加生命值和适应之力，任何能提供基础属性的装备都会因为这个百分比放大而更强。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "courage_of_the_colossus",
+      "nameCn": "巨像的勇气",
+      "rarityCn": "棱彩",
+      "effectCn": "定身或缚地一个敌方英雄后获得100 – 300(基于等级)（+ 5%最大生命值）护盾值。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "shield_heal"
+      ],
+      "relatedStats": [
+        "shield"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "hp_item",
+        "defensive_item",
+        "sustain_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "巨像的勇气提供或强化护盾机制，生命值、抗性和护盾相关装备能增强生存和护盾厚度。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "cruelty",
+      "nameCn": "残忍",
+      "rarityCn": "棱彩",
+      "effectCn": "定身 或 缚地 一个敌方英雄时，召唤一颗彗星至敌人上方。彗星会在1秒后着陆，在区域内造成 50-150(基于等级) (+ 40%AP) (+ 4%最大生命值) 魔法伤害 。 这个效果对每次技能施放和每个目标都有6秒冷却时间。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "strong",
+      "mechanicTypes": [
+        "burn_dot",
+        "hp_scaling",
+        "summon",
+        "stat_multiplier",
+        "ap_scaling"
+      ],
+      "relatedStats": [
+        "hp",
+        "ap"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "hp_item",
+        "defensive_item",
+        "ap_item",
+        "mage",
+        "ability_haste"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "残忍涉及技能冷却缩减，技能急速装备能让技能循环更流畅，提高持续输出。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "dashing",
+      "nameCn": "全凭身法",
+      "rarityCn": "棱彩",
+      "effectCn": "你的冲刺、跳跃、闪烁或传送类技能获得100技能急速。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "cooldown_loop",
+        "ability_cast"
+      ],
+      "relatedStats": [
+        "ability_haste"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "ability_haste"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "全凭身法涉及技能冷却缩减，技能急速装备能让技能循环更流畅，提高持续输出。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "devil_on_your_shoulder",
+      "nameCn": "你肩上的恶魔",
+      "rarityCn": "棱彩",
+      "effectCn": "你已与【大魔王】本尊订立了一个契约，他每秒汲取你0.75% 当前生命值 ，如果附近有敌人则提升至7.5%。 作为回报，大魔王会增幅你的攻击和技能，造成 20%额外真实伤害 ，并且他们还会使生命残片出现在附近，持续5秒，吸收一个生命残片会治疗你 50-150 (+50%额外攻击力) (+25%法术强度) 生命值 ，以及持续1秒的15%移动速度。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "strong",
+      "mechanicTypes": [
+        "stat_conversion",
+        "ad_scaling",
+        "ap_scaling",
+        "hp_scaling",
+        "burn_dot",
+        "on_hit",
+        "basic_attack",
+        "shield_heal",
+        "sustain",
+        "mobility",
+        "burst",
+        "stat_multiplier"
+      ],
+      "relatedStats": [
+        "ad",
+        "ap",
+        "hp",
+        "move_speed"
+      ],
+      "conversionRules": [
+        {
+          "from": "ad",
+          "to": "ap",
+          "ratio": 1.67,
+          "text": "额外攻击力→法术强度",
+          "cond": "常驻"
+        },
+        {
+          "from": "hp",
+          "to": "ad",
+          "ratio": null,
+          "text": "生命值→攻击力",
+          "cond": "常驻"
+        }
+      ],
+      "preferredItemTags": [
+        "hp_item",
+        "defensive_item",
+        "ap_item",
+        "mage",
+        "ad_item",
+        "sustain_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "你肩上的恶魔将额外攻击力转化为法术强度，让AD装备也能为法师提供AP收益，攻击力装备的价值大幅提升。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "draw_your_sword",
+      "nameCn": "亮出你的剑",
+      "rarityCn": "棱彩",
+      "effectCn": "变为近战状态，并且获得30%攻击力、30%生命值、25%攻击速度、20%生命偷取和25%移动速度 ，每个属性都基于舍弃的攻击距离提升0-30%（从500开始，每15提升3%）。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "strong",
+      "mechanicTypes": [
+        "attack_speed_scaling",
+        "sustain",
+        "mobility",
+        "stat_multiplier",
+        "hp_scaling"
+      ],
+      "relatedStats": [
+        "attack_speed",
+        "lifesteal",
+        "move_speed",
+        "hp"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "hp_item",
+        "defensive_item",
+        "ad_item",
+        "attack_speed_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "亮出你的剑将生命值转化为攻击力，让坦克装备同时提供输出，高血量装备的性价比大幅提升。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "dropkick",
+      "nameCn": "飞身踢",
+      "rarityCn": "棱彩",
+      "effectCn": "你的攻击和技能会斩杀生命值低于5% （+0.002%额外生命值） （+0.03%基础攻击力） 的敌人并将目标击退，被击退的敌人在碰到其他敌人或者地形时爆炸，造成 150-500 (+100%额外护甲) (+100%额外魔抗) 魔法伤害 ，同时你回复 100-300（+25%额外生命值）生命值",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "strong",
+      "mechanicTypes": [
+        "stat_conversion",
+        "hp_scaling",
+        "ad_scaling",
+        "on_hit",
+        "basic_attack",
+        "shield_heal",
+        "sustain",
+        "burst",
+        "execute"
+      ],
+      "relatedStats": [
+        "hp",
+        "ad"
+      ],
+      "conversionRules": [
+        {
+          "from": "hp",
+          "to": "ad",
+          "ratio": null,
+          "text": "生命值→攻击力",
+          "cond": "常驻"
+        }
+      ],
+      "preferredItemTags": [
+        "hp_item",
+        "defensive_item",
+        "ap_item",
+        "mage",
+        "ad_item",
+        "sustain_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "飞身踢将生命值转化为攻击力，让坦克装备同时提供输出，高血量装备的性价比大幅提升。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "droppybara",
+      "nameCn": "卡皮巴拉空投",
+      "rarityCn": "棱彩",
+      "effectCn": "获得召唤师技能卡皮巴拉空投。 在2秒后，一个卡皮巴拉撞进地面，造成25%最大生命值的真实伤害。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "summon"
+      ],
+      "relatedStats": [],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "卡皮巴拉空投的效果改变了战斗方式，选择与其机制匹配的装备可以最大化这个强化的价值。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "dual_wield",
+      "nameCn": "双刀流",
+      "rarityCn": "棱彩",
+      "effectCn": "在你攻击时，发射一个次级弩箭，造成40%伤害和40%效能的命中。获得20%总攻击速度。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "on_hit",
+        "basic_attack",
+        "attack_speed_scaling"
+      ],
+      "relatedStats": [
+        "attack_speed"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "attack_speed_item",
+        "on_hit_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "双刀流提升攻速收益，攻速装备配合命中特效或暴击能产生协同效应。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "empowered_by_the_faithful",
+      "nameCn": "信念者的强化",
+      "rarityCn": "棱彩",
+      "effectCn": "为友军提供治疗或护盾会赐福他们8秒。当被赐福的友军对敌方英雄造成伤害时，你会获得 【虔诚】 层数。在50层 【虔诚】 时，释放一道冲击波来造成50-300(基于等级) (+75000%治疗和护盾强度) 伤害，并斩杀 (25%治疗和护盾强度) 的敌人。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "strong",
+      "mechanicTypes": [
+        "shield_heal",
+        "sustain",
+        "execute"
+      ],
+      "relatedStats": [
+        "shield",
+        "hp"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "sustain_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "信念者的强化提供或强化护盾机制，生命值、抗性和护盾相关装备能增强生存和护盾厚度。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "empyrean_promise",
+      "nameCn": "至高天诺言",
+      "rarityCn": "棱彩",
+      "effectCn": "获得15%治疗和护盾强度，获得至高天诺言召唤师技能。警惕传送至你的友军并在着陆时提供持续3秒的100 - 250(基于等级) +100%AP + 10%额外生命值护盾值。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "strong",
+      "mechanicTypes": [
+        "shield_heal",
+        "sustain",
+        "summon",
+        "stat_multiplier",
+        "ap_scaling"
+      ],
+      "relatedStats": [
+        "shield",
+        "hp",
+        "ap"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "hp_item",
+        "defensive_item",
+        "ap_item",
+        "mage",
+        "sustain_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "至高天诺言提供或强化护盾机制，生命值、抗性和护盾相关装备能增强生存和护盾厚度。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "eureka",
+      "nameCn": "尤里卡",
+      "rarityCn": "棱彩",
+      "effectCn": "获得相当于30%法术强度的技能急速。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "cooldown_loop",
+        "ability_cast"
+      ],
+      "relatedStats": [
+        "ability_haste"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "ap_item",
+        "mage",
+        "ability_haste"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "尤里卡涉及技能冷却缩减，技能急速装备能让技能循环更流畅，提高持续输出。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "fan_the_hammer",
+      "nameCn": "连拨击锤",
+      "rarityCn": "棱彩",
+      "effectCn": "在你攻击时，发射5个额外箭矢，每个箭矢造成 10–52.5（基于等级） (+15%额外AD) 物理伤害 。每个方向有独立的5秒冷却时间，且每个箭矢可以暴击造成200伤害并以20%效率触发命中效果。不会被小兵触发。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "on_hit",
+        "basic_attack",
+        "crit_scaling",
+        "burst"
+      ],
+      "relatedStats": [
+        "crit"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "ad_item",
+        "crit_item",
+        "on_hit_item",
+        "attack_speed_item",
+        "ability_haste"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "连拨击锤强化普攻和命中效果，因此攻速和命中特效装备的收益会被显著放大。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "feel_the_burn",
+      "nameCn": "感受燃烧",
+      "rarityCn": "棱彩",
+      "effectCn": "获得召唤师技能感受灼烧。 感受灼烧会对所有附近的敌人们施放引燃和虚弱。 范围：800",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "weak",
+      "mechanicTypes": [
+        "burn_dot",
+        "hp_scaling",
+        "summon"
+      ],
+      "relatedStats": [
+        "hp"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "该强化主要提供技能/召唤师技能/随机效果，不直接改变装备优先级，推荐时走英雄定位兜底。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": "v1.2降级: 感受燃烧是召唤师技能，提供引燃+虚弱效果，不直接改变装备选择。"
+    },
+    {
+      "augmentId": "fey_magic",
+      "nameCn": "精怪魔法",
+      "rarityCn": "棱彩",
+      "effectCn": "你的终极技能的伤害会对敌人造成持续2秒的变形效果。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "weak",
+      "mechanicTypes": [
+        "ability_cast"
+      ],
+      "relatedStats": [],
+      "conversionRules": [],
+      "preferredItemTags": [],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "该强化主要提供技能/召唤师技能/随机效果，不直接改变装备优先级，推荐时走英雄定位兜底。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": "v1.2降级: 精怪魔法提供变形控制效果，属于功能性强化，不直接影响装备优先级。"
+    },
+    {
+      "augmentId": "final_form",
+      "nameCn": "最终形态",
+      "rarityCn": "棱彩",
+      "effectCn": "在施放你的终极技能时，获得持续10秒的50%最大生命值护盾、20%全能吸血和30%额外移动速度。(20秒冷却时间)",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "shield_heal",
+        "sustain",
+        "mobility",
+        "ability_cast"
+      ],
+      "relatedStats": [
+        "shield",
+        "lifesteal",
+        "move_speed"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "hp_item",
+        "defensive_item",
+        "sustain_item",
+        "ability_haste"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "最终形态涉及技能冷却缩减，技能急速装备能让技能循环更流畅，提高持续输出。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "gash",
+      "nameCn": "砍伤",
+      "rarityCn": "棱彩",
+      "effectCn": "获得50%攻击速度。攻击造成 20-40/10-20（+25%/20%额外护甲）真实伤害 命中。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "on_hit",
+        "basic_attack",
+        "attack_speed_scaling",
+        "burst"
+      ],
+      "relatedStats": [
+        "attack_speed"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "attack_speed_item",
+        "on_hit_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "砍伤强化普攻和命中效果，因此攻速和命中特效装备的收益会被显著放大。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "giant_slayer",
+      "nameCn": "巨人杀手",
+      "rarityCn": "棱彩",
+      "effectCn": "体型变小，获得30%移动速度，并基于敌方英雄体型大于你的程度造成10%到30%额外伤害。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "weak",
+      "mechanicTypes": [
+        "mobility",
+        "burst"
+      ],
+      "relatedStats": [
+        "move_speed"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "",
+      "sourceType": "effect_text",
+      "confidence": "medium",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "glass_cannon",
+      "nameCn": "玻璃大炮",
+      "rarityCn": "棱彩",
+      "effectCn": "减少30%最大生命值。造成15%额外真实伤害。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "weak",
+      "mechanicTypes": [
+        "burst"
+      ],
+      "relatedStats": [],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "",
+      "sourceType": "effect_text",
+      "confidence": "medium",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "goldrend",
+      "nameCn": "夺金",
+      "rarityCn": "棱彩",
+      "effectCn": "用攻击或技能对一个英雄造成伤害时会造成额外50-150(基于等级) +40%额外AD +20%AP魔法伤害，并为你提供30金币和持续1.5秒的25%移动速度(每个英雄有30秒冷却时间)。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "strong",
+      "mechanicTypes": [
+        "stat_conversion",
+        "ad_scaling",
+        "ap_scaling",
+        "on_hit",
+        "basic_attack",
+        "mobility",
+        "burst",
+        "economy",
+        "stat_multiplier"
+      ],
+      "relatedStats": [
+        "ad",
+        "ap",
+        "move_speed"
+      ],
+      "conversionRules": [
+        {
+          "from": "ad",
+          "to": "ap",
+          "ratio": 1.67,
+          "text": "额外攻击力→法术强度",
+          "cond": "常驻"
+        }
+      ],
+      "preferredItemTags": [
+        "ap_item",
+        "mage",
+        "ad_item",
+        "ability_haste"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "夺金强化普攻和命中效果，因此攻速和命中特效装备的收益会被显著放大。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "goliath",
+      "nameCn": "歌利亚巨人",
+      "rarityCn": "棱彩",
+      "effectCn": "体型变大，获得35%生命值和15%适应之力。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "strong",
+      "mechanicTypes": [
+        "stat_multiplier",
+        "hp_scaling"
+      ],
+      "relatedStats": [
+        "hp",
+        "ap",
+        "ad"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "歌利亚巨人增加生命值和适应之力，任何能提供基础属性的装备都会因为这个百分比放大而更强。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "hand_of_baron",
+      "nameCn": "男爵之手",
+      "rarityCn": "棱彩",
+      "effectCn": "获得33%适应之力，附近友方小兵都获得极大增强。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "strong",
+      "mechanicTypes": [
+        "stat_multiplier",
+        "ap_scaling",
+        "ad_scaling"
+      ],
+      "relatedStats": [
+        "ap",
+        "ad"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "ap_item",
+        "ad_item",
+        "scaling_item",
+        "mage",
+        "fighter"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "男爵之手提供适应之力，同时通过AD或AP方向放大输出，高属性装备的收益被百分比增强。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": "v1.1修正: 33%适应之力同时放大AP和AD"
+    },
+    {
+      "augmentId": "heads_up_cupcake",
+      "nameCn": "当心小蛋糕！",
+      "rarityCn": "棱彩",
+      "effectCn": "周期性地出现一个小蛋糕快速越过整个大桥，接住小蛋糕的英雄会获得 15金币 ，其与其附近的友军回复 50-250(+5-20%(基于等级)已损失生命值)生命值 ，但是会 减速 50%，持续0.5秒。你的小蛋糕每治疗1000生命值，就会提供 200金币",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "shield_heal",
+        "sustain",
+        "economy"
+      ],
+      "relatedStats": [
+        "hp"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "hp_item",
+        "defensive_item",
+        "sustain_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "当心小蛋糕！涉及治疗和回复，续航和吸血装备能让英雄在团战中更持久。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "holy_snowball",
+      "nameCn": "神圣雪球",
+      "rarityCn": "棱彩",
+      "effectCn": "你的雪球获得100技能急速，使用雪球冲刺后获得1秒的免疫伤害",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "cooldown_loop",
+        "ability_cast"
+      ],
+      "relatedStats": [
+        "ability_haste"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "ability_haste"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "神圣雪球涉及技能冷却缩减，技能急速装备能让技能循环更流畅，提高持续输出。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "im_a_baby_kitty_where_is_mama",
+      "nameCn": "小猫咪找妈妈",
+      "rarityCn": "棱彩",
+      "effectCn": "站在一个友军的附近并将其标记为你的妈妈。 当朝着妈妈移动时，获得37.5%移动速度。当靠近你的妈妈时，获得75%移动速度、50%治疗和护盾强度。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "shield_heal",
+        "sustain",
+        "mobility"
+      ],
+      "relatedStats": [
+        "shield",
+        "hp",
+        "move_speed"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "sustain_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "小猫咪找妈妈提供或强化护盾机制，生命值、抗性和护盾相关装备能增强生存和护盾厚度。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "infernal_conduit",
+      "nameCn": "炼狱导管",
+      "rarityCn": "棱彩",
+      "effectCn": "技能会施加一层可无限叠加的灼烧，每秒造成1.2 - 12 (基于等级) (+ 2.8 %额外AD) (+ 1.2 % AP) 点魔法伤害。 灼烧效果会降低你各基础技能的冷却时间0.08秒。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "strong",
+      "mechanicTypes": [
+        "stat_conversion",
+        "ad_scaling",
+        "ap_scaling",
+        "burn_dot",
+        "hp_scaling",
+        "burst"
+      ],
+      "relatedStats": [
+        "ad",
+        "ap",
+        "hp"
+      ],
+      "conversionRules": [
+        {
+          "from": "ad",
+          "to": "ap",
+          "ratio": 1.67,
+          "text": "额外攻击力→法术强度",
+          "cond": "常驻"
+        }
+      ],
+      "preferredItemTags": [
+        "ap_item",
+        "mage",
+        "ad_item",
+        "ability_haste"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "炼狱导管涉及技能冷却缩减，技能急速装备能让技能循环更流畅，提高持续输出。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "infinite_recursion",
+      "nameCn": "无限循环往复",
+      "rarityCn": "棱彩",
+      "effectCn": "获得60技能急速，参与击杀额外获得3技能急速",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "cooldown_loop",
+        "ability_cast"
+      ],
+      "relatedStats": [
+        "ability_haste"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "ability_haste"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "无限循环往复涉及技能冷却缩减，技能急速装备能让技能循环更流畅，提高持续输出。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "jeweled_gauntlet",
+      "nameCn": "珠光护手",
+      "rarityCn": "棱彩",
+      "effectCn": "你的技能可以造成暴击，造成145%总伤害。获得25%(+ 4.5% AP)%暴击几率。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "strong",
+      "mechanicTypes": [
+        "crit_scaling",
+        "stat_multiplier",
+        "ap_scaling"
+      ],
+      "relatedStats": [
+        "crit",
+        "ap"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "ap_item",
+        "mage",
+        "crit_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "珠光护手涉及暴击机制，暴击率和暴击伤害装备的优先级上升。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "king_me",
+      "nameCn": "尊我为王",
+      "rarityCn": "棱彩",
+      "effectCn": "当你第一次携带一件传说级装备并乘坐敌人的传送门时，你会加冕为王，升级你的装备并获得一个随机棱彩阶强化符文。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "weak",
+      "mechanicTypes": [
+        "item_interaction"
+      ],
+      "relatedStats": [],
+      "conversionRules": [],
+      "preferredItemTags": [],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "该强化主要提供技能/召唤师技能/随机效果，不直接改变装备优先级，推荐时走英雄定位兜底。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": "v1.2降级: 尊我为王是随机装备升级+棱彩强化，效果随机，不指向特定装备路线。"
+    },
+    {
+      "augmentId": "laser_heal",
+      "nameCn": "激光治疗",
+      "rarityCn": "棱彩",
+      "effectCn": "施放一个持续2.5秒的治疗激光，治疗友军200-550(基于等级) +70%AP +50%额外生命值 生命值，对敌人造成100-350(基于等级) +50%AP魔法伤害并使敌人减速20%。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "strong",
+      "mechanicTypes": [
+        "stat_multiplier",
+        "hp_scaling",
+        "shield_heal",
+        "sustain",
+        "burst",
+        "ap_scaling"
+      ],
+      "relatedStats": [
+        "hp",
+        "ap"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "hp_item",
+        "defensive_item",
+        "ap_item",
+        "mage",
+        "sustain_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "激光治疗增加生命值和适应之力，任何能提供基础属性的装备都会因为这个百分比放大而更强。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "mad_scientist",
+      "nameCn": "科学狂人",
+      "rarityCn": "棱彩",
+      "effectCn": "在回合开始时，你的体型要么变大(获得@ADAmp*100@%适应之力和@HealthAmp*100@%生命值)要么变小(获得@Haste@技能急速和@MovespeedAmp*100@%移动速度)。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "strong",
+      "mechanicTypes": [
+        "cooldown_loop",
+        "ability_cast",
+        "shield_heal",
+        "sustain",
+        "mobility",
+        "stat_multiplier",
+        "hp_scaling"
+      ],
+      "relatedStats": [
+        "ability_haste",
+        "hp",
+        "move_speed",
+        "ap",
+        "ad"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "hp_item",
+        "defensive_item",
+        "ad_item",
+        "ability_haste"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "科学狂人涉及技能冷却缩减，技能急速装备能让技能循环更流畅，提高持续输出。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "master_of_duality",
+      "nameCn": "物法皆修",
+      "rarityCn": "棱彩",
+      "effectCn": "你的每次攻击为你提供6 - 18 法术强度，并且你的每次技能为你提供3 - 9 攻击力 增益可无限叠加并刷新，但有5秒的持续时间。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "strong",
+      "mechanicTypes": [
+        "stat_conversion",
+        "ap_scaling",
+        "ad_scaling",
+        "cooldown_loop",
+        "refresh"
+      ],
+      "relatedStats": [
+        "ap",
+        "ad",
+        "ability_haste"
+      ],
+      "conversionRules": [
+        {
+          "from": "ap",
+          "to": "ad",
+          "ratio": null,
+          "text": "法术强度→额外攻击力",
+          "cond": "常驻"
+        }
+      ],
+      "preferredItemTags": [
+        "ap_item",
+        "mage",
+        "ad_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "物法皆修将额外攻击力转化为法术强度，让AD装备也能为法师提供AP收益，攻击力装备的价值大幅提升。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "mystic_punch",
+      "nameCn": "秘术冲拳",
+      "rarityCn": "棱彩",
+      "effectCn": "命中缩减技能冷却1.25秒",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "strong",
+      "mechanicTypes": [
+        "cooldown_loop",
+        "on_hit",
+        "basic_attack"
+      ],
+      "relatedStats": [
+        "ability_haste"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "on_hit_item",
+        "attack_speed_item",
+        "ability_haste"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "秘术冲拳让每次命中都缩减技能冷却时间，因此高攻速和命中特效装备能让技能循环大幅加速。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": "v1.1修正: 命中缩减技能冷却1.25秒"
+    },
+    {
+      "augmentId": "ominous_pact",
+      "nameCn": "不祥契约",
+      "rarityCn": "棱彩",
+      "effectCn": "基于已损失生命值，获得至多75 - 150(基于等级)法术强度，50%移动速度和20%全能吸血。施放技能会消耗你的5%当前生命值。 在30%生命值时获得最大增益。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "strong",
+      "mechanicTypes": [
+        "sustain",
+        "mobility",
+        "stat_multiplier",
+        "hp_scaling",
+        "ap_scaling"
+      ],
+      "relatedStats": [
+        "lifesteal",
+        "move_speed",
+        "hp",
+        "ap"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "hp_item",
+        "defensive_item",
+        "ap_item",
+        "mage",
+        "sustain_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "不祥契约涉及治疗和回复，续航和吸血装备能让英雄在团战中更持久。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "omni_soul",
+      "nameCn": "全能龙魂",
+      "rarityCn": "棱彩",
+      "effectCn": "获得3个随机龙魂",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "weak",
+      "mechanicTypes": [
+        "unknown"
+      ],
+      "relatedStats": [],
+      "conversionRules": [],
+      "preferredItemTags": [],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "该强化主要提供技能/召唤师技能/随机效果，不直接改变装备优先级，推荐时走英雄定位兜底。",
+      "sourceType": "inferred",
+      "confidence": "medium",
+      "notesCn": "v1.2降级: 全能龙魂提供随机龙魂效果，随机性太强无法稳定推荐装备。"
+    },
+    {
+      "augmentId": "orbitallaser",
+      "nameCn": "轨道镭射",
+      "rarityCn": "棱彩",
+      "effectCn": "在2.5秒后，召唤一道轨道镭射光束落下，造成25%目标最大生命值的真实伤害并在3秒内持续造成共360-600 (基于等级) 的魔法伤害。 每场游戏仅会有一位玩家拥有这个强化符文",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "burn_dot",
+        "hp_scaling",
+        "summon"
+      ],
+      "relatedStats": [
+        "hp"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "hp_item",
+        "defensive_item",
+        "ap_item",
+        "mage"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "轨道镭射涉及持续伤害机制，法强和生命值装备能同时提高灼烧的基础伤害和生存能力。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "pandorasbox",
+      "nameCn": "潘朵拉的盒子",
+      "rarityCn": "棱彩",
+      "effectCn": "所有强化变为随机棱彩阶",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "weak",
+      "mechanicTypes": [
+        "unknown"
+      ],
+      "relatedStats": [],
+      "conversionRules": [],
+      "preferredItemTags": [],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "",
+      "sourceType": "effect_text",
+      "confidence": "medium",
+      "notesCn": "v1.1修正: 所有强化变为随机棱彩阶"
+    },
+    {
+      "augmentId": "prom_queen",
+      "nameCn": "舞会女王",
+      "rarityCn": "棱彩",
+      "effectCn": "每25秒自动获得一个围绕你的聚光灯，聚光灯会在2.5秒后落下，当它着陆时，获得洛的终极技能，魅惑你碰到的敌人们。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "weak",
+      "mechanicTypes": [
+        "ability_cast"
+      ],
+      "relatedStats": [],
+      "conversionRules": [],
+      "preferredItemTags": [],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "该强化主要提供技能/召唤师技能/随机效果，不直接改变装备优先级，推荐时走英雄定位兜底。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": "v1.2降级: 舞会女王提供周期性魅惑，属于控制型效果，不直接改变装备优先级。"
+    },
+    {
+      "augmentId": "protein_shake",
+      "nameCn": "蛋白粉奶昔",
+      "rarityCn": "棱彩",
+      "effectCn": "获得25%(+35%额外护甲)(+35%额外魔抗)治疗和护盾强度。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "shield_heal",
+        "sustain"
+      ],
+      "relatedStats": [
+        "shield",
+        "hp"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "sustain_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "蛋白粉奶昔提供或强化护盾机制，生命值、抗性和护盾相关装备能增强生存和护盾厚度。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "quantum_computing",
+      "nameCn": "量子计算",
+      "rarityCn": "棱彩",
+      "effectCn": "每@AutoCastCooldown@秒在你周围 自动施放 一次巨型斩击，造成 200-350(基于等级) （+85%额外AD） （+50%AP） 物理伤害 。被外沿命中的敌人会被施加在@SlowDuration@秒里持续衰减的@SlowPercentage@% 减速 ，受到额外的 10% （+2.5%/100额外AD） （+1.6%/100AP） （+0.1%/100额外生命值）最大生命值 的物",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "strong",
+      "mechanicTypes": [
+        "stat_conversion",
+        "ad_scaling",
+        "ap_scaling",
+        "burn_dot",
+        "hp_scaling",
+        "shield_heal",
+        "sustain",
+        "burst",
+        "stat_multiplier"
+      ],
+      "relatedStats": [
+        "ad",
+        "ap",
+        "hp"
+      ],
+      "conversionRules": [
+        {
+          "from": "ad",
+          "to": "ap",
+          "ratio": 1.67,
+          "text": "额外攻击力→法术强度",
+          "cond": "常驻"
+        }
+      ],
+      "preferredItemTags": [
+        "hp_item",
+        "defensive_item",
+        "ap_item",
+        "mage",
+        "ad_item",
+        "on_hit_item",
+        "attack_speed_item",
+        "sustain_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "量子计算涉及治疗和回复，续航和吸血装备能让英雄在团战中更持久。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "quest_urfs_champion",
+      "nameCn": "任务：海牛阿福的勇士",
+      "rarityCn": "棱彩",
+      "effectCn": "参与击杀N次→奖励金铲铲",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "item_interaction",
+        "economy"
+      ],
+      "relatedStats": [],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "scaling_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "任务：海牛阿福的勇士奖励金铲铲，提供大量属性，需要配合成长型装备发挥最大价值。",
+      "sourceType": "effect_text",
+      "confidence": "medium",
+      "notesCn": "v1.1修正: 参与击杀N次→奖励金铲铲"
+    },
+    {
+      "augmentId": "quest_wooglets_witchcap",
+      "nameCn": "任务：沃格勒特的巫师帽",
+      "rarityCn": "棱彩",
+      "effectCn": "持有帽子+沙漏→获得沃格勒特的巫师帽",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "strong",
+      "mechanicTypes": [
+        "item_interaction",
+        "ap_scaling"
+      ],
+      "relatedStats": [
+        "ap"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "ap_item",
+        "mage",
+        "scaling_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "任务：沃格勒特的巫师帽是任务型装备升级路线，需要持有灭世者的死亡之帽和中娅沙漏来获得强化版沃格勒特的巫师帽。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": "v1.1修正: 持有帽子+沙漏→获得沃格勒特的巫师帽"
+    },
+    {
+      "augmentId": "red_envelopes",
+      "nameCn": "红包",
+      "rarityCn": "棱彩",
+      "effectCn": "每25-15(基于等级)秒，你的周围随机出现红包，拾取红包可以获得10-18(基于等级)到28-58(基于等级)金币，随机属性，以及持续4秒的150移动速度",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "weak",
+      "mechanicTypes": [
+        "mobility",
+        "economy"
+      ],
+      "relatedStats": [
+        "move_speed"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "",
+      "sourceType": "effect_text",
+      "confidence": "medium",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "scopiest_weapons",
+      "nameCn": "最万用的瞄准镜",
+      "rarityCn": "棱彩",
+      "effectCn": "+300攻击距离(远程+150)",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "basic_attack",
+        "attack_speed_scaling"
+      ],
+      "relatedStats": [
+        "attack_speed"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "marksman",
+        "attack_speed_item",
+        "on_hit_item",
+        "crit_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "最万用的瞄准镜大幅提升攻击距离，让射手和普攻型英雄能安全输出，高攻速和命中特效装备可以最大化距离优势。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": "v1.1修正: +300攻击距离(远程+150)"
+    },
+    {
+      "augmentId": "slow_cooker",
+      "nameCn": "慢炖",
+      "rarityCn": "棱彩",
+      "effectCn": "每一秒，对500码内的敌方英雄们施加一层可无限叠加的灼烧，在5秒的持续时间里每秒造成0.35%最大生命值的伤害。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "strong",
+      "mechanicTypes": [
+        "stat_multiplier",
+        "hp_scaling",
+        "burn_dot"
+      ],
+      "relatedStats": [
+        "hp",
+        "ap"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "慢炖增加生命值和适应之力，任何能提供基础属性的装备都会因为这个百分比放大而更强。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "stats_on_stats_on_stats",
+      "nameCn": "属性叠属性叠属性！",
+      "rarityCn": "棱彩",
+      "effectCn": "更高阶的属性锻造器",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "strong",
+      "mechanicTypes": [
+        "stat_multiplier"
+      ],
+      "relatedStats": [
+        "hp",
+        "ap",
+        "ad"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "scaling_item",
+        "hp_item",
+        "ap_item",
+        "ad_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "属性叠属性叠属性！提供更大量的属性锻造器，让装备提供的属性进一步放大，成型后属性碾压对手。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": "v1.1修正: 更高阶的属性锻造器"
+    },
+    {
+      "augmentId": "stuck_in_here_with_me",
+      "nameCn": "和我一起困在这里",
+      "rarityCn": "棱彩",
+      "effectCn": "使用你的终极技能时会嘲讽附近的敌人们并提供给你持续2秒的40%伤害减免。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "weak",
+      "mechanicTypes": [
+        "ability_cast"
+      ],
+      "relatedStats": [],
+      "conversionRules": [],
+      "preferredItemTags": [],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "该强化主要提供技能/召唤师技能/随机效果，不直接改变装备优先级，推荐时走英雄定位兜底。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": "v1.2降级: 和我一起困在这里提供嘲讽+减伤，属于功能性强化，装备推荐走英雄定位兜底。"
+    },
+    {
+      "augmentId": "symphony_of_war",
+      "nameCn": "战争交响乐",
+      "rarityCn": "棱彩",
+      "effectCn": "获得致命节奏和征服者基石符文",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "basic_attack",
+        "ability_cast"
+      ],
+      "relatedStats": [
+        "attack_speed",
+        "ad"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "attack_speed_item",
+        "ad_item",
+        "on_hit_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "战争交响乐提供致命节奏和征服者双基石，配合高攻速和攻击力装备可以快速叠满征服者层数。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": "v1.1修正: 获得致命节奏和征服者基石符文"
+    },
+    {
+      "augmentId": "tap_dancer",
+      "nameCn": "踢踏舞",
+      "rarityCn": "棱彩",
+      "effectCn": "你的攻击会为你提供 @MSPerHit@移动速度 。获得相当于你@MSToASConversion*10000@% 移动速度 的 攻击速度 。 增益可无限叠加并刷新，但有@StackDuration@秒的持续时间。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "strong",
+      "mechanicTypes": [
+        "attack_speed_scaling",
+        "mobility",
+        "cooldown_loop",
+        "refresh"
+      ],
+      "relatedStats": [
+        "attack_speed",
+        "move_speed",
+        "ability_haste"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "attack_speed_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "踢踏舞提升攻速收益，攻速装备配合命中特效或暴击能产生协同效应。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "transmute_chaos",
+      "nameCn": "质变：混沌",
+      "rarityCn": "棱彩",
+      "effectCn": "获得2个随机强化符文",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "weak",
+      "mechanicTypes": [
+        "unknown"
+      ],
+      "relatedStats": [],
+      "conversionRules": [],
+      "preferredItemTags": [],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "",
+      "sourceType": "effect_text",
+      "confidence": "medium",
+      "notesCn": "v1.1修正: 获得2个随机强化符文"
+    },
+    {
+      "augmentId": "triggered_inferno",
+      "nameCn": "扳机炼狱",
+      "rarityCn": "棱彩",
+      "effectCn": "获得 悍勇本色 。在你达到S 评价等级 时，自动使用 炼狱扳机 。 悍勇本色 - 使用与前一个不同的技能或攻击对敌人造成伤害时，会获得 评价等级 (从F到S)。从每 评价等级 中获得 2.8%-3.5%(基于等级)移动速度 。 炼狱扳机 - 倾泻出大量的子弹，在2秒里持续对周围所有敌人进行10次射击。每颗子弹造成 10-40(基于等级) (+35%AD) (+20%AP) 物理伤害 。低于 30%",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "strong",
+      "mechanicTypes": [
+        "stat_conversion",
+        "ad_scaling",
+        "ap_scaling",
+        "stat_multiplier",
+        "hp_scaling",
+        "burn_dot",
+        "crit_scaling",
+        "mobility"
+      ],
+      "relatedStats": [
+        "ad",
+        "ap",
+        "hp",
+        "crit",
+        "move_speed"
+      ],
+      "conversionRules": [
+        {
+          "from": "ad",
+          "to": "ap",
+          "ratio": 1.67,
+          "text": "额外攻击力→法术强度",
+          "cond": "常驻"
+        }
+      ],
+      "preferredItemTags": [
+        "hp_item",
+        "defensive_item",
+        "ap_item",
+        "mage",
+        "ad_item",
+        "crit_item",
+        "ability_haste"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "扳机炼狱增加生命值和适应之力，任何能提供基础属性的装备都会因为这个百分比放大而更强。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "trueshotprodigy",
+      "nameCn": "精准奇才",
+      "rarityCn": "棱彩",
+      "effectCn": "在你从700码外对一名敌人造成伤害时， 发射一道 精准弹幕 ，造成 100 – 350 (基于等级) (+ 80%额外AD) (+ 70% 法术强度) 魔法伤害 。15秒冷却时间。 每场游戏仅会有一位玩家拥有这个强化符文",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "weak",
+      "mechanicTypes": [
+        "burst"
+      ],
+      "relatedStats": [],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "ap_item",
+        "mage",
+        "ad_item",
+        "ability_haste"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "",
+      "sourceType": "effect_text",
+      "confidence": "medium",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "ultimate_awakening",
+      "nameCn": "终极唤醒",
+      "rarityCn": "棱彩",
+      "effectCn": "你的终极技能获得30技能急速。在施放你的终极技能后，重置你所有基础技能的冷却时间并获得持续15秒的300基础技能急速。(20秒冷却时间)",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "strong",
+      "mechanicTypes": [
+        "cooldown_loop",
+        "ability_cast",
+        "refresh"
+      ],
+      "relatedStats": [
+        "ability_haste"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "ability_haste"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "终极唤醒涉及技能冷却缩减，技能急速装备能让技能循环更流畅，提高持续输出。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "ultimate_revolution",
+      "nameCn": "终极刷新",
+      "rarityCn": "棱彩",
+      "effectCn": "在施放终极技能后刷新你的终极技能。(@Cooldown@秒冷却时间或阵亡时重置)",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "strong",
+      "mechanicTypes": [
+        "ability_cast",
+        "cooldown_loop",
+        "refresh"
+      ],
+      "relatedStats": [
+        "ability_haste"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "ability_haste"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "终极刷新涉及技能冷却缩减，技能急速装备能让技能循环更流畅，提高持续输出。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "upgrade_mikaels_blessing",
+      "nameCn": "升级：米凯尔的祝福",
+      "rarityCn": "棱彩",
+      "effectCn": "【米凯尔的祝福】的冷却时间降低至45秒。获得一个【米凯尔的祝福】。 使用【米凯尔的祝福】的主动效果时，对附近的友军施放一道光波，清除其 限制 和 定身 效果，回复 150-450(基于等级) +50%AP 生命值 ，并且提供持续3秒的65%韧性。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "strong",
+      "mechanicTypes": [
+        "shield_heal",
+        "sustain",
+        "stat_multiplier",
+        "ap_scaling"
+      ],
+      "relatedStats": [
+        "hp",
+        "ap"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "hp_item",
+        "defensive_item",
+        "ap_item",
+        "mage",
+        "sustain_item",
+        "ability_haste"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "升级：米凯尔的祝福涉及技能冷却缩减，技能急速装备能让技能循环更流畅，提高持续输出。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "void_immolation",
+      "nameCn": "任务：艾卡西亚的陷落",
+      "rarityCn": "棱彩",
+      "effectCn": "即刻：获得一个斑比的熔渣并且你可以同时购买两件献祭装备。 需求：持有【日炎圣盾】和【璀璨回响】。 奖励：将【日炎圣盾】和【璀璨回响】组合成【虚空献祭】。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "item_interaction"
+      ],
+      "relatedStats": [],
+      "conversionRules": [],
+      "preferredItemTags": [],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "任务：艾卡西亚的陷落的效果改变了战斗方式，选择与其机制匹配的装备可以最大化这个强化的价值。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "void_rift",
+      "nameCn": "虚空裂隙",
+      "rarityCn": "棱彩",
+      "effectCn": "技能制造虚空裂痕，双裂缝间造成高额穿甲伤害",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "burst",
+        "ability_cast"
+      ],
+      "relatedStats": [
+        "magic_penetration",
+        "armor_penetration"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "ap_item",
+        "ad_item",
+        "burst_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "虚空裂隙的伤害同时吃穿甲和法穿，因此高法强/高攻击力配合穿甲装备能让裂痕伤害最大化。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": "v1.1修正: 技能制造虚空裂痕，双裂缝间造成高额穿甲伤害"
+    },
+    {
+      "augmentId": "windspeakers_blessing",
+      "nameCn": "风语者的祝福",
+      "rarityCn": "棱彩",
+      "effectCn": "你的治疗效果和护盾效果还会提升目标30-60的护甲和魔法抗性，这些加成持续3秒。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "shield_heal",
+        "sustain"
+      ],
+      "relatedStats": [
+        "shield",
+        "hp"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "sustain_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "风语者的祝福提供或强化护盾机制，生命值、抗性和护盾相关装备能增强生存和护盾厚度。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "all_for_you",
+      "nameCn": "全心为你",
+      "rarityCn": "金色",
+      "effectCn": "你的治疗和护盾在用在一个友军身上时会变强@HealShieldAmp*100@%。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "shield_heal",
+        "sustain"
+      ],
+      "relatedStats": [
+        "shield",
+        "hp"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "sustain_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "全心为你提供或强化护盾机制，生命值、抗性和护盾相关装备能增强生存和护盾厚度。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "apex_inventor",
+      "nameCn": "尖端发明家",
+      "rarityCn": "金色",
+      "effectCn": "获得60装备急速(相当于37%装备冷却缩减)。 装备急速可缩减所有装备技能的冷却时间%i:cooldown%。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "cooldown_loop",
+        "ability_cast",
+        "item_interaction"
+      ],
+      "relatedStats": [
+        "ability_haste"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "ability_haste"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "尖端发明家涉及技能冷却缩减，技能急速装备能让技能循环更流畅，提高持续输出。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "big_brain",
+      "nameCn": "超强大脑",
+      "rarityCn": "金色",
+      "effectCn": "获得一个可吸收300%法术强度伤害的护盾，护盾被打破前持续生效。护盾会在阵亡时或每70秒刷新一次。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "strong",
+      "mechanicTypes": [
+        "shield_heal",
+        "cooldown_loop",
+        "refresh"
+      ],
+      "relatedStats": [
+        "shield",
+        "ability_haste"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "ap_item",
+        "mage",
+        "sustain_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "超强大脑提供或强化护盾机制，生命值、抗性和护盾相关装备能增强生存和护盾厚度。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "bread_and_butter",
+      "nameCn": "面包和黄油",
+      "rarityCn": "金色",
+      "effectCn": "你的Q获得100技能急速。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "cooldown_loop",
+        "ability_cast"
+      ],
+      "relatedStats": [
+        "ability_haste"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "ability_haste"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "面包和黄油涉及技能冷却缩减，技能急速装备能让技能循环更流畅，提高持续输出。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "bread_and_cheese",
+      "nameCn": "面包和奶酪",
+      "rarityCn": "金色",
+      "effectCn": "你的E获得@EAbilityHaste@技能急速。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "cooldown_loop",
+        "ability_cast"
+      ],
+      "relatedStats": [
+        "ability_haste"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "ability_haste"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "面包和奶酪涉及技能冷却缩减，技能急速装备能让技能循环更流畅，提高持续输出。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "bread_and_jam",
+      "nameCn": "面包和果酱",
+      "rarityCn": "金色",
+      "effectCn": "你的W获得@WAbilityHaste@技能急速。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "cooldown_loop",
+        "ability_cast"
+      ],
+      "relatedStats": [
+        "ability_haste"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "ability_haste"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "面包和果酱涉及技能冷却缩减，技能急速装备能让技能循环更流畅，提高持续输出。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "celestial_body",
+      "nameCn": "星界躯体",
+      "rarityCn": "金色",
+      "effectCn": "+1500HP但伤害-10%",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "weak",
+      "mechanicTypes": [
+        "tank_scaling"
+      ],
+      "relatedStats": [
+        "hp"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "星界躯体用10%伤害换1500血量，对纯坦克有收益但对输出型英雄是负面效果。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": "v1.1修正: +1500HP但伤害-10%"
+    },
+    {
+      "augmentId": "cheating",
+      "nameCn": "作弊：我能回城！",
+      "rarityCn": "金色",
+      "effectCn": "按下【回城】能够回到基地，购买装备并且获得强化符文。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "weak",
+      "mechanicTypes": [
+        "item_interaction"
+      ],
+      "relatedStats": [],
+      "conversionRules": [],
+      "preferredItemTags": [],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "该强化主要提供技能/召唤师技能/随机效果，不直接改变装备优先级，推荐时走英雄定位兜底。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": "v1.2降级: 作弊：我能回城！是功能型强化（回城购买），不改变装备优先级。"
+    },
+    {
+      "augmentId": "critical_healing",
+      "nameCn": "会心治疗",
+      "rarityCn": "金色",
+      "effectCn": "你的治疗和护盾可以暴击，获得@CritHeal*100@%额外数额的效果。获得20%暴击几率。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "crit_scaling",
+        "shield_heal",
+        "sustain"
+      ],
+      "relatedStats": [
+        "crit",
+        "shield",
+        "hp"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "crit_item",
+        "sustain_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "会心治疗涉及暴击机制，暴击率和暴击伤害装备的优先级上升。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "critical_missile",
+      "nameCn": "暴击飞弹",
+      "rarityCn": "金色",
+      "effectCn": "获得25%暴击率，当你暴击时，会施放1-4道飞弹(基于暴击率)，每道飞弹造成11-40(+7%额外攻击力)(+10%法术强度)魔法伤害",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "strong",
+      "mechanicTypes": [
+        "stat_conversion",
+        "ad_scaling",
+        "ap_scaling",
+        "crit_scaling",
+        "burst"
+      ],
+      "relatedStats": [
+        "ad",
+        "ap",
+        "crit"
+      ],
+      "conversionRules": [
+        {
+          "from": "ad",
+          "to": "ap",
+          "ratio": 1.67,
+          "text": "额外攻击力→法术强度",
+          "cond": "常驻"
+        }
+      ],
+      "preferredItemTags": [
+        "ap_item",
+        "mage",
+        "ad_item",
+        "crit_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "暴击飞弹将额外攻击力转化为法术强度，让AD装备也能为法师提供AP收益，攻击力装备的价值大幅提升。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "critical_rhythm",
+      "nameCn": "暴击律动",
+      "rarityCn": "金色",
+      "effectCn": "获得25%暴击几率。你的普攻在暴击时获得可叠加的6%攻击速度。(至多至10层)",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "on_hit",
+        "basic_attack",
+        "crit_scaling",
+        "attack_speed_scaling"
+      ],
+      "relatedStats": [
+        "crit",
+        "attack_speed"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "attack_speed_item",
+        "crit_item",
+        "on_hit_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "暴击律动强化普攻和命中效果，因此攻速和命中特效装备的收益会被显著放大。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "dawnbringers_resolve",
+      "nameCn": "黎明使者的坚决",
+      "rarityCn": "金色",
+      "effectCn": "在跌到@HealthThreshold*100@%生命值以下时，在3秒里持续回复共@HealAmount*100@%最大生命值。（45秒 冷却时间）",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "strong",
+      "mechanicTypes": [
+        "shield_heal",
+        "sustain",
+        "stat_multiplier",
+        "hp_scaling"
+      ],
+      "relatedStats": [
+        "hp"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "hp_item",
+        "defensive_item",
+        "sustain_item",
+        "ability_haste"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "黎明使者的坚决涉及技能冷却缩减，技能急速装备能让技能循环更流畅，提高持续输出。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "demons_dance",
+      "nameCn": "魔鬼之舞",
+      "rarityCn": "金色",
+      "effectCn": "获得 迅捷步法 和 不灭之握 基石符文。 - 迅捷步法 ：攻击和移动会积攒能量层数。在100层时，你的下次攻击会治疗你并提升移动速度。 - 不灭之握 ：在战斗中每过@GRTriggerTime@秒，你对一个英雄发起的下一次普攻将会造成额外魔法伤害、治疗你、并永久提升你的生命值。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "burn_dot",
+        "hp_scaling",
+        "on_hit",
+        "basic_attack",
+        "shield_heal",
+        "sustain",
+        "mobility",
+        "burst"
+      ],
+      "relatedStats": [
+        "hp",
+        "move_speed"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "hp_item",
+        "defensive_item",
+        "ap_item",
+        "mage",
+        "on_hit_item",
+        "attack_speed_item",
+        "sustain_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "魔鬼之舞强化普攻和命中效果，因此攻速和命中特效装备的收益会被显著放大。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "divine_intervention",
+      "nameCn": "神圣干预",
+      "rarityCn": "金色",
+      "effectCn": "每35秒，召唤护体星星缓慢地降落在你身上。在它着陆时，你和附近的友军们进入2.5秒的免疫伤害状态。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "weak",
+      "mechanicTypes": [
+        "summon"
+      ],
+      "relatedStats": [],
+      "conversionRules": [],
+      "preferredItemTags": [],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "该强化主要提供技能/召唤师技能/随机效果，不直接改变装备优先级，推荐时走英雄定位兜底。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": "v1.2降级: 神圣干预提供周期性免疫伤害，属于防御型效果，不直接指向特定装备。"
+    },
+    {
+      "augmentId": "donation",
+      "nameCn": "捐赠",
+      "rarityCn": "金色",
+      "effectCn": "获得2500金币。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "weak",
+      "mechanicTypes": [
+        "economy"
+      ],
+      "relatedStats": [],
+      "conversionRules": [],
+      "preferredItemTags": [],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "",
+      "sourceType": "effect_text",
+      "confidence": "medium",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "double_tap",
+      "nameCn": "双发快射",
+      "rarityCn": "金色",
+      "effectCn": "获得25%暴击率，暴击时会额外施加一次命中",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "crit_scaling"
+      ],
+      "relatedStats": [
+        "crit"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "crit_item",
+        "on_hit_item",
+        "attack_speed_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "双发快射涉及暴击机制，暴击率和暴击伤害装备的优先级上升。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "ethereal_weapon",
+      "nameCn": "虚幻武器",
+      "rarityCn": "金色",
+      "effectCn": "技能可施加命中效果，每目标1秒CD",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "strong",
+      "mechanicTypes": [
+        "on_hit",
+        "ability_cast",
+        "item_interaction"
+      ],
+      "relatedStats": [],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "on_hit_item",
+        "attack_speed_item",
+        "ability_haste",
+        "ap_item",
+        "ad_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "虚幻武器让技能可以触发命中特效，因此带有命中特效的装备在技能型英雄手上收益显著提高。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": "v1.1修正: 技能可施加命中效果，每目标1秒CD"
+    },
+    {
+      "augmentId": "executioner",
+      "nameCn": "裁决使",
+      "rarityCn": "金色",
+      "effectCn": "低血目标+10%伤害，击杀重置基础技能",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "strong",
+      "mechanicTypes": [
+        "execute",
+        "cooldown_loop",
+        "refresh"
+      ],
+      "relatedStats": [],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "burst_item",
+        "ad_item",
+        "ap_item",
+        "ability_haste"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "裁决使对低血量敌人造成额外伤害，且击杀后刷新基础技能，因此高爆发装备能让斩杀线更高并触发连续收割。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": "v1.1修正: 低血目标+10%伤害，击杀重置基础技能"
+    },
+    {
+      "augmentId": "final_city_transit",
+      "nameCn": "最终都市列车",
+      "rarityCn": "金色",
+      "effectCn": "在你阵亡时，朝击杀你的敌人发动一辆列车，对命中的敌人造成150-750(+50%法术强度)(+65%额外攻击力)(+15%最大生命值)物理伤害。这个列车不会停下。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "strong",
+      "mechanicTypes": [
+        "stat_conversion",
+        "ap_scaling",
+        "ad_scaling",
+        "tank_scaling",
+        "hp_scaling",
+        "burst",
+        "stat_multiplier"
+      ],
+      "relatedStats": [
+        "ap",
+        "ad",
+        "hp"
+      ],
+      "conversionRules": [
+        {
+          "from": "ap",
+          "to": "ad",
+          "ratio": null,
+          "text": "法术强度→额外攻击力",
+          "cond": "常驻"
+        }
+      ],
+      "preferredItemTags": [
+        "hp_item",
+        "defensive_item",
+        "ap_item",
+        "mage",
+        "ad_item",
+        "on_hit_item",
+        "attack_speed_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "最终都市列车将额外攻击力转化为法术强度，让AD装备也能为法师提供AP收益，攻击力装备的价值大幅提升。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "firebrand",
+      "nameCn": "火上浇油",
+      "rarityCn": "金色",
+      "effectCn": "你的攻击还会灼烧敌人，在@BleedDuration@秒的持续时间里每秒持续造成@PercentMaxHPDamagePer5Seconds*20@%最大生命值的魔法伤害。灼烧可无限叠加。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "burn_dot",
+        "hp_scaling"
+      ],
+      "relatedStats": [
+        "hp"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "hp_item",
+        "defensive_item",
+        "ap_item",
+        "mage"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "火上浇油涉及持续伤害机制，法强和生命值装备能同时提高灼烧的基础伤害和生存能力。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "from_beginning_to_end",
+      "nameCn": "有始有终",
+      "rarityCn": "金色",
+      "effectCn": "先攻+黑暗收割，每强化+8黑暗收割层数",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "weak",
+      "mechanicTypes": [
+        "burst"
+      ],
+      "relatedStats": [],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "burst_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "",
+      "sourceType": "effect_text",
+      "confidence": "medium",
+      "notesCn": "v1.1修正: 先攻+黑暗收割，每强化+8黑暗收割层数"
+    },
+    {
+      "augmentId": "get_excited",
+      "nameCn": "罪恶快感",
+      "rarityCn": "金色",
+      "effectCn": "参与击杀后，获得持续4秒的100%移动速度和15%总攻击速度。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "attack_speed_scaling",
+        "mobility"
+      ],
+      "relatedStats": [
+        "attack_speed",
+        "move_speed"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "attack_speed_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "罪恶快感提升攻速收益，攻速装备配合命中特效或暴击能产生协同效应。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "grandmas_chili_oil",
+      "nameCn": "祖母的辣椒油",
+      "rarityCn": "金色",
+      "effectCn": "施加一个灼烧时，会在附近掉落一个持续5秒的辣椒油池子，站在一个辣椒油池子上每秒会回复60-150(+30x燃烧来源)生命值，并对敌人造成60(+100x燃烧来源)魔法伤害。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "burn_dot",
+        "hp_scaling",
+        "shield_heal",
+        "sustain"
+      ],
+      "relatedStats": [
+        "hp"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "hp_item",
+        "defensive_item",
+        "ap_item",
+        "mage",
+        "sustain_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "祖母的辣椒油涉及治疗和回复，续航和吸血装备能让英雄在团战中更持久。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "growth_spurt",
+      "nameCn": "生机迸发",
+      "rarityCn": "金色",
+      "effectCn": "获得【生机迸发】召唤师技能。【生机迸发】会猛然提升你的体型，击飞附近的敌人们并提供300（+20%生命值）最大生命值。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "strong",
+      "mechanicTypes": [
+        "summon",
+        "stat_multiplier",
+        "hp_scaling"
+      ],
+      "relatedStats": [
+        "hp"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "生机迸发的效果改变了战斗方式，选择与其机制匹配的装备可以最大化这个强化的价值。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "holy_fire",
+      "nameCn": "圣火",
+      "rarityCn": "金色",
+      "effectCn": "你的 治疗 或 护盾 会对一个附近的敌人施加一层无限叠加的 灼烧 ，在@BurnDuration@秒里持续造成至多 @BurnPercentMax*100@%最大生命值的魔法伤害 (最小值：@BurnPercentMin*100@%)。 这个伤害基于 治疗 或 护盾 对被援助英雄的 最大生命值 的相对占比。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "burn_dot",
+        "hp_scaling",
+        "shield_heal",
+        "sustain"
+      ],
+      "relatedStats": [
+        "hp",
+        "shield"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "hp_item",
+        "defensive_item",
+        "ap_item",
+        "mage",
+        "sustain_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "圣火提供或强化护盾机制，生命值、抗性和护盾相关装备能增强生存和护盾厚度。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "impassable",
+      "nameCn": "不动如山",
+      "rarityCn": "金色",
+      "effectCn": "余震+冰川增幅基石符文",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "weak",
+      "mechanicTypes": [
+        "tank_scaling"
+      ],
+      "relatedStats": [
+        "armor",
+        "magic_resist"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "defensive_item",
+        "tank"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "",
+      "sourceType": "effect_text",
+      "confidence": "medium",
+      "notesCn": "v1.1修正: 余震+冰川增幅基石符文"
+    },
+    {
+      "augmentId": "its_critical",
+      "nameCn": "关键暴击",
+      "rarityCn": "金色",
+      "effectCn": "获得20%暴击几率。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "crit_scaling"
+      ],
+      "relatedStats": [
+        "crit"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "crit_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "关键暴击涉及暴击机制，暴击率和暴击伤害装备的优先级上升。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "its_killing_time",
+      "nameCn": "杀戮时间到了",
+      "rarityCn": "金色",
+      "effectCn": "在施放你的终极技能后，将所有敌人打上死亡标记。这个标记会将你对其造成的@DamageStorePercentage*100@%伤害储存起来，然后在@MarkDuration@秒后引爆，造成已储存的伤害(@Cooldown@秒冷却时间)。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "ability_cast"
+      ],
+      "relatedStats": [],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "ability_haste"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "杀戮时间到了涉及技能冷却缩减，技能急速装备能让技能循环更流畅，提高持续输出。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "keystone_conjurer",
+      "nameCn": "基石法师",
+      "rarityCn": "金色",
+      "effectCn": "获得召唤：艾黎和奥术彗星基石符文。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "summon"
+      ],
+      "relatedStats": [],
+      "conversionRules": [],
+      "preferredItemTags": [],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "基石法师的效果改变了战斗方式，选择与其机制匹配的装备可以最大化这个强化的价值。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "lightning_strikes",
+      "nameCn": "闪电打击",
+      "rarityCn": "金色",
+      "effectCn": "获得40%总攻击速度。 在2.5攻击次数/秒时，造成额外的魔法伤害 命中。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "on_hit",
+        "basic_attack",
+        "attack_speed_scaling",
+        "burst"
+      ],
+      "relatedStats": [
+        "attack_speed"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "ap_item",
+        "mage",
+        "attack_speed_item",
+        "on_hit_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "闪电打击强化普攻和命中效果，因此攻速和命中特效装备的收益会被显著放大。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "magic_missile",
+      "nameCn": "魔法飞弹",
+      "rarityCn": "金色",
+      "effectCn": "技能伤害附带3发魔法飞弹，每发至多1%最大HP真实伤害",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "burst",
+        "hp_scaling"
+      ],
+      "relatedStats": [
+        "ap",
+        "hp"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "ap_item",
+        "burst_item",
+        "hp_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "魔法飞弹让每次技能命中追加基于最大生命值的真实伤害，法强和高血量装备可以叠加技能基础伤害和飞弹伤害。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": "v1.1修正: 技能伤害附带3发魔法飞弹，每发至多1%最大HP真实伤害"
+    },
+    {
+      "augmentId": "marksmage",
+      "nameCn": "神射法师",
+      "rarityCn": "金色",
+      "effectCn": "你的攻击造成相当于你75%法术强度的额外物理伤害。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "on_hit",
+        "basic_attack",
+        "burst"
+      ],
+      "relatedStats": [],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "ap_item",
+        "mage",
+        "ad_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "神射法师强化普攻和命中效果，因此攻速和命中特效装备的收益会被显著放大。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "minionmancer",
+      "nameCn": "仆从大师",
+      "rarityCn": "金色",
+      "effectCn": "你的召唤物获得@MinionSizeIncrease*100@%体型提升、生命值和伤害。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "summon"
+      ],
+      "relatedStats": [],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "仆从大师的效果改变了战斗方式，选择与其机制匹配的装备可以最大化这个强化的价值。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "nightstalking",
+      "nameCn": "夜狩",
+      "rarityCn": "金色",
+      "effectCn": "击杀后1.5秒隐身",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "weak",
+      "mechanicTypes": [
+        "mobility"
+      ],
+      "relatedStats": [],
+      "conversionRules": [],
+      "preferredItemTags": [],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "",
+      "sourceType": "effect_text",
+      "confidence": "medium",
+      "notesCn": "v1.1修正: 击杀后1.5秒隐身"
+    },
+    {
+      "augmentId": "ok_boomerang",
+      "nameCn": "回力OK镖",
+      "rarityCn": "金色",
+      "effectCn": "每@BaseCooldown@秒朝着一个附近的敌人自动施放投掷一个回力镖，对命中的敌人们造成40 – 200 (基于等级) (+ 22%额外AD) (+ 15% AP)自适应伤害。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "strong",
+      "mechanicTypes": [
+        "stat_conversion",
+        "ad_scaling",
+        "ap_scaling",
+        "burst"
+      ],
+      "relatedStats": [
+        "ad",
+        "ap"
+      ],
+      "conversionRules": [
+        {
+          "from": "ad",
+          "to": "ap",
+          "ratio": 1.67,
+          "text": "额外攻击力→法术强度",
+          "cond": "常驻"
+        }
+      ],
+      "preferredItemTags": [
+        "ap_item",
+        "mage",
+        "ad_item",
+        "on_hit_item",
+        "attack_speed_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "回力OK镖的效果改变了战斗方式，选择与其机制匹配的装备可以最大化这个强化的价值。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "outlaws_grit",
+      "nameCn": "狂徒豪气",
+      "rarityCn": "金色",
+      "effectCn": "位移技能提供双抗叠层，最多60双抗",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "tank_scaling",
+        "mobility"
+      ],
+      "relatedStats": [
+        "armor",
+        "magic_resist"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "defensive_item",
+        "hp_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "狂徒豪气让位移英雄叠加双抗，配合防御装可以堆出极高硬度。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": "v1.1修正: 位移技能提供双抗叠层，最多60双抗"
+    },
+    {
+      "augmentId": "overflow",
+      "nameCn": "溢流",
+      "rarityCn": "金色",
+      "effectCn": "你的法力值消耗翻倍。你的技能的治疗效果、护盾效果和伤害的效能提升10% （每 100最大法力值+ 0.5 % ）。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "shield_heal",
+        "sustain"
+      ],
+      "relatedStats": [
+        "shield",
+        "hp"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "mana_item",
+        "scaling_item",
+        "sustain_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "溢流提供或强化护盾机制，生命值、抗性和护盾相关装备能增强生存和护盾厚度。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "perseverance",
+      "nameCn": "坚韧",
+      "rarityCn": "金色",
+      "effectCn": "获得250%基础生命回复，在低于25%生命值时提升至10%基础生命回复。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "strong",
+      "mechanicTypes": [
+        "shield_heal",
+        "sustain",
+        "stat_multiplier",
+        "hp_scaling"
+      ],
+      "relatedStats": [
+        "hp"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "hp_item",
+        "defensive_item",
+        "sustain_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "坚韧涉及治疗和回复，续航和吸血装备能让英雄在团战中更持久。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "phenomenal_evil",
+      "nameCn": "超凡邪恶",
+      "rarityCn": "金色",
+      "effectCn": "技能命中永久+1法强，第二强化自带40法强",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "ap_scaling",
+        "ability_cast"
+      ],
+      "relatedStats": [
+        "ap"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "ap_item",
+        "mage",
+        "ability_haste",
+        "scaling_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "超凡邪恶让每次技能命中永久叠加法强，因此高技能急速和法强装备能加速叠层并提供更高的基础法强。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": "v1.1修正: 技能命中永久+1法强，第二强化自带40法强"
+    },
+    {
+      "augmentId": "pinball",
+      "nameCn": "弹球",
+      "rarityCn": "金色",
+      "effectCn": "你的雪球获得50技能急速，造成额外100-500(基于等级)真实伤害，并且可以从墙上反弹，每次反弹都会提升它25%体型，20%伤害，并且缩短它30%冷却时间",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "cooldown_loop",
+        "ability_cast",
+        "burst"
+      ],
+      "relatedStats": [
+        "ability_haste"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "ability_haste"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "弹球涉及技能冷却缩减，技能急速装备能让技能循环更流畅，提高持续输出。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "poro_blaster",
+      "nameCn": "魄罗爆破手",
+      "rarityCn": "金色",
+      "effectCn": "召集魄罗，每只3%最大HP真实伤害",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "on_hit",
+        "basic_attack"
+      ],
+      "relatedStats": [
+        "hp"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "on_hit_item",
+        "attack_speed_item",
+        "hp_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "魄罗爆破手的伤害基于最大生命值，配合高攻速和生命值装备可以频繁发射魄罗打出高额真实伤害。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": "v1.1修正: 召集魄罗，每只3%最大HP真实伤害"
+    },
+    {
+      "augmentId": "quest_steel_your_heart",
+      "nameCn": "任务：钢化你心",
+      "rarityCn": "金色",
+      "effectCn": "心之钢层数≥300后层数×3",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "strong",
+      "mechanicTypes": [
+        "item_interaction",
+        "hp_scaling",
+        "tank_scaling"
+      ],
+      "relatedStats": [
+        "hp"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "hp_item",
+        "tank",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "任务：钢化你心直接要求心之钢，并会放大心之钢层数三倍，因此心之钢路线是这个强化的核心装备方向。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": "v1.1修正: 心之钢层数≥300后层数×3"
+    },
+    {
+      "augmentId": "rabble_rousing",
+      "nameCn": "古式佳酿",
+      "rarityCn": "金色",
+      "effectCn": "使用一个技能时会回复5 – 60 (基于等级)（+ 1%最大生命值）点生命值。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "shield_heal",
+        "sustain"
+      ],
+      "relatedStats": [
+        "hp"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "hp_item",
+        "defensive_item",
+        "sustain_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "古式佳酿涉及治疗和回复，续航和吸血装备能让英雄在团战中更持久。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "recursion",
+      "nameCn": "循环往复",
+      "rarityCn": "金色",
+      "effectCn": "获得60技能急速。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "cooldown_loop",
+        "ability_cast"
+      ],
+      "relatedStats": [
+        "ability_haste"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "ability_haste"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "循环往复涉及技能冷却缩减，技能急速装备能让技能循环更流畅，提高持续输出。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "restless_restoration",
+      "nameCn": "无休回复",
+      "rarityCn": "金色",
+      "effectCn": "你每移动1000码距离就会回复20-120(基于等级)（+0.1% 最大生命值）的生命值。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "shield_heal",
+        "sustain"
+      ],
+      "relatedStats": [
+        "hp"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "hp_item",
+        "defensive_item",
+        "sustain_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "无休回复涉及治疗和回复，续航和吸血装备能让英雄在团战中更持久。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "scopier_weapons",
+      "nameCn": "更万用的瞄准镜",
+      "rarityCn": "金色",
+      "effectCn": "+200攻击距离(远程+100)",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "basic_attack",
+        "attack_speed_scaling"
+      ],
+      "relatedStats": [
+        "attack_speed"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "marksman",
+        "attack_speed_item",
+        "on_hit_item",
+        "crit_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "更万用的瞄准镜提升攻击距离，射手和普攻英雄配合高攻速装备可以安全地持续输出。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": "v1.1修正: +200攻击距离(远程+100)"
+    },
+    {
+      "augmentId": "searing_dawn",
+      "nameCn": "炽烈黎明",
+      "rarityCn": "金色",
+      "effectCn": "你的技能会标记敌人，使其在被你的友军的下一个攻击或技能命中时会受到额外40-200(基于等级)魔法伤害。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "on_hit",
+        "basic_attack",
+        "burst"
+      ],
+      "relatedStats": [],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "ap_item",
+        "mage",
+        "on_hit_item",
+        "attack_speed_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "炽烈黎明的效果改变了战斗方式，选择与其机制匹配的装备可以最大化这个强化的价值。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "shrink_engine",
+      "nameCn": "缩小引擎",
+      "rarityCn": "金色",
+      "effectCn": "每次参与击杀敌方英雄会让你变小4%，获得10技能急速和2%移动速度，死亡时损失65%层数",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "cooldown_loop",
+        "ability_cast",
+        "mobility"
+      ],
+      "relatedStats": [
+        "ability_haste",
+        "move_speed"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "ability_haste"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "缩小引擎让每次击杀叠HP层数，配合血量和防御装能滚起雪球，阵亡会损失层数所以生存装备也很重要。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "shrink_ray",
+      "nameCn": "缩小射线",
+      "rarityCn": "金色",
+      "effectCn": "攻击造成伤害削减效果",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "weak",
+      "mechanicTypes": [
+        "tank_scaling"
+      ],
+      "relatedStats": [],
+      "conversionRules": [],
+      "preferredItemTags": [],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "",
+      "sourceType": "effect_text",
+      "confidence": "medium",
+      "notesCn": "v1.1修正: 攻击造成伤害削减效果"
+    },
+    {
+      "augmentId": "skilled_sniper",
+      "nameCn": "老练狙神",
+      "rarityCn": "金色",
+      "effectCn": "用一个非终极技能命中一个@SnipeDistance@码距离外的敌人时，返还该技能80%冷却时间(周期性技能返还65%)。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "ability_cast"
+      ],
+      "relatedStats": [],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "on_hit_item",
+        "attack_speed_item",
+        "ability_haste"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "老练狙神涉及技能冷却缩减，技能急速装备能让技能循环更流畅，提高持续输出。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "slow_and_steady",
+      "nameCn": "一板一眼",
+      "rarityCn": "金色",
+      "effectCn": "获得25攻击力。你的攻击速度变为@StaticRatio@。所有额外攻击速度会被转化为攻击力。(每1%攻速转为1攻击力)。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "attack_speed_scaling"
+      ],
+      "relatedStats": [
+        "attack_speed"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "ad_item",
+        "attack_speed_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "一板一眼提升攻速收益，攻速装备配合命中特效或暴击能产生协同效应。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "snowball_roulette",
+      "nameCn": "雪球扭蛋机",
+      "rarityCn": "金色",
+      "effectCn": "雪球获得100技能急速。在使用 雪球 后，随机对自身施放一个增益型的召唤师技能并对你的目标施放一个减益型的召唤师技能。在使用 雪球突进 后，再次对自身施放该增益型的召唤师技能。 如果你没有雪球，获得一个 雪球 。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "cooldown_loop",
+        "ability_cast",
+        "summon"
+      ],
+      "relatedStats": [
+        "ability_haste"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "ability_haste"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "雪球扭蛋机涉及技能冷却缩减，技能急速装备能让技能循环更流畅，提高持续输出。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "snowball_upgrade",
+      "nameCn": "升级：雪球",
+      "rarityCn": "金色",
+      "effectCn": "你的 雪球 获得100技能急速。 击中时会产生一片区域，使其中的敌人受到50% +6%/100AP 减速 效果，以及在2秒的持续时间里每秒造成 100 +100%额外AD +60%AP 魔法伤害 (总计 200 +200%额外AD +120%AP 魔法伤害 )。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "strong",
+      "mechanicTypes": [
+        "stat_conversion",
+        "ad_scaling",
+        "ap_scaling",
+        "cooldown_loop",
+        "ability_cast",
+        "burst",
+        "stat_multiplier"
+      ],
+      "relatedStats": [
+        "ad",
+        "ap",
+        "ability_haste"
+      ],
+      "conversionRules": [
+        {
+          "from": "ad",
+          "to": "ap",
+          "ratio": 1.67,
+          "text": "额外攻击力→法术强度",
+          "cond": "常驻"
+        }
+      ],
+      "preferredItemTags": [
+        "ap_item",
+        "mage",
+        "ad_item",
+        "ability_haste"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "升级：雪球涉及技能冷却缩减，技能急速装备能让技能循环更流畅，提高持续输出。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "sonata",
+      "nameCn": "咏叹奏鸣",
+      "rarityCn": "金色",
+      "effectCn": "每10秒交替自动施放咏叹调和奏鸣曲",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "weak",
+      "mechanicTypes": [
+        "shield_heal"
+      ],
+      "relatedStats": [],
+      "conversionRules": [],
+      "preferredItemTags": [],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "",
+      "sourceType": "effect_text",
+      "confidence": "medium",
+      "notesCn": "v1.1修正: 每10秒交替自动施放咏叹调和奏鸣曲"
+    },
+    {
+      "augmentId": "soul_eater",
+      "nameCn": "吞噬灵魂",
+      "rarityCn": "金色",
+      "effectCn": "定身敌人获得+20最大生命值",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "tank_scaling",
+        "hp_scaling"
+      ],
+      "relatedStats": [
+        "hp"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "hp_item",
+        "tank",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "吞噬灵魂每次控制都能永久增加最大生命值，控制型英雄配合生命值装备可以快速堆出可观的血量。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": "v1.1修正: 定身敌人获得+20最大生命值"
+    },
+    {
+      "augmentId": "soul_siphon",
+      "nameCn": "灵魂虹吸",
+      "rarityCn": "金色",
+      "effectCn": "获得@CritChance*100@%暴击几率和作用于暴击的@HealPercentage*100@%生命偷取。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "crit_scaling",
+        "shield_heal",
+        "sustain"
+      ],
+      "relatedStats": [
+        "crit",
+        "hp",
+        "lifesteal"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "hp_item",
+        "defensive_item",
+        "crit_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "灵魂虹吸涉及暴击机制，暴击率和暴击伤害装备的优先级上升。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "spiritual_purification",
+      "nameCn": "心灵净化",
+      "rarityCn": "金色",
+      "effectCn": "参与击杀英雄时，在其上方产生一次爆炸，对敌人造成相当于其15%当前生命值的伤害。随后它会持续存在1.5秒，对敌人造成60%减速效果。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "strong",
+      "mechanicTypes": [
+        "tank_scaling",
+        "hp_scaling"
+      ],
+      "relatedStats": [
+        "hp"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "心灵净化让每次击杀叠HP层数，配合血量和防御装能滚起雪球，阵亡会损失层数所以生存装备也很重要。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "stats_on_stats",
+      "nameCn": "属性叠属性！",
+      "rarityCn": "金色",
+      "effectCn": "获得4个属性锻造器，更高几率黄金/棱彩阶",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "stat_multiplier"
+      ],
+      "relatedStats": [
+        "hp",
+        "ap",
+        "ad"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "scaling_item",
+        "hp_item",
+        "ap_item",
+        "ad_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "属性叠属性！提供4个属性锻造器，高几率出高级锻造，任何能放大基础属性的装备都会因为这些额外属性而更强。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": "v1.1修正: 获得4个属性锻造器，更高几率黄金/棱彩阶"
+    },
+    {
+      "augmentId": "tank_engine",
+      "nameCn": "坦克引擎",
+      "rarityCn": "金色",
+      "effectCn": "参与击杀时，获得一个层数，使你的体型增大5%并提升5%最大生命值。阵亡时损失65%层数。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "strong",
+      "mechanicTypes": [
+        "stat_multiplier",
+        "hp_scaling",
+        "tank_scaling"
+      ],
+      "relatedStats": [
+        "hp",
+        "ap"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "坦克引擎让每次击杀叠HP层数，配合血量和防御装能滚起雪球，阵亡会损失层数所以生存装备也很重要。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "thread_the_needle",
+      "nameCn": "穿针引线",
+      "rarityCn": "金色",
+      "effectCn": "获得@PercentPen%护甲和法术穿透",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "burst",
+        "poke"
+      ],
+      "relatedStats": [
+        "armor_penetration",
+        "magic_penetration"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "assassin",
+        "mage",
+        "burst_item",
+        "poke_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "穿针引线提供百分比双穿，让技能和普攻更容易穿透敌方防御，刺客和法师的爆发装备收益最高。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": "v1.1修正: 获得@PercentPen%护甲和法术穿透"
+    },
+    {
+      "augmentId": "transmute_prismatic",
+      "nameCn": "质变：棱彩阶",
+      "rarityCn": "金色",
+      "effectCn": "获得1个随机棱彩强化",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "weak",
+      "mechanicTypes": [
+        "unknown"
+      ],
+      "relatedStats": [],
+      "conversionRules": [],
+      "preferredItemTags": [],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "",
+      "sourceType": "effect_text",
+      "confidence": "medium",
+      "notesCn": "v1.1修正: 获得1个随机棱彩强化"
+    },
+    {
+      "augmentId": "twice_thrice",
+      "nameCn": "接二连三",
+      "rarityCn": "金色",
+      "effectCn": "每第三次攻击，你附带的命中会触发第二次。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "on_hit",
+        "basic_attack"
+      ],
+      "relatedStats": [],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "on_hit_item",
+        "attack_speed_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "接二连三强化普攻和命中效果，因此攻速和命中特效装备的收益会被显著放大。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "upgrade_hubris",
+      "nameCn": "升级：狂妄",
+      "rarityCn": "金色",
+      "effectCn": "参与击杀时，【狂妄】回复你的2.5%最大生命值+ 0.5%*层数的已损失生命值，并且在增益持续时间提供10+5*层数 的移动速度。此外，获得250金币。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "strong",
+      "mechanicTypes": [
+        "tank_scaling",
+        "hp_scaling",
+        "shield_heal",
+        "sustain",
+        "mobility",
+        "economy"
+      ],
+      "relatedStats": [
+        "hp",
+        "move_speed"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "hp_item",
+        "defensive_item",
+        "sustain_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "升级：狂妄让每次击杀叠HP层数，配合血量和防御装能滚起雪球，阵亡会损失层数所以生存装备也很重要。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "upgrade_infinity_edge",
+      "nameCn": "升级：无尽之刃",
+      "rarityCn": "金色",
+      "effectCn": "获得25%暴击几率和500金币。 装备【无尽之刃】后，你的暴击会随机造成额外暴击伤害，最高可至你暴击几率的50%。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "crit_scaling",
+        "burst",
+        "economy",
+        "item_interaction"
+      ],
+      "relatedStats": [
+        "crit"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "crit_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "升级：无尽之刃涉及暴击机制，暴击率和暴击伤害装备的优先级上升。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "upgrade_sheen",
+      "nameCn": "升级：耀光",
+      "rarityCn": "金色",
+      "effectCn": "你的【咒刃】效果造成额外目标最大生命值物理伤害并治疗你自身。此外，获得250金币。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "shield_heal",
+        "sustain",
+        "burst",
+        "economy"
+      ],
+      "relatedStats": [
+        "hp"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "hp_item",
+        "defensive_item",
+        "ad_item",
+        "sustain_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "升级：耀光涉及治疗和回复，续航和吸血装备能让英雄在团战中更持久。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "vampirism",
+      "nameCn": "吸血习性",
+      "rarityCn": "金色",
+      "effectCn": "你不再能够被友军治疗或获得任何生命回复。获得30%全能吸血。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "shield_heal",
+        "sustain"
+      ],
+      "relatedStats": [
+        "hp",
+        "lifesteal"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "hp_item",
+        "defensive_item",
+        "sustain_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "吸血习性涉及治疗和回复，续航和吸血装备能让英雄在团战中更持久。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "vulnerability",
+      "nameCn": "易损",
+      "rarityCn": "金色",
+      "effectCn": "你的装备效果和持续伤害效果可以暴击来造成40%额外伤害。获得20%暴击几率。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "crit_scaling",
+        "burst",
+        "item_interaction"
+      ],
+      "relatedStats": [
+        "crit"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "crit_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "易损涉及暴击机制，暴击率和暴击伤害装备的优先级上升。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "with_haste",
+      "nameCn": "急急小子",
+      "rarityCn": "金色",
+      "effectCn": "获得移动速度，相当于你的@AbilityHasteToMSConversion*100@%技能急速。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "cooldown_loop",
+        "ability_cast",
+        "mobility"
+      ],
+      "relatedStats": [
+        "ability_haste",
+        "move_speed"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "ability_haste"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "急急小子涉及技能冷却缩减，技能急速装备能让技能循环更流畅，提高持续输出。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "adamant",
+      "nameCn": "坚若磐石",
+      "rarityCn": "银色",
+      "effectCn": "控制后叠双抗，最多10层",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "tank_scaling"
+      ],
+      "relatedStats": [
+        "armor",
+        "magic_resist"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "defensive_item",
+        "tank",
+        "hp_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "坚若磐石让控制型英雄每次控制都叠加双抗，配合防御装可以成为真正的前排铁壁。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": "v1.1修正: 控制后叠双抗，最多10层"
+    },
+    {
+      "augmentId": "adapt",
+      "nameCn": "物理转魔法",
+      "rarityCn": "银色",
+      "effectCn": "将额外攻击力转化为法术强度，并获得15%法术强度。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "strong",
+      "mechanicTypes": [
+        "stat_conversion",
+        "ad_scaling",
+        "ap_scaling",
+        "stat_multiplier"
+      ],
+      "relatedStats": [
+        "ad",
+        "ap"
+      ],
+      "conversionRules": [
+        {
+          "from": "ad",
+          "to": "ap",
+          "ratio": 1.67,
+          "text": "额外攻击力→法术强度",
+          "cond": "常驻"
+        }
+      ],
+      "preferredItemTags": [
+        "ap_item",
+        "mage",
+        "ad_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "物理转魔法将额外攻击力转化为法术强度，让AD装备也能为法师提供AP收益，攻击力装备的价值大幅提升。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "blunt_force",
+      "nameCn": "大力",
+      "rarityCn": "银色",
+      "effectCn": "获得@ADAmp%攻击力",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "ad_scaling",
+        "stat_multiplier"
+      ],
+      "relatedStats": [
+        "ad"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "ad_item",
+        "fighter",
+        "assassin",
+        "marksman"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "大力提供百分比攻击力加成，因此高攻击力装备的收益会被进一步放大，战士和射手收益最高。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": "v1.1修正: 获得@ADAmp%攻击力"
+    },
+    {
+      "augmentId": "buff_buddies",
+      "nameCn": "霸符兄弟",
+      "rarityCn": "银色",
+      "effectCn": "你获得余烬之冠和洞悉之冠。 余烬之冠：普攻会灼烧和减速敌方英雄。在非战斗状态下，治疗你的一部分最大生命值。 洞悉之冠：获得技能急速，并且每秒回复法力值和能量值。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "strong",
+      "mechanicTypes": [
+        "stat_conversion",
+        "mana_scaling",
+        "hp_scaling",
+        "burn_dot",
+        "on_hit",
+        "basic_attack",
+        "cooldown_loop",
+        "ability_cast",
+        "shield_heal",
+        "sustain"
+      ],
+      "relatedStats": [
+        "mana",
+        "hp",
+        "ability_haste"
+      ],
+      "conversionRules": [
+        {
+          "from": "mana",
+          "to": "hp",
+          "ratio": 0.5,
+          "text": "每1法力值→0.5生命值",
+          "cond": "常驻"
+        }
+      ],
+      "preferredItemTags": [
+        "mana_item",
+        "scaling_item",
+        "hp_item",
+        "defensive_item",
+        "on_hit_item",
+        "attack_speed_item",
+        "sustain_item",
+        "ability_haste"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "霸符兄弟将法力值转化为生命值，因此提供大量法力值的装备（大天使之杖、魔宗、末日寒冬）优先级上升，血量收益随法力增长。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "crack_open_that_egg",
+      "nameCn": "砸开那颗蛋",
+      "rarityCn": "银色",
+      "effectCn": "护盾过期后会爆炸，对周围敌人造成护盾值等量魔法伤害",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "shield_heal"
+      ],
+      "relatedStats": [
+        "shield"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "ap_item",
+        "mage",
+        "sustain_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "砸开那颗蛋提供或强化护盾机制，生命值、抗性和护盾相关装备能增强生存和护盾厚度。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "crit_n_cast",
+      "nameCn": "由暴生急",
+      "rarityCn": "银色",
+      "effectCn": "每拥有1%暴击率就会获得0.4技能急速",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "crit_scaling",
+        "cooldown_loop",
+        "ability_cast"
+      ],
+      "relatedStats": [
+        "crit",
+        "ability_haste"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "crit_item",
+        "ability_haste"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "由暴生急涉及暴击机制，暴击率和暴击伤害装备的优先级上升。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "deft",
+      "nameCn": "灵巧",
+      "rarityCn": "银色",
+      "effectCn": "获得60%攻击速度。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "attack_speed_scaling"
+      ],
+      "relatedStats": [
+        "attack_speed"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "attack_speed_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "灵巧提升攻速收益，攻速装备配合命中特效或暴击能产生协同效应。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "dive_bomber",
+      "nameCn": "俯冲轰炸",
+      "rarityCn": "银色",
+      "effectCn": "阵亡爆炸造成目标最大HP真实伤害",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "weak",
+      "mechanicTypes": [
+        "burst"
+      ],
+      "relatedStats": [
+        "hp"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "",
+      "sourceType": "effect_text",
+      "confidence": "medium",
+      "notesCn": "v1.1修正: 阵亡爆炸造成目标最大HP真实伤害"
+    },
+    {
+      "augmentId": "dont_blink",
+      "nameCn": "唯快不破",
+      "rarityCn": "银色",
+      "effectCn": "你每比目标多10移动速度，则对其多造成@BonusDamagePerMSDifference*1000@%额外伤害。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "weak",
+      "mechanicTypes": [
+        "mobility",
+        "burst"
+      ],
+      "relatedStats": [
+        "move_speed"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "",
+      "sourceType": "effect_text",
+      "confidence": "medium",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "erosion",
+      "nameCn": "侵蚀",
+      "rarityCn": "银色",
+      "effectCn": "伤害叠层击碎双抗，最多6层击碎30%",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "burn_dot",
+        "burst"
+      ],
+      "relatedStats": [
+        "armor_penetration",
+        "magic_penetration"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "burst_item",
+        "poke_item",
+        "ap_item",
+        "ad_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "侵蚀让每次伤害都能击碎敌方双抗，持续输出型英雄配合高频率伤害装备可以快速叠满30%击碎效果。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": "v1.1修正: 伤害叠层击碎双抗，最多6层击碎30%"
+    },
+    {
+      "augmentId": "escapade",
+      "nameCn": "魔法转物理",
+      "rarityCn": "银色",
+      "effectCn": "将法术强度转化为额外攻击力，并获得15%攻击力。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "strong",
+      "mechanicTypes": [
+        "stat_conversion",
+        "ap_scaling",
+        "ad_scaling",
+        "stat_multiplier"
+      ],
+      "relatedStats": [
+        "ap",
+        "ad"
+      ],
+      "conversionRules": [
+        {
+          "from": "ap",
+          "to": "ad",
+          "ratio": null,
+          "text": "法术强度→额外攻击力",
+          "cond": "常驻"
+        }
+      ],
+      "preferredItemTags": [
+        "ap_item",
+        "mage",
+        "ad_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "魔法转物理将额外攻击力转化为法术强度，让AD装备也能为法师提供AP收益，攻击力装备的价值大幅提升。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "escape_plan",
+      "nameCn": "逃跑计划",
+      "rarityCn": "银色",
+      "effectCn": "在降至35%生命值时，获得持续衰减的65%最大生命值护盾、持续衰减的150%移动速度和持续衰减的缩小效果。(75秒冷却时间)",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "strong",
+      "mechanicTypes": [
+        "stat_multiplier",
+        "hp_scaling",
+        "shield_heal",
+        "mobility"
+      ],
+      "relatedStats": [
+        "hp",
+        "ap",
+        "shield",
+        "move_speed"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "hp_item",
+        "defensive_item",
+        "sustain_item",
+        "ability_haste"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "逃跑计划增加生命值和适应之力，任何能提供基础属性的装备都会因为这个百分比放大而更强。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "firefox",
+      "nameCn": "火狐",
+      "rarityCn": "银色",
+      "effectCn": "周期性的自动施放阿狸的W技能，为你提供40%移动速度，在2秒内衰减，并生成三个围绕自身的狐火，狐火造成35( +25%额外攻击力 +25%法术强度 )自适应伤害，同一个目标被多个狐火命中时，额外的狐火只造成30%伤害，7秒冷却时间",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "strong",
+      "mechanicTypes": [
+        "stat_conversion",
+        "ad_scaling",
+        "ap_scaling",
+        "on_hit",
+        "basic_attack",
+        "mobility",
+        "burst",
+        "stat_multiplier"
+      ],
+      "relatedStats": [
+        "ad",
+        "ap",
+        "move_speed"
+      ],
+      "conversionRules": [
+        {
+          "from": "ad",
+          "to": "ap",
+          "ratio": 1.67,
+          "text": "额外攻击力→法术强度",
+          "cond": "常驻"
+        }
+      ],
+      "preferredItemTags": [
+        "ap_item",
+        "mage",
+        "ad_item",
+        "on_hit_item",
+        "attack_speed_item",
+        "ability_haste"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "火狐将额外攻击力转化为法术强度，让AD装备也能为法师提供AP收益，攻击力装备的价值大幅提升。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "first_aid_kit",
+      "nameCn": "急救用具",
+      "rarityCn": "银色",
+      "effectCn": "获得@HealShieldAmp*100@%治疗和护盾强度。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "shield_heal",
+        "sustain"
+      ],
+      "relatedStats": [
+        "shield",
+        "hp"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "sustain_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "急救用具提供或强化护盾机制，生命值、抗性和护盾相关装备能增强生存和护盾厚度。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "flash_2",
+      "nameCn": "闪闪现现",
+      "rarityCn": "银色",
+      "effectCn": "获得第二个【闪现】召唤师技能和70召唤师技能急速。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "cooldown_loop",
+        "ability_cast",
+        "summon"
+      ],
+      "relatedStats": [
+        "ability_haste"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "ability_haste"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "闪闪现现涉及技能冷却缩减，技能急速装备能让技能循环更流畅，提高持续输出。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "flashbang",
+      "nameCn": "闪光弹",
+      "rarityCn": "银色",
+      "effectCn": "你在【闪现】时会在你周围引发爆炸，造成 70 - 240 (基于等级) (+ 70% AD) (+ 60% AP) 魔法伤害 和持续@SlowDuration@秒的@SlowAmount*100@% 减速 。每次阵亡时重置闪现。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "strong",
+      "mechanicTypes": [
+        "stat_conversion",
+        "ad_scaling",
+        "ap_scaling",
+        "stat_multiplier"
+      ],
+      "relatedStats": [
+        "ad",
+        "ap"
+      ],
+      "conversionRules": [
+        {
+          "from": "ad",
+          "to": "ap",
+          "ratio": 1.67,
+          "text": "额外攻击力→法术强度",
+          "cond": "常驻"
+        }
+      ],
+      "preferredItemTags": [
+        "ap_item",
+        "mage",
+        "ad_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "闪光弹刷新技能冷却，技能急速装备配合刷新机制能让技能循环几乎没有空窗期。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "frost_wraith",
+      "nameCn": "冰霜 幽灵",
+      "rarityCn": "银色",
+      "effectCn": "周期性自动禁锢附近敌人",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "weak",
+      "mechanicTypes": [
+        "ability_cast"
+      ],
+      "relatedStats": [],
+      "conversionRules": [],
+      "preferredItemTags": [],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "",
+      "sourceType": "effect_text",
+      "confidence": "medium",
+      "notesCn": "v1.1修正: 周期性自动禁锢附近敌人"
+    },
+    {
+      "augmentId": "goredrink",
+      "nameCn": "渴血",
+      "rarityCn": "银色",
+      "effectCn": "获得15%全能吸血。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "sustain"
+      ],
+      "relatedStats": [
+        "lifesteal"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "sustain_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "渴血涉及治疗和回复，续航和吸血装备能让英雄在团战中更持久。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "guilty_pleasure",
+      "nameCn": "恶趣味",
+      "rarityCn": "银色",
+      "effectCn": "定身或缚地敌方英雄时回复10-150(基于等级)（+1.5%最大生命值）生命值。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "shield_heal",
+        "sustain"
+      ],
+      "relatedStats": [
+        "hp"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "hp_item",
+        "defensive_item",
+        "sustain_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "恶趣味涉及治疗和回复，续航和吸血装备能让英雄在团战中更持久。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "hat_on_a_hat",
+      "nameCn": "帽上加帽",
+      "rarityCn": "银色",
+      "effectCn": "头戴式装备和帽子提供15法术强度和8魔法抗性。 帽子饮品提供8法术强度和4魔法抗性。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "item_interaction"
+      ],
+      "relatedStats": [],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "ap_item",
+        "mage"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "帽上加帽的效果改变了战斗方式，选择与其机制匹配的装备可以最大化这个强化的价值。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "heavy_hitter",
+      "nameCn": "重量级打击手",
+      "rarityCn": "银色",
+      "effectCn": "你的攻击造成相当于你4%最大生命值的额外物理伤害。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "on_hit",
+        "basic_attack",
+        "burst"
+      ],
+      "relatedStats": [],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "hp_item",
+        "defensive_item",
+        "ad_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "重量级打击手强化普攻和命中效果，因此攻速和命中特效装备的收益会被显著放大。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "hextech_soul",
+      "nameCn": "海克斯科技龙魂",
+      "rarityCn": "银色",
+      "effectCn": "周期性地使你的下一个伤害型技能或攻击触发一道闪电爆裂，连锁穿过敌人以造成伤害和减速。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "on_hit",
+        "basic_attack"
+      ],
+      "relatedStats": [],
+      "conversionRules": [],
+      "preferredItemTags": [],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "海克斯科技龙魂强化普攻和命中效果，因此攻速和命中特效装备的收益会被显著放大。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "homeguard",
+      "nameCn": "家园卫士",
+      "rarityCn": "银色",
+      "effectCn": "获得100%移动速度，在受到伤害后失效3秒。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "weak",
+      "mechanicTypes": [
+        "mobility"
+      ],
+      "relatedStats": [
+        "move_speed"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "",
+      "sourceType": "effect_text",
+      "confidence": "medium",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "ice_cold",
+      "nameCn": "冰寒",
+      "rarityCn": "银色",
+      "effectCn": "你的减速效果可使移动速度降低额外的100。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "weak",
+      "mechanicTypes": [
+        "mobility"
+      ],
+      "relatedStats": [
+        "move_speed"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "",
+      "sourceType": "effect_text",
+      "confidence": "medium",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "infernal_soul",
+      "nameCn": "炼狱龙魂",
+      "rarityCn": "银色",
+      "effectCn": "你获得炼狱龙魂，使用技能或攻击命中敌人时造成额外伤害。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "on_hit",
+        "basic_attack",
+        "burst"
+      ],
+      "relatedStats": [],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "on_hit_item",
+        "attack_speed_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "炼狱龙魂强化普攻和命中效果，因此攻速和命中特效装备的收益会被显著放大。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "juiced",
+      "nameCn": "注魔",
+      "rarityCn": "银色",
+      "effectCn": "攻击会消耗2.5%最大法力值，造成相当于3.5%最大法力值的魔法伤害，该伤害可以暴击",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "crit_scaling"
+      ],
+      "relatedStats": [
+        "crit"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "mana_item",
+        "scaling_item",
+        "ap_item",
+        "mage",
+        "crit_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "注魔涉及暴击机制，暴击率和暴击伤害装备的优先级上升。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "kill_secured",
+      "nameCn": "杀意翻涌",
+      "rarityCn": "银色",
+      "effectCn": "朝着生命值低于40%的敌方英雄时获得100%移动速度。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "weak",
+      "mechanicTypes": [
+        "mobility"
+      ],
+      "relatedStats": [
+        "move_speed"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "",
+      "sourceType": "effect_text",
+      "confidence": "medium",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "leg_day",
+      "nameCn": "练腿日",
+      "rarityCn": "银色",
+      "effectCn": "获得50移动速度和40%减速抗性。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "weak",
+      "mechanicTypes": [
+        "mobility"
+      ],
+      "relatedStats": [
+        "move_speed"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "",
+      "sourceType": "effect_text",
+      "confidence": "medium",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "light_em_up",
+      "nameCn": "点亮他们！",
+      "rarityCn": "银色",
+      "effectCn": "每第4次攻击造成额外44 – 320 (基于等级) (+ 140%额外AD) (+ 76% AP) 魔法伤害。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "strong",
+      "mechanicTypes": [
+        "stat_conversion",
+        "ad_scaling",
+        "ap_scaling",
+        "on_hit",
+        "basic_attack",
+        "burst"
+      ],
+      "relatedStats": [
+        "ad",
+        "ap"
+      ],
+      "conversionRules": [
+        {
+          "from": "ad",
+          "to": "ap",
+          "ratio": 1.67,
+          "text": "额外攻击力→法术强度",
+          "cond": "常驻"
+        }
+      ],
+      "preferredItemTags": [
+        "ap_item",
+        "mage",
+        "ad_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "点亮他们！强化普攻和命中效果，因此攻速和命中特效装备的收益会被显著放大。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "mighty_shield",
+      "nameCn": "强力护盾",
+      "rarityCn": "银色",
+      "effectCn": "当你获得护盾时，获得%i:miniAdaptiveForce%40-100(基于等级)适应之力，持续3秒。(5秒冷却时间)",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "strong",
+      "mechanicTypes": [
+        "stat_conversion",
+        "ad_scaling",
+        "ap_scaling",
+        "shield_heal",
+        "stat_multiplier"
+      ],
+      "relatedStats": [
+        "ad",
+        "ap",
+        "shield"
+      ],
+      "conversionRules": [
+        {
+          "from": "ad",
+          "to": "ap",
+          "ratio": 1.67,
+          "text": "额外攻击力→法术强度",
+          "cond": "常驻"
+        }
+      ],
+      "preferredItemTags": [
+        "ap_item",
+        "mage",
+        "ad_item",
+        "sustain_item",
+        "ability_haste"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "强力护盾涉及技能冷却缩减，技能急速装备能让技能循环更流畅，提高持续输出。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "mind_to_matter",
+      "nameCn": "由心及物",
+      "rarityCn": "银色",
+      "effectCn": "使你的最大生命值提升，数额相当于你一半的法力值。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "strong",
+      "mechanicTypes": [
+        "stat_conversion",
+        "mana_scaling",
+        "hp_scaling",
+        "stat_multiplier"
+      ],
+      "relatedStats": [
+        "mana",
+        "hp"
+      ],
+      "conversionRules": [
+        {
+          "from": "mana",
+          "to": "hp",
+          "ratio": 0.5,
+          "text": "每1法力值→0.5生命值",
+          "cond": "常驻"
+        }
+      ],
+      "preferredItemTags": [
+        "mana_item",
+        "scaling_item",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "由心及物将法力值转化为生命值，因此提供大量法力值的装备（大天使之杖、魔宗、末日寒冬）优先级上升，血量收益随法力增长。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "mountainsoul",
+      "nameCn": "山脉龙魂",
+      "rarityCn": "银色",
+      "effectCn": "你获得山脉龙魂，在脱离战斗之后获得一个持续一小段时间的护盾。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "shield_heal"
+      ],
+      "relatedStats": [
+        "shield"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "sustain_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "山脉龙魂提供或强化护盾机制，生命值、抗性和护盾相关装备能增强生存和护盾厚度。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "ocean_soul",
+      "nameCn": "海洋龙魂",
+      "rarityCn": "银色",
+      "effectCn": "对英雄造成伤害后获得高额生命和法力回复",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "sustain",
+        "shield_heal"
+      ],
+      "relatedStats": [
+        "hp",
+        "mana"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "sustain_item",
+        "hp_item",
+        "mana_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "海洋龙魂在造成伤害后提供大量生命和法力回复，配合生命值和法力值装备可以持续站场施法。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": "v1.1修正: 对英雄造成伤害后获得高额生命和法力回复"
+    },
+    {
+      "augmentId": "poltergeist",
+      "nameCn": "吵闹鬼",
+      "rarityCn": "银色",
+      "effectCn": "获得【吵闹鬼】召唤师技能。 吵闹鬼会同时施放召唤师技能【屏障】和【幽灵疾步】。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "weak",
+      "mechanicTypes": [
+        "summon"
+      ],
+      "relatedStats": [],
+      "conversionRules": [],
+      "preferredItemTags": [],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "该强化主要提供技能/召唤师技能/随机效果，不直接改变装备优先级，推荐时走英雄定位兜底。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": "v1.2降级: 吵闹鬼是召唤师技能组合（屏障+幽灵疾步），不改变装备选择。"
+    },
+    {
+      "augmentId": "purist_caster",
+      "nameCn": "纯粹主义者 - 术师",
+      "rarityCn": "银色",
+      "effectCn": "获得10%冷却减缩，你的所有攻速转换为技能急速每1%攻速转换为0.65技能急速",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "attack_speed_scaling",
+        "cooldown_loop",
+        "ability_cast"
+      ],
+      "relatedStats": [
+        "attack_speed",
+        "ability_haste"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "attack_speed_item",
+        "ability_haste"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "纯粹主义者 - 术师提升攻速收益，攻速装备配合命中特效或暴击能产生协同效应。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "repulsor",
+      "nameCn": "退敌力场",
+      "rarityCn": "银色",
+      "effectCn": "在你跌下@HealthThreshold2*100@%生命值时，附近的敌人们会被击退并对其施加持续1.5秒的90%减速。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "strong",
+      "mechanicTypes": [
+        "shield_heal",
+        "sustain",
+        "stat_multiplier",
+        "hp_scaling"
+      ],
+      "relatedStats": [
+        "hp"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "退敌力场涉及治疗和回复，续航和吸血装备能让英雄在团战中更持久。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "scoped_weapons",
+      "nameCn": "万用瞄准镜",
+      "rarityCn": "银色",
+      "effectCn": "+100攻击距离(远程+50)",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "basic_attack",
+        "attack_speed_scaling"
+      ],
+      "relatedStats": [
+        "attack_speed"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "marksman",
+        "attack_speed_item",
+        "on_hit_item",
+        "crit_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "万用瞄准镜增加攻击距离，适合射手和普攻型英雄搭配攻速装备来风筝对手。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": "v1.1修正: +100攻击距离(远程+50)"
+    },
+    {
+      "augmentId": "self_destruct",
+      "nameCn": "自我毁灭",
+      "rarityCn": "银色",
+      "effectCn": "每25秒，会有一个炸弹附在你身上。在@BombDelay@秒后，它会爆炸，造成20%目标最大生命值的真实伤害并击飞附近的敌人们。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "burn_dot",
+        "hp_scaling"
+      ],
+      "relatedStats": [
+        "hp"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "自我毁灭的效果改变了战斗方式，选择与其机制匹配的装备可以最大化这个强化的价值。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "shadow_runner",
+      "nameCn": "暗影疾奔",
+      "rarityCn": "银色",
+      "effectCn": "在使用一个冲刺、跳跃、闪烁或传送类技能或离开潜行状态之后，获得持续3秒的100移动速度。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "weak",
+      "mechanicTypes": [
+        "mobility"
+      ],
+      "relatedStats": [
+        "move_speed"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "",
+      "sourceType": "effect_text",
+      "confidence": "medium",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "slap_around",
+      "nameCn": "扇巴掌",
+      "rarityCn": "银色",
+      "effectCn": "每当你定身或缚地一个敌人时，获得一层可叠加的20 适应之力。阵亡时损失50%层数。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "strong",
+      "mechanicTypes": [
+        "stat_multiplier",
+        "ap_scaling",
+        "ad_scaling",
+        "hp_scaling"
+      ],
+      "relatedStats": [
+        "ap",
+        "ad",
+        "hp"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "ap_item",
+        "ad_item",
+        "scaling_item",
+        "hp_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "扇巴掌提供适应之力，同时通过AD或AP方向放大输出，高属性装备的收益被百分比增强。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": "v1.1修正: 控制后叠适应之力,需要生存和控制能力"
+    },
+    {
+      "augmentId": "sonic_boom",
+      "nameCn": "天音爆",
+      "rarityCn": "银色",
+      "effectCn": "在为你的友军提供增益效果、治疗效果或护盾效果时，会对其附近的敌人造成30 - 150(基于等级)真实伤害和持续2秒的30%减速。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "shield_heal",
+        "sustain"
+      ],
+      "relatedStats": [
+        "shield",
+        "hp"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "sustain_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "天音爆提供或强化护盾机制，生命值、抗性和护盾相关装备能增强生存和护盾厚度。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "speed_demon",
+      "nameCn": "速度恶魔",
+      "rarityCn": "银色",
+      "effectCn": "用技能伤害敌方英雄会获得350移动速度，在2秒内衰减",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "weak",
+      "mechanicTypes": [
+        "mobility"
+      ],
+      "relatedStats": [
+        "move_speed"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "",
+      "sourceType": "effect_text",
+      "confidence": "medium",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "spin_me_right_round",
+      "nameCn": "转得我眩晕了",
+      "rarityCn": "银色",
+      "effectCn": "将一个召唤师技能替换为骄行荡寇。 骄行荡寇发射一根钩爪，吸附在地形上，在此之后，你可以再次施放来绕着它摆荡。在摆荡状态下，自动攻击相距最近的那个敌人。在与一个敌方英雄碰撞或再次施放时结束摆荡。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "weak",
+      "mechanicTypes": [
+        "summon"
+      ],
+      "relatedStats": [],
+      "conversionRules": [],
+      "preferredItemTags": [],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "该强化主要提供技能/召唤师技能/随机效果，不直接改变装备优先级，推荐时走英雄定位兜底。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": "v1.2降级: 转得我眩晕了是召唤师技能替换（骄行荡寇），属于机动性效果，装备推荐走英雄定位兜底。"
+    },
+    {
+      "augmentId": "spin_to_win",
+      "nameCn": "旋转至胜",
+      "rarityCn": "银色",
+      "effectCn": "你的旋转类技能获得@SpinHaste@技能急速并且多造成@SpinDamageAmp*100@%伤害！",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "cooldown_loop",
+        "ability_cast"
+      ],
+      "relatedStats": [
+        "ability_haste"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "ability_haste"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "旋转至胜涉及技能冷却缩减，技能急速装备能让技能循环更流畅，提高持续输出。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "stackosaurusrex",
+      "nameCn": "叠角龙",
+      "rarityCn": "银色",
+      "effectCn": "永久层数获得量+75%",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "strong",
+      "mechanicTypes": [
+        "stat_multiplier"
+      ],
+      "relatedStats": [],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "scaling_item",
+        "hp_item",
+        "ap_item",
+        "ad_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "叠角龙让所有永久层数获取量增加75%，对心之钢、超凡邪恶、时光之杖等有叠层机制的装备收益极高。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": "v1.1修正: 永久层数获得量+75%"
+    },
+    {
+      "augmentId": "stats",
+      "nameCn": "属性！",
+      "rarityCn": "银色",
+      "effectCn": "获得3个属性锻造器",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "stat_multiplier"
+      ],
+      "relatedStats": [
+        "hp",
+        "ap",
+        "ad"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "scaling_item",
+        "hp_item",
+        "ap_item",
+        "ad_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "属性！提供3个属性锻造器，额外的基础属性让任何装备的收益都更高。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": "v1.1修正: 获得3个属性锻造器"
+    },
+    {
+      "augmentId": "swift_and_safe",
+      "nameCn": "快中求稳",
+      "rarityCn": "银色",
+      "effectCn": "在冲刺或闪烁后，获得持续2秒的65-290(基于等级)(+65% 额外AD)(+26% AP)护盾值。 (5秒冷却时间)",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "strong",
+      "mechanicTypes": [
+        "stat_conversion",
+        "ad_scaling",
+        "ap_scaling",
+        "shield_heal"
+      ],
+      "relatedStats": [
+        "ad",
+        "ap",
+        "shield"
+      ],
+      "conversionRules": [
+        {
+          "from": "ad",
+          "to": "ap",
+          "ratio": 1.67,
+          "text": "额外攻击力→法术强度",
+          "cond": "常驻"
+        }
+      ],
+      "preferredItemTags": [
+        "ap_item",
+        "mage",
+        "ad_item",
+        "sustain_item",
+        "ability_haste"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "快中求稳涉及技能冷却缩减，技能急速装备能让技能循环更流畅，提高持续输出。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "tank_it_or_leave_it",
+      "nameCn": "会心防御",
+      "rarityCn": "银色",
+      "effectCn": "你可以使用你的暴击几率(最大50%几率)来进行会心防御，使你有一定几率来使所受伤害降低20%。获得25%暴击几率。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "crit_scaling"
+      ],
+      "relatedStats": [
+        "crit"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "crit_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "会心防御涉及暴击机制，暴击率和暴击伤害装备的优先级上升。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "the_brutalizer",
+      "nameCn": "残暴之力",
+      "rarityCn": "银色",
+      "effectCn": "获得@AD@攻击力、@AbilityHaste@技能急速和@Lethality@穿甲。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "cooldown_loop",
+        "ability_cast"
+      ],
+      "relatedStats": [
+        "ability_haste"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "ad_item",
+        "ability_haste"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "残暴之力涉及技能冷却缩减，技能急速装备能让技能循环更流畅，提高持续输出。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "tormentor",
+      "nameCn": "折磨者",
+      "rarityCn": "银色",
+      "effectCn": "定身 或 缚地 敌方英雄时还会施加一层 灼烧 ，在@BleedDuration@秒的持续时间里每秒持续造成 @PercentMaxHPDamagePer5Seconds*20@%最大生命值的魔法伤害 。 这个 灼烧 可无限叠加。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "burn_dot",
+        "hp_scaling"
+      ],
+      "relatedStats": [
+        "hp"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "hp_item",
+        "defensive_item",
+        "ap_item",
+        "mage"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "折磨者涉及持续伤害机制，法强和生命值装备能同时提高灼烧的基础伤害和生存能力。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "twin_fire",
+      "nameCn": "双生火焰",
+      "rarityCn": "银色",
+      "effectCn": "技能会发射1-4个飞弹(基于暴击率)，每个飞弹造成10-30(基于等级)(+7%额外攻击力+7%法术强度)魔法伤害，获得15%暴击几率",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "strong",
+      "mechanicTypes": [
+        "stat_conversion",
+        "ad_scaling",
+        "ap_scaling",
+        "crit_scaling",
+        "burst",
+        "stat_multiplier"
+      ],
+      "relatedStats": [
+        "ad",
+        "ap",
+        "crit"
+      ],
+      "conversionRules": [
+        {
+          "from": "ad",
+          "to": "ap",
+          "ratio": 1.67,
+          "text": "额外攻击力→法术强度",
+          "cond": "常驻"
+        }
+      ],
+      "preferredItemTags": [
+        "ap_item",
+        "mage",
+        "ad_item",
+        "crit_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "双生火焰将额外攻击力转化为法术强度，让AD装备也能为法师提供AP收益，攻击力装备的价值大幅提升。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "typhoon",
+      "nameCn": "台风",
+      "rarityCn": "银色",
+      "effectCn": "你的攻击会对一个额外目标发射一根弩箭，这个弩箭会造成削减过的伤害并施加命中。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "on_hit",
+        "basic_attack",
+        "burst"
+      ],
+      "relatedStats": [],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "on_hit_item",
+        "attack_speed_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "台风的效果改变了战斗方式，选择与其机制匹配的装备可以最大化这个强化的价值。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "ultimate_unstoppable",
+      "nameCn": "终极不可阻挡",
+      "rarityCn": "银色",
+      "effectCn": "在你使用你的终极技能后，你获得持续@UnstoppableDuration@秒的控制免疫。 (@Cooldown@秒冷却时间)。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "ability_cast"
+      ],
+      "relatedStats": [],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "ability_haste"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "终极不可阻挡涉及技能冷却缩减，技能急速装备能让技能循环更流畅，提高持续输出。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "upgrade_collector",
+      "nameCn": "升级：收集者",
+      "rarityCn": "银色",
+      "effectCn": "使用【收集者】的被动处决敌人时的处决阈值提升@ExecutionInc*100@%，并且提供额外@UpgradedGoldAmount@金币。 获得250金币。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "weak",
+      "mechanicTypes": [
+        "economy"
+      ],
+      "relatedStats": [],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "ad_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "",
+      "sourceType": "effect_text",
+      "confidence": "medium",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "upgrade_cutlass",
+      "nameCn": "升级：弯刀",
+      "rarityCn": "银色",
+      "effectCn": "【幽魂弯刀】和【求生索】的冷却时间降低至@UpgradeCD@秒。主动效果激活时，获得@DamageAmp*100@%伤害增幅。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "weak",
+      "mechanicTypes": [
+        "burst"
+      ],
+      "relatedStats": [],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "ad_item",
+        "ability_haste"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "",
+      "sourceType": "effect_text",
+      "confidence": "medium",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "upgrade_immolate",
+      "nameCn": "升级：献祭",
+      "rarityCn": "银色",
+      "effectCn": "【璀璨回响】和【日炎圣盾】每当有目标受到【献祭】效果影响时，提供@GoldPerTick@ 金币 。获得250金币。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "weak",
+      "mechanicTypes": [
+        "economy"
+      ],
+      "relatedStats": [],
+      "conversionRules": [],
+      "preferredItemTags": [],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "",
+      "sourceType": "effect_text",
+      "confidence": "medium",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "upgrade_thornmail",
+      "nameCn": "升级：荆棘之甲",
+      "rarityCn": "银色",
+      "effectCn": "荆棘之甲获得反弹伤害外壳",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "tank_scaling",
+        "item_interaction"
+      ],
+      "relatedStats": [
+        "hp",
+        "armor"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "defensive_item",
+        "hp_item",
+        "tank"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "升级：荆棘之甲强化反弹伤害，配合高生命值和高护甲装备可以反弹更多伤害。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": "v1.1修正: 荆棘之甲获得反弹伤害外壳"
+    },
+    {
+      "augmentId": "upgrade_zhonyas",
+      "nameCn": "升级：中娅",
+      "rarityCn": "银色",
+      "effectCn": "升级你的【探索者的护臂】、【沃格勒特的巫师帽】和【中娅沙漏】，使你能够在静滞效果期间移动，并在静滞期间获得50%额外移动速度。此外，【中娅沙漏】的静滞冷却时间降低至45秒。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "weak",
+      "mechanicTypes": [
+        "mobility"
+      ],
+      "relatedStats": [
+        "move_speed"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "ability_haste"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "",
+      "sourceType": "effect_text",
+      "confidence": "medium",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "weighted_popoffs",
+      "nameCn": "负重爆气",
+      "rarityCn": "银色",
+      "effectCn": "使用技能对敌方英雄造成伤害会为你提供持续6秒的爆气层数（最大：6）。 每层爆气可以使你的各个非终极技能的冷却时间转速加快2.5%，在6层时提升至5%。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "ability_cast"
+      ],
+      "relatedStats": [],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "ability_haste"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "负重爆气涉及技能冷却缩减，技能急速装备能让技能循环更流畅，提高持续输出。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "wind_beneath_blade",
+      "nameCn": "刃下生风",
+      "rarityCn": "银色",
+      "effectCn": "从每1点固定护甲穿透和法术穿透中获得1.5移动速度。每拥有10%百分比护甲穿透和法术穿透，就获得@PercentPenConversion@移动速度。",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "weak",
+      "mechanicTypes": [
+        "mobility"
+      ],
+      "relatedStats": [
+        "move_speed"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "",
+      "sourceType": "effect_text",
+      "confidence": "medium",
+      "notesCn": ""
+    },
+    {
+      "augmentId": "witchful_thinking",
+      "nameCn": "巫师式思考",
+      "rarityCn": "银色",
+      "effectCn": "获得20-80(基于等级)法术强度",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "medium",
+      "mechanicTypes": [
+        "ap_scaling"
+      ],
+      "relatedStats": [
+        "ap"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "ap_item",
+        "mage"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "巫师式思考直接提供法术强度，配合法强装备能让法师前期就拥有可观的技能伤害。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": "v1.1修正: 获得20-80(基于等级)法术强度"
+    },
+    {
+      "augmentId": "zealot",
+      "nameCn": "狂热者",
+      "rarityCn": "银色",
+      "effectCn": "获得25%暴击率（+0.05%AP）和35%攻击速度（+0.05%AP）",
+      "availabilityNoteCn": "未发现该强化有阶段限制，按站点通用规则标记为 3/7/11/15 级均可能出现。",
+      "mechanicStrength": "strong",
+      "mechanicTypes": [
+        "crit_scaling",
+        "attack_speed_scaling",
+        "stat_multiplier",
+        "ap_scaling"
+      ],
+      "relatedStats": [
+        "crit",
+        "attack_speed",
+        "ap"
+      ],
+      "conversionRules": [],
+      "preferredItemTags": [
+        "ap_item",
+        "mage",
+        "attack_speed_item",
+        "crit_item"
+      ],
+      "avoidItemTags": [],
+      "triggerPatterns": [],
+      "recommendedReasonTemplateCn": "狂热者涉及暴击机制，暴击率和暴击伤害装备的优先级上升。",
+      "sourceType": "effect_text",
+      "confidence": "high",
+      "notesCn": ""
+    }
+  ],
+  "qualityReport": {
+    "totalAugments": 195,
+    "taggedAugments": 195,
+    "strongMechanicCount": 58,
+    "mediumMechanicCount": 98,
+    "weakMechanicCount": 39,
+    "noMechanicCount": 0,
+    "unknownCount": 0,
+    "lowConfidenceCount": 0,
+    "missingEffectCount": 0,
+    "illegalMechanicTypesCount": 0
+  }
+}

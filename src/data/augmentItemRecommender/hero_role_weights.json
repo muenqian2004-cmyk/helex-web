@@ -1,0 +1,4897 @@
+{
+  "schemaVersion": "augment_item_recommender.hero_role_weights.v1.2",
+  "generatedAt": "2026-05-27",
+  "sourceFiles": [
+    "D:\\桌面\\arammayhem_heroes_v1.json"
+  ],
+  "data": [
+    {
+      "heroId": "brand",
+      "heroNameCn": "布兰德",
+      "titleCn": "复仇焰魂",
+      "roles": [
+        "法师"
+      ],
+      "roleWeights": [
+        {
+          "role": "法师",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "法师",
+      "secondaryRole": "",
+      "damageProfile": "magic",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "mage",
+        "ap_item",
+        "mana_item",
+        "ability_haste",
+        "scaling_item"
+      ],
+      "avoidItemTags": [
+        "crit_item"
+      ],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "graves",
+      "heroNameCn": "格雷福斯",
+      "titleCn": "法外狂徒",
+      "roles": [
+        "射手"
+      ],
+      "roleWeights": [
+        {
+          "role": "射手",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "射手",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "marksman",
+        "ad_item",
+        "attack_speed_item",
+        "crit_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "yasuo",
+      "heroNameCn": "亚索",
+      "titleCn": "疾风剑豪",
+      "roles": [
+        "战士"
+      ],
+      "roleWeights": [
+        {
+          "role": "战士",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "战士",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "fighter",
+        "ad_item",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "vayne",
+      "heroNameCn": "薇恩",
+      "titleCn": "暗夜猎手",
+      "roles": [
+        "射手"
+      ],
+      "roleWeights": [
+        {
+          "role": "射手",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "射手",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "marksman",
+        "ad_item",
+        "attack_speed_item",
+        "crit_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "morgana",
+      "heroNameCn": "莫甘娜",
+      "titleCn": "堕落天使",
+      "roles": [
+        "辅助"
+      ],
+      "roleWeights": [
+        {
+          "role": "辅助",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "辅助",
+      "secondaryRole": "",
+      "damageProfile": "magic",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "support",
+        "utility_item",
+        "sustain_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "lillia",
+      "heroNameCn": "莉莉娅",
+      "titleCn": "含羞蓓蕾",
+      "roles": [
+        "战士"
+      ],
+      "roleWeights": [
+        {
+          "role": "战士",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "战士",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "fighter",
+        "ad_item",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "jinx",
+      "heroNameCn": "金克丝",
+      "titleCn": "暴走萝莉",
+      "roles": [
+        "射手"
+      ],
+      "roleWeights": [
+        {
+          "role": "射手",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "射手",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "marksman",
+        "ad_item",
+        "attack_speed_item",
+        "crit_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "fizz",
+      "heroNameCn": "菲兹",
+      "titleCn": "潮汐海灵",
+      "roles": [
+        "刺客"
+      ],
+      "roleWeights": [
+        {
+          "role": "刺客",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "刺客",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "assassin",
+        "ad_item",
+        "ap_item",
+        "burst_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "sett",
+      "heroNameCn": "瑟提",
+      "titleCn": "腕豪",
+      "roles": [
+        "战士"
+      ],
+      "roleWeights": [
+        {
+          "role": "战士",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "战士",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "fighter",
+        "ad_item",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "malzahar",
+      "heroNameCn": "玛尔扎哈",
+      "titleCn": "虚空先知",
+      "roles": [
+        "法师"
+      ],
+      "roleWeights": [
+        {
+          "role": "法师",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "法师",
+      "secondaryRole": "",
+      "damageProfile": "magic",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "mage",
+        "ap_item",
+        "mana_item",
+        "ability_haste",
+        "scaling_item"
+      ],
+      "avoidItemTags": [
+        "crit_item"
+      ],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "aurelionsol",
+      "heroNameCn": "奥瑞利安·索尔",
+      "titleCn": "铸星龙王",
+      "roles": [
+        "法师"
+      ],
+      "roleWeights": [
+        {
+          "role": "法师",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "法师",
+      "secondaryRole": "",
+      "damageProfile": "magic",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "mage",
+        "ap_item",
+        "mana_item",
+        "ability_haste",
+        "scaling_item"
+      ],
+      "avoidItemTags": [
+        "crit_item"
+      ],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "seraphine",
+      "heroNameCn": "萨勒芬妮",
+      "titleCn": "星籁歌姬",
+      "roles": [
+        "辅助"
+      ],
+      "roleWeights": [
+        {
+          "role": "辅助",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "辅助",
+      "secondaryRole": "",
+      "damageProfile": "magic",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "support",
+        "utility_item",
+        "sustain_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "caitlyn",
+      "heroNameCn": "凯特琳",
+      "titleCn": "皮城女警",
+      "roles": [
+        "射手"
+      ],
+      "roleWeights": [
+        {
+          "role": "射手",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "射手",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "marksman",
+        "ad_item",
+        "attack_speed_item",
+        "crit_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "drmundo",
+      "heroNameCn": "蒙多医生",
+      "titleCn": "祖安狂人",
+      "roles": [
+        "坦克"
+      ],
+      "roleWeights": [
+        {
+          "role": "坦克",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "坦克",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "tank",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "lucian",
+      "heroNameCn": "卢锡安",
+      "titleCn": "圣枪游侠",
+      "roles": [
+        "射手"
+      ],
+      "roleWeights": [
+        {
+          "role": "射手",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "射手",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "marksman",
+        "ad_item",
+        "attack_speed_item",
+        "crit_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "ryze",
+      "heroNameCn": "瑞兹",
+      "titleCn": "符文法师",
+      "roles": [
+        "法师"
+      ],
+      "roleWeights": [
+        {
+          "role": "法师",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "法师",
+      "secondaryRole": "",
+      "damageProfile": "magic",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "mage",
+        "ap_item",
+        "mana_item",
+        "ability_haste",
+        "scaling_item"
+      ],
+      "avoidItemTags": [
+        "crit_item"
+      ],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "masteryi",
+      "heroNameCn": "易",
+      "titleCn": "无极剑圣",
+      "roles": [
+        "战士"
+      ],
+      "roleWeights": [
+        {
+          "role": "战士",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "战士",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "fighter",
+        "ad_item",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "karthus",
+      "heroNameCn": "卡尔萨斯",
+      "titleCn": "死亡颂唱者",
+      "roles": [
+        "法师"
+      ],
+      "roleWeights": [
+        {
+          "role": "法师",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "法师",
+      "secondaryRole": "",
+      "damageProfile": "magic",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "mage",
+        "ap_item",
+        "mana_item",
+        "ability_haste",
+        "scaling_item"
+      ],
+      "avoidItemTags": [
+        "crit_item"
+      ],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "twistedfate",
+      "heroNameCn": "崔斯特",
+      "titleCn": "卡牌大师",
+      "roles": [
+        "法师"
+      ],
+      "roleWeights": [
+        {
+          "role": "法师",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "法师",
+      "secondaryRole": "",
+      "damageProfile": "magic",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "mage",
+        "ap_item",
+        "mana_item",
+        "ability_haste",
+        "scaling_item"
+      ],
+      "avoidItemTags": [
+        "crit_item"
+      ],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "yone",
+      "heroNameCn": "永恩",
+      "titleCn": "封魔剑魂",
+      "roles": [
+        "战士"
+      ],
+      "roleWeights": [
+        {
+          "role": "战士",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "战士",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "fighter",
+        "ad_item",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "missfortune",
+      "heroNameCn": "厄运小姐",
+      "titleCn": "赏金猎人",
+      "roles": [
+        "射手"
+      ],
+      "roleWeights": [
+        {
+          "role": "射手",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "射手",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "marksman",
+        "ad_item",
+        "attack_speed_item",
+        "crit_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "xinzhao",
+      "heroNameCn": "赵信",
+      "titleCn": "德邦总管",
+      "roles": [
+        "战士"
+      ],
+      "roleWeights": [
+        {
+          "role": "战士",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "战士",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "fighter",
+        "ad_item",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "ashe",
+      "heroNameCn": "艾希",
+      "titleCn": "寒冰射手",
+      "roles": [
+        "射手"
+      ],
+      "roleWeights": [
+        {
+          "role": "射手",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "射手",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "marksman",
+        "ad_item",
+        "attack_speed_item",
+        "crit_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "tristana",
+      "heroNameCn": "崔丝塔娜",
+      "titleCn": "麦林炮手",
+      "roles": [
+        "射手"
+      ],
+      "roleWeights": [
+        {
+          "role": "射手",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "射手",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "marksman",
+        "ad_item",
+        "attack_speed_item",
+        "crit_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "rumble",
+      "heroNameCn": "兰博",
+      "titleCn": "机械公敌",
+      "roles": [
+        "战士"
+      ],
+      "roleWeights": [
+        {
+          "role": "战士",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "战士",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "fighter",
+        "ad_item",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "kayn",
+      "heroNameCn": "凯隐",
+      "titleCn": "影流之镰",
+      "roles": [
+        "战士"
+      ],
+      "roleWeights": [
+        {
+          "role": "战士",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "战士",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "fighter",
+        "ad_item",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "zed",
+      "heroNameCn": "劫",
+      "titleCn": "影流之主",
+      "roles": [
+        "刺客"
+      ],
+      "roleWeights": [
+        {
+          "role": "刺客",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "刺客",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "assassin",
+        "ad_item",
+        "ap_item",
+        "burst_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "hecarim",
+      "heroNameCn": "赫卡里姆",
+      "titleCn": "战争之影",
+      "roles": [
+        "战士"
+      ],
+      "roleWeights": [
+        {
+          "role": "战士",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "战士",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "fighter",
+        "ad_item",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "galio",
+      "heroNameCn": "加里奥",
+      "titleCn": "正义巨像",
+      "roles": [
+        "坦克"
+      ],
+      "roleWeights": [
+        {
+          "role": "坦克",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "坦克",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "tank",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "xayah",
+      "heroNameCn": "霞",
+      "titleCn": "逆羽",
+      "roles": [
+        "射手"
+      ],
+      "roleWeights": [
+        {
+          "role": "射手",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "射手",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "marksman",
+        "ad_item",
+        "attack_speed_item",
+        "crit_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "singed",
+      "heroNameCn": "辛吉德",
+      "titleCn": "炼金术士",
+      "roles": [
+        "坦克"
+      ],
+      "roleWeights": [
+        {
+          "role": "坦克",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "坦克",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "tank",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "zyra",
+      "heroNameCn": "婕拉",
+      "titleCn": "荆棘之兴",
+      "roles": [
+        "法师"
+      ],
+      "roleWeights": [
+        {
+          "role": "法师",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "法师",
+      "secondaryRole": "",
+      "damageProfile": "magic",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "mage",
+        "ap_item",
+        "mana_item",
+        "ability_haste",
+        "scaling_item"
+      ],
+      "avoidItemTags": [
+        "crit_item"
+      ],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "tahmkench",
+      "heroNameCn": "塔姆",
+      "titleCn": "河流之王",
+      "roles": [
+        "坦克"
+      ],
+      "roleWeights": [
+        {
+          "role": "坦克",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "坦克",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "tank",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "yunara",
+      "heroNameCn": "芸阿娜",
+      "titleCn": "不破之誓",
+      "roles": [
+        "射手"
+      ],
+      "roleWeights": [
+        {
+          "role": "射手",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "射手",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "marksman",
+        "ad_item",
+        "attack_speed_item",
+        "crit_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "kayle",
+      "heroNameCn": "凯尔",
+      "titleCn": "正义天使",
+      "roles": [
+        "法师"
+      ],
+      "roleWeights": [
+        {
+          "role": "法师",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "法师",
+      "secondaryRole": "",
+      "damageProfile": "magic",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "mage",
+        "ap_item",
+        "mana_item",
+        "ability_haste",
+        "scaling_item"
+      ],
+      "avoidItemTags": [
+        "crit_item"
+      ],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "swain",
+      "heroNameCn": "斯维因",
+      "titleCn": "诺克萨斯统领",
+      "roles": [
+        "法师"
+      ],
+      "roleWeights": [
+        {
+          "role": "法师",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "法师",
+      "secondaryRole": "",
+      "damageProfile": "magic",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "mage",
+        "ap_item",
+        "mana_item",
+        "ability_haste",
+        "scaling_item"
+      ],
+      "avoidItemTags": [
+        "crit_item"
+      ],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "twitch",
+      "heroNameCn": "图奇",
+      "titleCn": "瘟疫之源",
+      "roles": [
+        "射手"
+      ],
+      "roleWeights": [
+        {
+          "role": "射手",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "射手",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "marksman",
+        "ad_item",
+        "attack_speed_item",
+        "crit_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "hwei",
+      "heroNameCn": "彗",
+      "titleCn": "异画师",
+      "roles": [
+        "法师"
+      ],
+      "roleWeights": [
+        {
+          "role": "法师",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "法师",
+      "secondaryRole": "",
+      "damageProfile": "magic",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "mage",
+        "ap_item",
+        "mana_item",
+        "ability_haste",
+        "scaling_item"
+      ],
+      "avoidItemTags": [
+        "crit_item"
+      ],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "rell",
+      "heroNameCn": "芮尔",
+      "titleCn": "镕铁少女",
+      "roles": [
+        "坦克"
+      ],
+      "roleWeights": [
+        {
+          "role": "坦克",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "坦克",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "tank",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "ahri",
+      "heroNameCn": "阿狸",
+      "titleCn": "九尾妖狐",
+      "roles": [
+        "法师"
+      ],
+      "roleWeights": [
+        {
+          "role": "法师",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "法师",
+      "secondaryRole": "",
+      "damageProfile": "magic",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "mage",
+        "ap_item",
+        "mana_item",
+        "ability_haste",
+        "scaling_item"
+      ],
+      "avoidItemTags": [
+        "crit_item"
+      ],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "xerath",
+      "heroNameCn": "泽拉斯",
+      "titleCn": "远古巫灵",
+      "roles": [
+        "法师"
+      ],
+      "roleWeights": [
+        {
+          "role": "法师",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "法师",
+      "secondaryRole": "",
+      "damageProfile": "magic",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "mage",
+        "ap_item",
+        "mana_item",
+        "ability_haste",
+        "scaling_item"
+      ],
+      "avoidItemTags": [
+        "crit_item"
+      ],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "kaisa",
+      "heroNameCn": "卡莎",
+      "titleCn": "虚空之女",
+      "roles": [
+        "射手"
+      ],
+      "roleWeights": [
+        {
+          "role": "射手",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "射手",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "marksman",
+        "ad_item",
+        "attack_speed_item",
+        "crit_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "senna",
+      "heroNameCn": "赛娜",
+      "titleCn": "涤魂圣枪",
+      "roles": [
+        "辅助"
+      ],
+      "roleWeights": [
+        {
+          "role": "辅助",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "辅助",
+      "secondaryRole": "",
+      "damageProfile": "magic",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "support",
+        "utility_item",
+        "sustain_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "aurora",
+      "heroNameCn": "阿萝拉",
+      "titleCn": "双界灵兔",
+      "roles": [
+        "法师"
+      ],
+      "roleWeights": [
+        {
+          "role": "法师",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "法师",
+      "secondaryRole": "",
+      "damageProfile": "magic",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "mage",
+        "ap_item",
+        "mana_item",
+        "ability_haste",
+        "scaling_item"
+      ],
+      "avoidItemTags": [
+        "crit_item"
+      ],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "veigar",
+      "heroNameCn": "维迦",
+      "titleCn": "邪恶小法师",
+      "roles": [
+        "法师"
+      ],
+      "roleWeights": [
+        {
+          "role": "法师",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "法师",
+      "secondaryRole": "",
+      "damageProfile": "magic",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "mage",
+        "ap_item",
+        "mana_item",
+        "ability_haste",
+        "scaling_item"
+      ],
+      "avoidItemTags": [
+        "crit_item"
+      ],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "syndra",
+      "heroNameCn": "辛德拉",
+      "titleCn": "暗黑元首",
+      "roles": [
+        "法师"
+      ],
+      "roleWeights": [
+        {
+          "role": "法师",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "法师",
+      "secondaryRole": "",
+      "damageProfile": "magic",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "mage",
+        "ap_item",
+        "mana_item",
+        "ability_haste",
+        "scaling_item"
+      ],
+      "avoidItemTags": [
+        "crit_item"
+      ],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "corki",
+      "heroNameCn": "库奇",
+      "titleCn": "英勇投弹手",
+      "roles": [
+        "射手"
+      ],
+      "roleWeights": [
+        {
+          "role": "射手",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "射手",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "marksman",
+        "ad_item",
+        "attack_speed_item",
+        "crit_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "garen",
+      "heroNameCn": "盖伦",
+      "titleCn": "德玛西亚之力",
+      "roles": [
+        "战士"
+      ],
+      "roleWeights": [
+        {
+          "role": "战士",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "战士",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "fighter",
+        "ad_item",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "maokai",
+      "heroNameCn": "茂凯",
+      "titleCn": "扭曲树精",
+      "roles": [
+        "坦克"
+      ],
+      "roleWeights": [
+        {
+          "role": "坦克",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "坦克",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "tank",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "sion",
+      "heroNameCn": "赛恩",
+      "titleCn": "亡灵战神",
+      "roles": [
+        "坦克"
+      ],
+      "roleWeights": [
+        {
+          "role": "坦克",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "坦克",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "tank",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "tryndamere",
+      "heroNameCn": "泰达米尔",
+      "titleCn": "蛮族之王",
+      "roles": [
+        "战士"
+      ],
+      "roleWeights": [
+        {
+          "role": "战士",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "战士",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "fighter",
+        "ad_item",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "ekko",
+      "heroNameCn": "艾克",
+      "titleCn": "时间刺客",
+      "roles": [
+        "刺客"
+      ],
+      "roleWeights": [
+        {
+          "role": "刺客",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "刺客",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "assassin",
+        "ad_item",
+        "ap_item",
+        "burst_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "velkoz",
+      "heroNameCn": "维克兹",
+      "titleCn": "虚空之眼",
+      "roles": [
+        "法师"
+      ],
+      "roleWeights": [
+        {
+          "role": "法师",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "法师",
+      "secondaryRole": "",
+      "damageProfile": "magic",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "mage",
+        "ap_item",
+        "mana_item",
+        "ability_haste",
+        "scaling_item"
+      ],
+      "avoidItemTags": [
+        "crit_item"
+      ],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "viktor",
+      "heroNameCn": "维克托",
+      "titleCn": "奥术先驱",
+      "roles": [
+        "法师"
+      ],
+      "roleWeights": [
+        {
+          "role": "法师",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "法师",
+      "secondaryRole": "",
+      "damageProfile": "magic",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "mage",
+        "ap_item",
+        "mana_item",
+        "ability_haste",
+        "scaling_item"
+      ],
+      "avoidItemTags": [
+        "crit_item"
+      ],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "jhin",
+      "heroNameCn": "烬",
+      "titleCn": "戏命师",
+      "roles": [
+        "射手"
+      ],
+      "roleWeights": [
+        {
+          "role": "射手",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "射手",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "marksman",
+        "ad_item",
+        "attack_speed_item",
+        "crit_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "lux",
+      "heroNameCn": "拉克丝",
+      "titleCn": "光辉女郎",
+      "roles": [
+        "法师"
+      ],
+      "roleWeights": [
+        {
+          "role": "法师",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "法师",
+      "secondaryRole": "",
+      "damageProfile": "magic",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "mage",
+        "ap_item",
+        "mana_item",
+        "ability_haste",
+        "scaling_item"
+      ],
+      "avoidItemTags": [
+        "crit_item"
+      ],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "teemo",
+      "heroNameCn": "提莫",
+      "titleCn": "迅捷斥候",
+      "roles": [
+        "射手"
+      ],
+      "roleWeights": [
+        {
+          "role": "射手",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "射手",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "marksman",
+        "ad_item",
+        "attack_speed_item",
+        "crit_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "gangplank",
+      "heroNameCn": "普朗克",
+      "titleCn": "海洋之灾",
+      "roles": [
+        "战士"
+      ],
+      "roleWeights": [
+        {
+          "role": "战士",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "战士",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "fighter",
+        "ad_item",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "nautilus",
+      "heroNameCn": "诺提勒斯",
+      "titleCn": "深海泰坦",
+      "roles": [
+        "坦克"
+      ],
+      "roleWeights": [
+        {
+          "role": "坦克",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "坦克",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "tank",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "zaahen",
+      "heroNameCn": "亚恒",
+      "titleCn": "不落魔锋",
+      "roles": [
+        "战士"
+      ],
+      "roleWeights": [
+        {
+          "role": "战士",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "战士",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "fighter",
+        "ad_item",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "smolder",
+      "heroNameCn": "斯莫德",
+      "titleCn": "炽炎雏龙",
+      "roles": [
+        "射手"
+      ],
+      "roleWeights": [
+        {
+          "role": "射手",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "射手",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "marksman",
+        "ad_item",
+        "attack_speed_item",
+        "crit_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "jarvaniv",
+      "heroNameCn": "嘉文四世",
+      "titleCn": "德玛西亚皇子",
+      "roles": [
+        "战士"
+      ],
+      "roleWeights": [
+        {
+          "role": "战士",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "战士",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "fighter",
+        "ad_item",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "jayce",
+      "heroNameCn": "杰斯",
+      "titleCn": "未来守护者",
+      "roles": [
+        "战士"
+      ],
+      "roleWeights": [
+        {
+          "role": "战士",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "战士",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "fighter",
+        "ad_item",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "gwen",
+      "heroNameCn": "格温",
+      "titleCn": "灵罗娃娃",
+      "roles": [
+        "战士"
+      ],
+      "roleWeights": [
+        {
+          "role": "战士",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "战士",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "fighter",
+        "ad_item",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "chogath",
+      "heroNameCn": "科加斯",
+      "titleCn": "虚空恐惧",
+      "roles": [
+        "坦克"
+      ],
+      "roleWeights": [
+        {
+          "role": "坦克",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "坦克",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "tank",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "mel",
+      "heroNameCn": "梅尔",
+      "titleCn": "流光镜影",
+      "roles": [
+        "法师"
+      ],
+      "roleWeights": [
+        {
+          "role": "法师",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "法师",
+      "secondaryRole": "",
+      "damageProfile": "magic",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "mage",
+        "ap_item",
+        "mana_item",
+        "ability_haste",
+        "scaling_item"
+      ],
+      "avoidItemTags": [
+        "crit_item"
+      ],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "briar",
+      "heroNameCn": "贝蕾亚",
+      "titleCn": "狂厄蔷薇",
+      "roles": [
+        "战士"
+      ],
+      "roleWeights": [
+        {
+          "role": "战士",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "战士",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "fighter",
+        "ad_item",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "alistar",
+      "heroNameCn": "阿利斯塔",
+      "titleCn": "牛头酋长",
+      "roles": [
+        "坦克"
+      ],
+      "roleWeights": [
+        {
+          "role": "坦克",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "坦克",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "tank",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "jax",
+      "heroNameCn": "贾克斯",
+      "titleCn": "武器大师",
+      "roles": [
+        "战士"
+      ],
+      "roleWeights": [
+        {
+          "role": "战士",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "战士",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "fighter",
+        "ad_item",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "malphite",
+      "heroNameCn": "墨菲特",
+      "titleCn": "熔岩巨兽",
+      "roles": [
+        "坦克"
+      ],
+      "roleWeights": [
+        {
+          "role": "坦克",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "坦克",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "tank",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "kalista",
+      "heroNameCn": "卡莉丝塔",
+      "titleCn": "复仇之矛",
+      "roles": [
+        "射手"
+      ],
+      "roleWeights": [
+        {
+          "role": "射手",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "射手",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "marksman",
+        "ad_item",
+        "attack_speed_item",
+        "crit_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "aphelios",
+      "heroNameCn": "厄斐琉斯",
+      "titleCn": "残月之肃",
+      "roles": [
+        "射手"
+      ],
+      "roleWeights": [
+        {
+          "role": "射手",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "射手",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "marksman",
+        "ad_item",
+        "attack_speed_item",
+        "crit_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "shyvana",
+      "heroNameCn": "希瓦娜",
+      "titleCn": "龙血武姬",
+      "roles": [
+        "战士"
+      ],
+      "roleWeights": [
+        {
+          "role": "战士",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "战士",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "fighter",
+        "ad_item",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "sylas",
+      "heroNameCn": "塞拉斯",
+      "titleCn": "解脱者",
+      "roles": [
+        "法师"
+      ],
+      "roleWeights": [
+        {
+          "role": "法师",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "法师",
+      "secondaryRole": "",
+      "damageProfile": "magic",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "mage",
+        "ap_item",
+        "mana_item",
+        "ability_haste",
+        "scaling_item"
+      ],
+      "avoidItemTags": [
+        "crit_item"
+      ],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "ziggs",
+      "heroNameCn": "吉格斯",
+      "titleCn": "爆破鬼才",
+      "roles": [
+        "法师"
+      ],
+      "roleWeights": [
+        {
+          "role": "法师",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "法师",
+      "secondaryRole": "",
+      "damageProfile": "magic",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "mage",
+        "ap_item",
+        "mana_item",
+        "ability_haste",
+        "scaling_item"
+      ],
+      "avoidItemTags": [
+        "crit_item"
+      ],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "ornn",
+      "heroNameCn": "奥恩",
+      "titleCn": "山隐之焰",
+      "roles": [
+        "坦克"
+      ],
+      "roleWeights": [
+        {
+          "role": "坦克",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "坦克",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "tank",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "kindred",
+      "heroNameCn": "千珏",
+      "titleCn": "永猎双子",
+      "roles": [
+        "射手"
+      ],
+      "roleWeights": [
+        {
+          "role": "射手",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "射手",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "marksman",
+        "ad_item",
+        "attack_speed_item",
+        "crit_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "ezreal",
+      "heroNameCn": "伊泽瑞尔",
+      "titleCn": "探险家",
+      "roles": [
+        "射手"
+      ],
+      "roleWeights": [
+        {
+          "role": "射手",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "射手",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "marksman",
+        "ad_item",
+        "attack_speed_item",
+        "crit_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "pantheon",
+      "heroNameCn": "潘森",
+      "titleCn": "不屈之枪",
+      "roles": [
+        "战士"
+      ],
+      "roleWeights": [
+        {
+          "role": "战士",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "战士",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "fighter",
+        "ad_item",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "pyke",
+      "heroNameCn": "派克",
+      "titleCn": "血港鬼影",
+      "roles": [
+        "辅助"
+      ],
+      "roleWeights": [
+        {
+          "role": "辅助",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "辅助",
+      "secondaryRole": "",
+      "damageProfile": "magic",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "support",
+        "utility_item",
+        "sustain_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "zilean",
+      "heroNameCn": "基兰",
+      "titleCn": "时光守护者",
+      "roles": [
+        "辅助"
+      ],
+      "roleWeights": [
+        {
+          "role": "辅助",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "辅助",
+      "secondaryRole": "",
+      "damageProfile": "magic",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "support",
+        "utility_item",
+        "sustain_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "kogmaw",
+      "heroNameCn": "克格莫",
+      "titleCn": "深渊巨口",
+      "roles": [
+        "射手"
+      ],
+      "roleWeights": [
+        {
+          "role": "射手",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "射手",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "marksman",
+        "ad_item",
+        "attack_speed_item",
+        "crit_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "heimerdinger",
+      "heroNameCn": "黑默丁格",
+      "titleCn": "大发明家",
+      "roles": [
+        "法师"
+      ],
+      "roleWeights": [
+        {
+          "role": "法师",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "法师",
+      "secondaryRole": "",
+      "damageProfile": "magic",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "mage",
+        "ap_item",
+        "mana_item",
+        "ability_haste",
+        "scaling_item"
+      ],
+      "avoidItemTags": [
+        "crit_item"
+      ],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "talon",
+      "heroNameCn": "泰隆",
+      "titleCn": "刀锋之影",
+      "roles": [
+        "刺客"
+      ],
+      "roleWeights": [
+        {
+          "role": "刺客",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "刺客",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "assassin",
+        "ad_item",
+        "ap_item",
+        "burst_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "leona",
+      "heroNameCn": "蕾欧娜",
+      "titleCn": "曙光女神",
+      "roles": [
+        "坦克"
+      ],
+      "roleWeights": [
+        {
+          "role": "坦克",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "坦克",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "tank",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "varus",
+      "heroNameCn": "韦鲁斯",
+      "titleCn": "惩戒之箭",
+      "roles": [
+        "射手"
+      ],
+      "roleWeights": [
+        {
+          "role": "射手",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "射手",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "marksman",
+        "ad_item",
+        "attack_speed_item",
+        "crit_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "shen",
+      "heroNameCn": "慎",
+      "titleCn": "暮光之眼",
+      "roles": [
+        "坦克"
+      ],
+      "roleWeights": [
+        {
+          "role": "坦克",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "坦克",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "tank",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "darius",
+      "heroNameCn": "德莱厄斯",
+      "titleCn": "诺克萨斯之手",
+      "roles": [
+        "战士"
+      ],
+      "roleWeights": [
+        {
+          "role": "战士",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "战士",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "fighter",
+        "ad_item",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "sivir",
+      "heroNameCn": "希维尔",
+      "titleCn": "战争女神",
+      "roles": [
+        "射手"
+      ],
+      "roleWeights": [
+        {
+          "role": "射手",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "射手",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "marksman",
+        "ad_item",
+        "attack_speed_item",
+        "crit_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "vladimir",
+      "heroNameCn": "弗拉基米尔",
+      "titleCn": "猩红收割者",
+      "roles": [
+        "法师"
+      ],
+      "roleWeights": [
+        {
+          "role": "法师",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "法师",
+      "secondaryRole": "",
+      "damageProfile": "magic",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "mage",
+        "ap_item",
+        "mana_item",
+        "ability_haste",
+        "scaling_item"
+      ],
+      "avoidItemTags": [
+        "crit_item"
+      ],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "renata",
+      "heroNameCn": "烈娜塔 · 戈拉斯克",
+      "titleCn": "炼金男爵",
+      "roles": [
+        "辅助"
+      ],
+      "roleWeights": [
+        {
+          "role": "辅助",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "辅助",
+      "secondaryRole": "",
+      "damageProfile": "magic",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "support",
+        "utility_item",
+        "sustain_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "fiora",
+      "heroNameCn": "菲奥娜",
+      "titleCn": "无双剑姬",
+      "roles": [
+        "战士"
+      ],
+      "roleWeights": [
+        {
+          "role": "战士",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "战士",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "fighter",
+        "ad_item",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "janna",
+      "heroNameCn": "迦娜",
+      "titleCn": "风暴之怒",
+      "roles": [
+        "辅助"
+      ],
+      "roleWeights": [
+        {
+          "role": "辅助",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "辅助",
+      "secondaryRole": "",
+      "damageProfile": "magic",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "support",
+        "utility_item",
+        "sustain_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "blitzcrank",
+      "heroNameCn": "布里茨",
+      "titleCn": "蒸汽机器人",
+      "roles": [
+        "坦克"
+      ],
+      "roleWeights": [
+        {
+          "role": "坦克",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "坦克",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "tank",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "mordekaiser",
+      "heroNameCn": "莫德凯撒",
+      "titleCn": "铁铠冥魂",
+      "roles": [
+        "战士"
+      ],
+      "roleWeights": [
+        {
+          "role": "战士",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "战士",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "fighter",
+        "ad_item",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "viego",
+      "heroNameCn": "佛耶戈",
+      "titleCn": "破败之王",
+      "roles": [
+        "战士"
+      ],
+      "roleWeights": [
+        {
+          "role": "战士",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "战士",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "fighter",
+        "ad_item",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "vex",
+      "heroNameCn": "薇古丝",
+      "titleCn": "愁云使者",
+      "roles": [
+        "法师"
+      ],
+      "roleWeights": [
+        {
+          "role": "法师",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "法师",
+      "secondaryRole": "",
+      "damageProfile": "magic",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "mage",
+        "ap_item",
+        "mana_item",
+        "ability_haste",
+        "scaling_item"
+      ],
+      "avoidItemTags": [
+        "crit_item"
+      ],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "kassadin",
+      "heroNameCn": "卡萨丁",
+      "titleCn": "虚空行者",
+      "roles": [
+        "刺客"
+      ],
+      "roleWeights": [
+        {
+          "role": "刺客",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "刺客",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "assassin",
+        "ad_item",
+        "ap_item",
+        "burst_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "shaco",
+      "heroNameCn": "萨科",
+      "titleCn": "恶魔小丑",
+      "roles": [
+        "刺客"
+      ],
+      "roleWeights": [
+        {
+          "role": "刺客",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "刺客",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "assassin",
+        "ad_item",
+        "ap_item",
+        "burst_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "sejuani",
+      "heroNameCn": "瑟庄妮",
+      "titleCn": "北地之怒",
+      "roles": [
+        "坦克"
+      ],
+      "roleWeights": [
+        {
+          "role": "坦克",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "坦克",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "tank",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "riven",
+      "heroNameCn": "锐雯",
+      "titleCn": "放逐之刃",
+      "roles": [
+        "战士"
+      ],
+      "roleWeights": [
+        {
+          "role": "战士",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "战士",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "fighter",
+        "ad_item",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "ambessa",
+      "heroNameCn": "安蓓萨",
+      "titleCn": "铁血狼母",
+      "roles": [
+        "战士"
+      ],
+      "roleWeights": [
+        {
+          "role": "战士",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "战士",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "fighter",
+        "ad_item",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "khazix",
+      "heroNameCn": "卡兹克",
+      "titleCn": "虚空掠夺者",
+      "roles": [
+        "刺客"
+      ],
+      "roleWeights": [
+        {
+          "role": "刺客",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "刺客",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "assassin",
+        "ad_item",
+        "ap_item",
+        "burst_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "karma",
+      "heroNameCn": "卡尔玛",
+      "titleCn": "天启者",
+      "roles": [
+        "法师"
+      ],
+      "roleWeights": [
+        {
+          "role": "法师",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "法师",
+      "secondaryRole": "",
+      "damageProfile": "magic",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "mage",
+        "ap_item",
+        "mana_item",
+        "ability_haste",
+        "scaling_item"
+      ],
+      "avoidItemTags": [
+        "crit_item"
+      ],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "orianna",
+      "heroNameCn": "奥莉安娜",
+      "titleCn": "发条魔灵",
+      "roles": [
+        "法师"
+      ],
+      "roleWeights": [
+        {
+          "role": "法师",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "法师",
+      "secondaryRole": "",
+      "damageProfile": "magic",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "mage",
+        "ap_item",
+        "mana_item",
+        "ability_haste",
+        "scaling_item"
+      ],
+      "avoidItemTags": [
+        "crit_item"
+      ],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "nilah",
+      "heroNameCn": "尼菈",
+      "titleCn": "不羁之悦",
+      "roles": [
+        "战士"
+      ],
+      "roleWeights": [
+        {
+          "role": "战士",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "战士",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "fighter",
+        "ad_item",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "gragas",
+      "heroNameCn": "古拉加斯",
+      "titleCn": "酒桶",
+      "roles": [
+        "战士"
+      ],
+      "roleWeights": [
+        {
+          "role": "战士",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "战士",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "fighter",
+        "ad_item",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "nocturne",
+      "heroNameCn": "魔腾",
+      "titleCn": "永恒梦魇",
+      "roles": [
+        "战士"
+      ],
+      "roleWeights": [
+        {
+          "role": "战士",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "战士",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "fighter",
+        "ad_item",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "soraka",
+      "heroNameCn": "索拉卡",
+      "titleCn": "众星之子",
+      "roles": [
+        "辅助"
+      ],
+      "roleWeights": [
+        {
+          "role": "辅助",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "辅助",
+      "secondaryRole": "",
+      "damageProfile": "magic",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "support",
+        "utility_item",
+        "sustain_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "sona",
+      "heroNameCn": "娑娜",
+      "titleCn": "琴瑟仙女",
+      "roles": [
+        "辅助"
+      ],
+      "roleWeights": [
+        {
+          "role": "辅助",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "辅助",
+      "secondaryRole": "",
+      "damageProfile": "magic",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "support",
+        "utility_item",
+        "sustain_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "akshan",
+      "heroNameCn": "阿克尚",
+      "titleCn": "影哨",
+      "roles": [
+        "射手"
+      ],
+      "roleWeights": [
+        {
+          "role": "射手",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "射手",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "marksman",
+        "ad_item",
+        "attack_speed_item",
+        "crit_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "thresh",
+      "heroNameCn": "锤石",
+      "titleCn": "魂锁典狱长",
+      "roles": [
+        "辅助"
+      ],
+      "roleWeights": [
+        {
+          "role": "辅助",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "辅助",
+      "secondaryRole": "",
+      "damageProfile": "magic",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "support",
+        "utility_item",
+        "sustain_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "lissandra",
+      "heroNameCn": "丽桑卓",
+      "titleCn": "冰霜女巫",
+      "roles": [
+        "法师"
+      ],
+      "roleWeights": [
+        {
+          "role": "法师",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "法师",
+      "secondaryRole": "",
+      "damageProfile": "magic",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "mage",
+        "ap_item",
+        "mana_item",
+        "ability_haste",
+        "scaling_item"
+      ],
+      "avoidItemTags": [
+        "crit_item"
+      ],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "amumu",
+      "heroNameCn": "阿木木",
+      "titleCn": "殇之木乃伊",
+      "roles": [
+        "坦克"
+      ],
+      "roleWeights": [
+        {
+          "role": "坦克",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "坦克",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "tank",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "draven",
+      "heroNameCn": "德莱文",
+      "titleCn": "荣耀行刑官",
+      "roles": [
+        "射手"
+      ],
+      "roleWeights": [
+        {
+          "role": "射手",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "射手",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "marksman",
+        "ad_item",
+        "attack_speed_item",
+        "crit_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "illaoi",
+      "heroNameCn": "俄洛伊",
+      "titleCn": "海兽祭司",
+      "roles": [
+        "战士"
+      ],
+      "roleWeights": [
+        {
+          "role": "战士",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "战士",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "fighter",
+        "ad_item",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "aatrox",
+      "heroNameCn": "亚托克斯",
+      "titleCn": "暗裔剑魔",
+      "roles": [
+        "战士"
+      ],
+      "roleWeights": [
+        {
+          "role": "战士",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "战士",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "fighter",
+        "ad_item",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "monkeyking",
+      "heroNameCn": "孙悟空",
+      "titleCn": "齐天大圣",
+      "roles": [
+        "战士"
+      ],
+      "roleWeights": [
+        {
+          "role": "战士",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "战士",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "fighter",
+        "ad_item",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "fiddlesticks",
+      "heroNameCn": "费德提克",
+      "titleCn": "远古恐惧",
+      "roles": [
+        "法师"
+      ],
+      "roleWeights": [
+        {
+          "role": "法师",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "法师",
+      "secondaryRole": "",
+      "damageProfile": "magic",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "mage",
+        "ap_item",
+        "mana_item",
+        "ability_haste",
+        "scaling_item"
+      ],
+      "avoidItemTags": [
+        "crit_item"
+      ],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "nami",
+      "heroNameCn": "娜美",
+      "titleCn": "唤潮鲛姬",
+      "roles": [
+        "辅助"
+      ],
+      "roleWeights": [
+        {
+          "role": "辅助",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "辅助",
+      "secondaryRole": "",
+      "damageProfile": "magic",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "support",
+        "utility_item",
+        "sustain_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "udyr",
+      "heroNameCn": "乌迪尔",
+      "titleCn": "兽灵行者",
+      "roles": [
+        "战士"
+      ],
+      "roleWeights": [
+        {
+          "role": "战士",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "战士",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "fighter",
+        "ad_item",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "samira",
+      "heroNameCn": "莎弥拉",
+      "titleCn": "沙漠玫瑰",
+      "roles": [
+        "射手"
+      ],
+      "roleWeights": [
+        {
+          "role": "射手",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "射手",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "marksman",
+        "ad_item",
+        "attack_speed_item",
+        "crit_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "katarina",
+      "heroNameCn": "卡特琳娜",
+      "titleCn": "不祥之刃",
+      "roles": [
+        "刺客"
+      ],
+      "roleWeights": [
+        {
+          "role": "刺客",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "刺客",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "assassin",
+        "ad_item",
+        "ap_item",
+        "burst_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "leesin",
+      "heroNameCn": "李青",
+      "titleCn": "盲僧",
+      "roles": [
+        "战士"
+      ],
+      "roleWeights": [
+        {
+          "role": "战士",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "战士",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "fighter",
+        "ad_item",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "trundle",
+      "heroNameCn": "特朗德尔",
+      "titleCn": "巨魔之王",
+      "roles": [
+        "战士"
+      ],
+      "roleWeights": [
+        {
+          "role": "战士",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "战士",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "fighter",
+        "ad_item",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "diana",
+      "heroNameCn": "黛安娜",
+      "titleCn": "皎月女神",
+      "roles": [
+        "战士"
+      ],
+      "roleWeights": [
+        {
+          "role": "战士",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "战士",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "fighter",
+        "ad_item",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "rengar",
+      "heroNameCn": "雷恩加尔",
+      "titleCn": "傲之追猎者",
+      "roles": [
+        "刺客"
+      ],
+      "roleWeights": [
+        {
+          "role": "刺客",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "刺客",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "assassin",
+        "ad_item",
+        "ap_item",
+        "burst_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "yuumi",
+      "heroNameCn": "悠米",
+      "titleCn": "魔法猫咪",
+      "roles": [
+        "辅助"
+      ],
+      "roleWeights": [
+        {
+          "role": "辅助",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "辅助",
+      "secondaryRole": "",
+      "damageProfile": "magic",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "support",
+        "utility_item",
+        "sustain_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "poppy",
+      "heroNameCn": "波比",
+      "titleCn": "圣锤之毅",
+      "roles": [
+        "坦克"
+      ],
+      "roleWeights": [
+        {
+          "role": "坦克",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "坦克",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "tank",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "annie",
+      "heroNameCn": "安妮",
+      "titleCn": "黑暗之女",
+      "roles": [
+        "法师"
+      ],
+      "roleWeights": [
+        {
+          "role": "法师",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "法师",
+      "secondaryRole": "",
+      "damageProfile": "magic",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "mage",
+        "ap_item",
+        "mana_item",
+        "ability_haste",
+        "scaling_item"
+      ],
+      "avoidItemTags": [
+        "crit_item"
+      ],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "volibear",
+      "heroNameCn": "沃利贝尔",
+      "titleCn": "不灭狂雷",
+      "roles": [
+        "战士"
+      ],
+      "roleWeights": [
+        {
+          "role": "战士",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "战士",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "fighter",
+        "ad_item",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "nidalee",
+      "heroNameCn": "奈德丽",
+      "titleCn": "狂野女猎手",
+      "roles": [
+        "刺客"
+      ],
+      "roleWeights": [
+        {
+          "role": "刺客",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "刺客",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "assassin",
+        "ad_item",
+        "ap_item",
+        "burst_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "cassiopeia",
+      "heroNameCn": "卡西奥佩娅",
+      "titleCn": "魔蛇之拥",
+      "roles": [
+        "法师"
+      ],
+      "roleWeights": [
+        {
+          "role": "法师",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "法师",
+      "secondaryRole": "",
+      "damageProfile": "magic",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "mage",
+        "ap_item",
+        "mana_item",
+        "ability_haste",
+        "scaling_item"
+      ],
+      "avoidItemTags": [
+        "crit_item"
+      ],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "naafiri",
+      "heroNameCn": "纳亚菲利",
+      "titleCn": "百裂冥犬",
+      "roles": [
+        "刺客"
+      ],
+      "roleWeights": [
+        {
+          "role": "刺客",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "刺客",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "assassin",
+        "ad_item",
+        "ap_item",
+        "burst_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "taliyah",
+      "heroNameCn": "塔莉垭",
+      "titleCn": "岩雀",
+      "roles": [
+        "法师"
+      ],
+      "roleWeights": [
+        {
+          "role": "法师",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "法师",
+      "secondaryRole": "",
+      "damageProfile": "magic",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "mage",
+        "ap_item",
+        "mana_item",
+        "ability_haste",
+        "scaling_item"
+      ],
+      "avoidItemTags": [
+        "crit_item"
+      ],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "quinn",
+      "heroNameCn": "奎因",
+      "titleCn": "德玛西亚之翼",
+      "roles": [
+        "射手"
+      ],
+      "roleWeights": [
+        {
+          "role": "射手",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "射手",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "marksman",
+        "ad_item",
+        "attack_speed_item",
+        "crit_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "milio",
+      "heroNameCn": "米利欧",
+      "titleCn": "明烛",
+      "roles": [
+        "辅助"
+      ],
+      "roleWeights": [
+        {
+          "role": "辅助",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "辅助",
+      "secondaryRole": "",
+      "damageProfile": "magic",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "support",
+        "utility_item",
+        "sustain_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "taric",
+      "heroNameCn": "塔里克",
+      "titleCn": "瓦洛兰之盾",
+      "roles": [
+        "辅助"
+      ],
+      "roleWeights": [
+        {
+          "role": "辅助",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "辅助",
+      "secondaryRole": "",
+      "damageProfile": "magic",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "support",
+        "utility_item",
+        "sustain_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "nasus",
+      "heroNameCn": "内瑟斯",
+      "titleCn": "沙漠死神",
+      "roles": [
+        "战士"
+      ],
+      "roleWeights": [
+        {
+          "role": "战士",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "战士",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "fighter",
+        "ad_item",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "lulu",
+      "heroNameCn": "璐璐",
+      "titleCn": "仙灵女巫",
+      "roles": [
+        "辅助"
+      ],
+      "roleWeights": [
+        {
+          "role": "辅助",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "辅助",
+      "secondaryRole": "",
+      "damageProfile": "magic",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "support",
+        "utility_item",
+        "sustain_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "zoe",
+      "heroNameCn": "佐伊",
+      "titleCn": "暮光星灵",
+      "roles": [
+        "法师"
+      ],
+      "roleWeights": [
+        {
+          "role": "法师",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "法师",
+      "secondaryRole": "",
+      "damageProfile": "magic",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "mage",
+        "ap_item",
+        "mana_item",
+        "ability_haste",
+        "scaling_item"
+      ],
+      "avoidItemTags": [
+        "crit_item"
+      ],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "anivia",
+      "heroNameCn": "艾尼维亚",
+      "titleCn": "冰晶凤凰",
+      "roles": [
+        "法师"
+      ],
+      "roleWeights": [
+        {
+          "role": "法师",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "法师",
+      "secondaryRole": "",
+      "damageProfile": "magic",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "mage",
+        "ap_item",
+        "mana_item",
+        "ability_haste",
+        "scaling_item"
+      ],
+      "avoidItemTags": [
+        "crit_item"
+      ],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "urgot",
+      "heroNameCn": "厄加特",
+      "titleCn": "无畏战车",
+      "roles": [
+        "战士"
+      ],
+      "roleWeights": [
+        {
+          "role": "战士",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "战士",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "fighter",
+        "ad_item",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "vi",
+      "heroNameCn": "蔚",
+      "titleCn": "皮城执法官",
+      "roles": [
+        "战士"
+      ],
+      "roleWeights": [
+        {
+          "role": "战士",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "战士",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "fighter",
+        "ad_item",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "azir",
+      "heroNameCn": "阿兹尔",
+      "titleCn": "沙漠皇帝",
+      "roles": [
+        "法师"
+      ],
+      "roleWeights": [
+        {
+          "role": "法师",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "法师",
+      "secondaryRole": "",
+      "damageProfile": "magic",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "mage",
+        "ap_item",
+        "mana_item",
+        "ability_haste",
+        "scaling_item"
+      ],
+      "avoidItemTags": [
+        "crit_item"
+      ],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "rammus",
+      "heroNameCn": "拉莫斯",
+      "titleCn": "披甲龙龟",
+      "roles": [
+        "坦克"
+      ],
+      "roleWeights": [
+        {
+          "role": "坦克",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "坦克",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "tank",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "braum",
+      "heroNameCn": "布隆",
+      "titleCn": "弗雷尔卓德之心",
+      "roles": [
+        "坦克"
+      ],
+      "roleWeights": [
+        {
+          "role": "坦克",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "坦克",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "tank",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "kennen",
+      "heroNameCn": "凯南",
+      "titleCn": "狂暴之心",
+      "roles": [
+        "法师"
+      ],
+      "roleWeights": [
+        {
+          "role": "法师",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "法师",
+      "secondaryRole": "",
+      "damageProfile": "magic",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "mage",
+        "ap_item",
+        "mana_item",
+        "ability_haste",
+        "scaling_item"
+      ],
+      "avoidItemTags": [
+        "crit_item"
+      ],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "neeko",
+      "heroNameCn": "妮蔻",
+      "titleCn": "万花通灵",
+      "roles": [
+        "法师"
+      ],
+      "roleWeights": [
+        {
+          "role": "法师",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "法师",
+      "secondaryRole": "",
+      "damageProfile": "magic",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "mage",
+        "ap_item",
+        "mana_item",
+        "ability_haste",
+        "scaling_item"
+      ],
+      "avoidItemTags": [
+        "crit_item"
+      ],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "qiyana",
+      "heroNameCn": "奇亚娜",
+      "titleCn": "元素女皇",
+      "roles": [
+        "刺客"
+      ],
+      "roleWeights": [
+        {
+          "role": "刺客",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "刺客",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "assassin",
+        "ad_item",
+        "ap_item",
+        "burst_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "ivern",
+      "heroNameCn": "艾翁",
+      "titleCn": "翠神",
+      "roles": [
+        "辅助"
+      ],
+      "roleWeights": [
+        {
+          "role": "辅助",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "辅助",
+      "secondaryRole": "",
+      "damageProfile": "magic",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "support",
+        "utility_item",
+        "sustain_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "rakan",
+      "heroNameCn": "洛",
+      "titleCn": "幻翎",
+      "roles": [
+        "辅助"
+      ],
+      "roleWeights": [
+        {
+          "role": "辅助",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "辅助",
+      "secondaryRole": "",
+      "damageProfile": "magic",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "support",
+        "utility_item",
+        "sustain_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "zac",
+      "heroNameCn": "扎克",
+      "titleCn": "生化魔人",
+      "roles": [
+        "坦克"
+      ],
+      "roleWeights": [
+        {
+          "role": "坦克",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "坦克",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "tank",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "nunu",
+      "heroNameCn": "努努和威朗普",
+      "titleCn": "雪原双子",
+      "roles": [
+        "坦克"
+      ],
+      "roleWeights": [
+        {
+          "role": "坦克",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "坦克",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "tank",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "belveth",
+      "heroNameCn": "卑尔维斯",
+      "titleCn": "虚空女皇",
+      "roles": [
+        "战士"
+      ],
+      "roleWeights": [
+        {
+          "role": "战士",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "战士",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "fighter",
+        "ad_item",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "leblanc",
+      "heroNameCn": "乐芙兰",
+      "titleCn": "诡术妖姬",
+      "roles": [
+        "刺客"
+      ],
+      "roleWeights": [
+        {
+          "role": "刺客",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "刺客",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "assassin",
+        "ad_item",
+        "ap_item",
+        "burst_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "reksai",
+      "heroNameCn": "雷克塞",
+      "titleCn": "虚空遁地兽",
+      "roles": [
+        "战士"
+      ],
+      "roleWeights": [
+        {
+          "role": "战士",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "战士",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "fighter",
+        "ad_item",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "renekton",
+      "heroNameCn": "雷克顿",
+      "titleCn": "荒漠屠夫",
+      "roles": [
+        "战士"
+      ],
+      "roleWeights": [
+        {
+          "role": "战士",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "战士",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "fighter",
+        "ad_item",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "akali",
+      "heroNameCn": "阿卡丽",
+      "titleCn": "离群之刺",
+      "roles": [
+        "刺客"
+      ],
+      "roleWeights": [
+        {
+          "role": "刺客",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "刺客",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "assassin",
+        "ad_item",
+        "ap_item",
+        "burst_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "elise",
+      "heroNameCn": "伊莉丝",
+      "titleCn": "蜘蛛女皇",
+      "roles": [
+        "刺客"
+      ],
+      "roleWeights": [
+        {
+          "role": "刺客",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "刺客",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "assassin",
+        "ad_item",
+        "ap_item",
+        "burst_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "skarner",
+      "heroNameCn": "斯卡纳",
+      "titleCn": "上古领主",
+      "roles": [
+        "坦克"
+      ],
+      "roleWeights": [
+        {
+          "role": "坦克",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "坦克",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "tank",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "gnar",
+      "heroNameCn": "纳尔",
+      "titleCn": "迷失之牙",
+      "roles": [
+        "战士"
+      ],
+      "roleWeights": [
+        {
+          "role": "战士",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "战士",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "fighter",
+        "ad_item",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "zeri",
+      "heroNameCn": "泽丽",
+      "titleCn": "祖安花火",
+      "roles": [
+        "射手"
+      ],
+      "roleWeights": [
+        {
+          "role": "射手",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "射手",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "ranged",
+      "preferredItemTags": [
+        "marksman",
+        "ad_item",
+        "attack_speed_item",
+        "crit_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "olaf",
+      "heroNameCn": "奥拉夫",
+      "titleCn": "狂战士",
+      "roles": [
+        "战士"
+      ],
+      "roleWeights": [
+        {
+          "role": "战士",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "战士",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "fighter",
+        "ad_item",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "warwick",
+      "heroNameCn": "沃里克",
+      "titleCn": "祖安怒兽",
+      "roles": [
+        "战士"
+      ],
+      "roleWeights": [
+        {
+          "role": "战士",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "战士",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "fighter",
+        "ad_item",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "ksante",
+      "heroNameCn": "奎桑提",
+      "titleCn": "纳祖芒荣耀",
+      "roles": [
+        "坦克"
+      ],
+      "roleWeights": [
+        {
+          "role": "坦克",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "坦克",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "tank",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "yorick",
+      "heroNameCn": "约里克",
+      "titleCn": "牧魂人",
+      "roles": [
+        "战士"
+      ],
+      "roleWeights": [
+        {
+          "role": "战士",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "战士",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "fighter",
+        "ad_item",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "kled",
+      "heroNameCn": "克烈",
+      "titleCn": "暴怒骑士",
+      "roles": [
+        "战士"
+      ],
+      "roleWeights": [
+        {
+          "role": "战士",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "战士",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "fighter",
+        "ad_item",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "camille",
+      "heroNameCn": "卡蜜尔",
+      "titleCn": "青钢影",
+      "roles": [
+        "战士"
+      ],
+      "roleWeights": [
+        {
+          "role": "战士",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "战士",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "fighter",
+        "ad_item",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "irelia",
+      "heroNameCn": "艾瑞莉娅",
+      "titleCn": "刀锋舞者",
+      "roles": [
+        "战士"
+      ],
+      "roleWeights": [
+        {
+          "role": "战士",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "战士",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "fighter",
+        "ad_item",
+        "hp_item",
+        "defensive_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "evelynn",
+      "heroNameCn": "伊芙琳",
+      "titleCn": "痛苦之拥",
+      "roles": [
+        "刺客"
+      ],
+      "roleWeights": [
+        {
+          "role": "刺客",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "刺客",
+      "secondaryRole": "",
+      "damageProfile": "physical",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "assassin",
+        "ad_item",
+        "ap_item",
+        "burst_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    },
+    {
+      "heroId": "bard",
+      "heroNameCn": "巴德",
+      "titleCn": "星界游神",
+      "roles": [
+        "辅助"
+      ],
+      "roleWeights": [
+        {
+          "role": "辅助",
+          "weight": 1.0
+        }
+      ],
+      "primaryRole": "辅助",
+      "secondaryRole": "",
+      "damageProfile": "magic",
+      "rangeType": "melee",
+      "preferredItemTags": [
+        "support",
+        "utility_item",
+        "sustain_item"
+      ],
+      "avoidItemTags": [],
+      "sourceType": "inferred",
+      "confidence": "high",
+      "notesCn": ""
+    }
+  ],
+  "qualityReport": {
+    "totalHeroes": 172,
+    "heroesWithRole": 172,
+    "multiRoleHeroCount": 0,
+    "lowConfidenceCount": 0
+  }
+}

@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="none" viewBox="0 0 64 64">
+  <defs>
+    <!-- Outer glow filter -->
+    <filter id="hexGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <!-- Inner aura filter -->
+    <filter id="innerGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Silver energy gradient -->
+    <linearGradient id="silver" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f0f0f8"/>
+      <stop offset="35%" stop-color="#b8b8d0"/>
+      <stop offset="50%" stop-color="#e8e8f4"/>
+      <stop offset="65%" stop-color="#9098b0"/>
+      <stop offset="100%" stop-color="#d8d8e8"/>
+    </linearGradient>
+
+    <!-- Gold energy gradient -->
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffeaaa"/>
+      <stop offset="30%" stop-color="#e8b840"/>
+      <stop offset="50%" stop-color="#fff0c0"/>
+      <stop offset="70%" stop-color="#c89030"/>
+      <stop offset="100%" stop-color="#ffd866"/>
+    </linearGradient>
+
+    <!-- Prismatic energy gradient -->
+    <linearGradient id="prismatic" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff7eb3"/>
+      <stop offset="20%" stop-color="#c461ff"/>
+      <stop offset="40%" stop-color="#5ec5ff"/>
+      <stop offset="60%" stop-color="#47ff94"/>
+      <stop offset="80%" stop-color="#ff7eb3"/>
+      <stop offset="100%" stop-color="#c461ff"/>
+    </linearGradient>
+
+    <!-- Hexagon border gradient -->
+    <linearGradient id="hexBorder" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7b4fff"/>
+      <stop offset="50%" stop-color="#a878ff"/>
+      <stop offset="100%" stop-color="#6040d0"/>
+    </linearGradient>
+
+    <!-- Corner accent glow -->
+    <radialGradient id="cornerGlow">
+      <stop offset="0%" stop-color="#a878ff" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#a878ff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Outer hexagon glow ring (larger, blurred) -->
+  <polygon
+    points="32,2 58,17 58,47 32,62 6,47 6,17"
+    fill="none"
+    stroke="#7b4fff"
+    stroke-width="1"
+    opacity="0.3"
+    filter="url(#hexGlow)"
+  />
+
+  <!-- Main outer hexagon -->
+  <polygon
+    points="32,3 57,17.5 57,46.5 32,61 7,46.5 7,17.5"
+    fill="none"
+    stroke="url(#hexBorder)"
+    stroke-width="1.8"
+    filter="url(#hexGlow)"
+  />
+
+  <!-- Dark hexagon body -->
+  <polygon
+    points="32,5 55.5,18.5 55.5,45.5 32,59 8.5,45.5 8.5,18.5"
+    fill="#0d0820"
+    stroke="#6040d0"
+    stroke-width="0.5"
+    opacity="0.95"
+  />
+
+  <!-- Inner hexagon (subtle border) -->
+  <polygon
+    points="32,9 51.5,20.5 51.5,43.5 32,55 12.5,43.5 12.5,20.5"
+    fill="none"
+    stroke="#7b4fff"
+    stroke-width="0.4"
+    opacity="0.25"
+  />
+
+  <!-- Energy aura behind slots -->
+  <ellipse cx="32" cy="32" rx="10" ry="18" fill="#7b4fff" opacity="0.08" filter="url(#innerGlow)"/>
+
+  <!-- Silver energy slot (left) -->
+  <rect x="21" y="17" width="5" height="30" rx="2.5" fill="url(#silver)" opacity="0.9"/>
+  <rect x="21" y="17" width="5" height="30" rx="2.5" fill="none" stroke="#e8e8f8" stroke-width="0.3" opacity="0.5"/>
+
+  <!-- Gold energy slot (center) -->
+  <rect x="29.5" y="14" width="5" height="36" rx="2.5" fill="url(#gold)" opacity="0.95"/>
+  <rect x="29.5" y="14" width="5" height="36" rx="2.5" fill="none" stroke="#fff0d0" stroke-width="0.5" opacity="0.6"/>
+
+  <!-- Prismatic energy slot (right) -->
+  <rect x="38" y="17" width="5" height="30" rx="2.5" fill="url(#prismatic)" opacity="0.9"/>
+  <rect x="38" y="17" width="5" height="30" rx="2.5" fill="none" stroke="#ffffff" stroke-width="0.3" opacity="0.4"/>
+
+  <!-- Slot glow overlays (top/bottom bright spots) -->
+  <ellipse cx="23.5" cy="17" rx="2" ry="1.5" fill="#ffffff" opacity="0.5"/>
+  <ellipse cx="32" cy="14" rx="2" ry="1.5" fill="#ffffff" opacity="0.5"/>
+  <ellipse cx="40.5" cy="17" rx="2" ry="1.5" fill="#ffffff" opacity="0.5"/>
+
+  <!-- Corner accent dots at hexagon vertices -->
+  <circle cx="32" cy="4.5" r="1.2" fill="#a878ff" opacity="0.7"/>
+  <circle cx="56.5" cy="18" r="1" fill="#a878ff" opacity="0.5"/>
+  <circle cx="56.5" cy="46" r="1" fill="#a878ff" opacity="0.5"/>
+  <circle cx="32" cy="59.5" r="1" fill="#a878ff" opacity="0.4"/>
+  <circle cx="7.5" cy="46" r="1" fill="#a878ff" opacity="0.5"/>
+  <circle cx="7.5" cy="18" r="1" fill="#a878ff" opacity="0.5"/>
+</svg>

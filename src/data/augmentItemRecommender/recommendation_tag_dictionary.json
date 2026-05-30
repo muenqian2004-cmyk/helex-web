@@ -1,0 +1,116 @@
+{
+  "schemaVersion": "augment_item_recommender.recommendation_tag_dictionary.v1.2",
+  "generatedAt": "2026-05-27",
+  "language": "zh-CN",
+  "statTags": [
+    "hp",
+    "mana",
+    "ap",
+    "ad",
+    "armor",
+    "magic_resist",
+    "attack_speed",
+    "crit",
+    "ability_haste",
+    "move_speed",
+    "lifesteal",
+    "omnivamp",
+    "heal_shield_power",
+    "shield",
+    "tenacity",
+    "magic_penetration",
+    "armor_penetration",
+    "lethality"
+  ],
+  "mechanicTypes": [
+    "stat_conversion",
+    "stat_multiplier",
+    "mana_scaling",
+    "hp_scaling",
+    "ap_scaling",
+    "ad_scaling",
+    "attack_speed_scaling",
+    "crit_scaling",
+    "on_hit",
+    "basic_attack",
+    "ability_cast",
+    "cooldown_loop",
+    "refresh",
+    "shield_heal",
+    "burn_dot",
+    "execute",
+    "summon",
+    "mobility",
+    "tank_scaling",
+    "sustain",
+    "burst",
+    "poke",
+    "team_utility",
+    "economy",
+    "item_interaction",
+    "unknown"
+  ],
+  "itemRoleTags": [
+    "mage",
+    "marksman",
+    "assassin",
+    "fighter",
+    "tank",
+    "support",
+    "mana_item",
+    "hp_item",
+    "ap_item",
+    "ad_item",
+    "attack_speed_item",
+    "crit_item",
+    "on_hit_item",
+    "defensive_item",
+    "sustain_item",
+    "burst_item",
+    "poke_item",
+    "scaling_item",
+    "utility_item"
+  ],
+  "heroRoles": [
+    "刺客",
+    "战士",
+    "坦克",
+    "射手",
+    "辅助",
+    "法师"
+  ],
+  "recommendationSourceTypes": [
+    "augment_synergy",
+    "hero_role_fallback",
+    "dual_match",
+    "situational",
+    "anti_synergy"
+  ],
+  "scoreBands": [
+    {
+      "scoreTier": "core",
+      "scoreBonus": 40,
+      "meaningCn": "强机制联动，明显提高装备优先级"
+    },
+    {
+      "scoreTier": "good",
+      "scoreBonus": 25,
+      "meaningCn": "有稳定联动，推荐考虑"
+    },
+    {
+      "scoreTier": "optional",
+      "scoreBonus": 12,
+      "meaningCn": "有轻度联动，可以作为补充"
+    },
+    {
+      "scoreTier": "neutral",
+      "scoreBonus": 0,
+      "meaningCn": "没有明显联动"
+    },
+    {
+      "scoreTier": "avoid",
+      "scoreBonus": -25,
+      "meaningCn": "属性浪费或机制冲突，不推荐"
+    }
+  ]
+}
